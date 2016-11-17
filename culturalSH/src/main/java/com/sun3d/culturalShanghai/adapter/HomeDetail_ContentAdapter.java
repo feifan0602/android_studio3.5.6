@@ -1,44 +1,22 @@
 package com.sun3d.culturalShanghai.adapter;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.sun3d.culturalShanghai.MyApplication;
 import com.sun3d.culturalShanghai.R;
-import com.sun3d.culturalShanghai.Util.AppConfigUtil;
 import com.sun3d.culturalShanghai.Util.TextUtil;
-import com.sun3d.culturalShanghai.Util.ToastUtil;
 import com.sun3d.culturalShanghai.activity.ActivityDetailActivity;
-import com.sun3d.culturalShanghai.activity.ActivityRoomDateilsActivity;
-import com.sun3d.culturalShanghai.activity.BannerWebView;
-import com.sun3d.culturalShanghai.activity.EventListActivity;
-import com.sun3d.culturalShanghai.activity.VenueDetailActivity;
-import com.sun3d.culturalShanghai.activity.VenueListActivity;
-import com.sun3d.culturalShanghai.object.ActivityConditionInfo;
-import com.sun3d.culturalShanghai.object.ActivityListRoomInfo;
 import com.sun3d.culturalShanghai.object.HomeDetail_ContentInfor;
-import com.sun3d.culturalShanghai.object.HomeDetail_HorizonListInfor;
-import com.sun3d.culturalShanghai.object.HomeDetail_TopLayoutInfor;
-import com.sun3d.culturalShanghai.object.RoomDetailTimeSlotInfor;
-import com.sun3d.culturalShanghai.object.ScreenInfo;
+
+import java.util.List;
 
 public class HomeDetail_ContentAdapter extends BaseAdapter {
 	private Context mContext;
@@ -137,8 +115,10 @@ public class HomeDetail_ContentAdapter extends BaseAdapter {
 				if (info.getAdvertLink() == 0) {
 					MyApplication.selectImg(mContext, info.getAdvertLinkType(),
 							info.getAdvertUrl());
+
 				} else {
 					MyApplication.selectWeb(mContext, info.getAdvertUrl());
+
 				}
 			}
 		});

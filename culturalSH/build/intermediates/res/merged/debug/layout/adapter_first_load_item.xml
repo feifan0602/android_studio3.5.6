@@ -12,6 +12,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/home_myborder"
         android:gravity="center"
+        android:singleLine="true"
         android:text="测试"
         android:textColor="@color/text_color_7c"
         android:textSize="@dimen/text_size_28px" />

@@ -1,12 +1,17 @@
 package com.sun3d.culturalShanghai.view;
 
-import com.sun3d.culturalShanghai.MyApplication;
-
 import android.content.Context;
-import android.content.res.AssetManager;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.TextView;
+
+import com.sun3d.culturalShanghai.MyApplication;
+
+import java.io.File;
+
+import static com.sun3d.culturalShanghai.MyApplication.TEXTFONTTYPEPATH;
+import static com.sun3d.culturalShanghai.MyApplication.changeFontType;
+import static com.sun3d.culturalShanghai.MyApplication.typeFace;
 
 public class MyTextView extends TextView {
 
@@ -17,14 +22,16 @@ public class MyTextView extends TextView {
 	}
 
 	private void init(Context context) {
-		AssetManager assmag = context.getAssets();
-	
-		if (MyApplication.Total_font == null) {
-			MyApplication.Total_font = Typeface.createFromAsset(assmag,
-					"fonts/STYuanti-SC-Light.TTF");
-		}else {
-			
+		if (typeFace == null) {
+			String familyName = "宋体";
+			File f = new File(TEXTFONTTYPEPATH);
+			if(changeFontType()){
+				typeFace = Typeface.createFromFile(f);
+			}else{
+				typeFace =Typeface.create(familyName,Typeface.BOLD);
+			}
 		}
+		MyApplication.Total_font = typeFace;
 		setTypeface(MyApplication.Total_font);
 	}
 

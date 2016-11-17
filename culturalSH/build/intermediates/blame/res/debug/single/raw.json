@@ -20,6 +20,18 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\raw\\path.svg"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\raw\\config.properties",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\raw\\config.properties"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\raw\\path.svg",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\raw\\path.svg"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\raw\\libsplayer.7z",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playercore_v20\\unspecified\\res\\raw\\libsplayer.7z"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\raw\\libsplayer.7z",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playercore_v20\\unspecified\\res\\raw\\libsplayer.7z"
     }

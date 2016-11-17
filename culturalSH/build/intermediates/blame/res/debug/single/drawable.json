@@ -4,16 +4,16 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_main_title_rect.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_idea.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_personal_idea.xml"
+        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_personal_center.xml",
+        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_personal_center.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_comment_rect.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_comment_rect.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_personal_center.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_personal_center.xml"
+        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_idea.xml",
+        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_personal_idea.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_setting_right_rect.xml",
@@ -22,6 +22,10 @@
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_system.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_personal_system.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_persona_but.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_persona_but.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_white_border.xml",
@@ -36,12 +40,16 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\wff_gray_rect.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_ctrl_fullscreen.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_fullscreen.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_main_white_round.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_main_white_round.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_progress_bar.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\custom_progress_bar.xml"
+    },
+    {
+        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_ctrl_fullscreen.xml",
+        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_fullscreen.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_first_bt_bg.xml",
@@ -50,6 +58,10 @@
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_myborder.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\home_myborder.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_comment_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_comment_rect.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_label_style.xml",
@@ -64,6 +76,14 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_gray_nullcontent_rect.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\next_month_btn_press.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\next_month_btn_press.png"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\activity_host_subitem.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\activity_host_subitem.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_single.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_personal_single.xml"
     },
@@ -72,12 +92,20 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_volume.xml"
     },
     {
+        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_while_left_rect.xml",
+        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_while_left_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_listview_thumb.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_listview_thumb.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_while_left_rect.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_while_left_rect.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_first_bt_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_first_bt_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_timebg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\wheel_timebg.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_navi_bus_bg.xml",
@@ -88,16 +116,20 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_window_item_org_rect.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\seekbar_thumb.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\seekbar_thumb.xml"
-    },
-    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_progress_bar.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\custom_progress_bar.xml"
     },
     {
+        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\seekbar_thumb.xml",
+        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\seekbar_thumb.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_main_title_rect.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_main_title_rect.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_setting_right_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_setting_right_rect.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_bottom_radius.xml",
@@ -108,12 +140,28 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\other_item_bg.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_mychoosetimebg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\wheel_mychoosetimebg.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_while_left_rect.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_while_left_rect.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_myborder_press.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\home_myborder_press.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_list_item_pop.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\bg_list_item_pop.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_like.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_personal_like.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_juli_white_border.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\home_juli_white_border.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_persona_but.xml",
@@ -122,6 +170,14 @@
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_pop_radiu_white.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\home_pop_radiu_white.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\resolution_textcolor.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\resolution_textcolor.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_tab_venue_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_tab_venue_bg.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_index_tab_bg.xml",
@@ -144,6 +200,10 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_red_oval.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_event_right_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_event_right_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_comment_item_bg.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_comment_item_bg.xml"
     },
@@ -154,6 +214,10 @@
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\mer_border.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\mer_border.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_style_alert_dialog_special.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\btn_style_alert_dialog_special.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_seekbar_background.xml",
@@ -168,32 +232,48 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\home_pop_radiu_gray.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_white_border.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\home_white_border.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_dialog_order.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_dialog_order.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_red_oval.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_red_oval.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_while_center_rect.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_while_center_rect.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_window_item_red_rect.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_window_item_red_rect.xml"
-    },
-    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_navi_bus_bg.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_navi_bus_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_window_item_red_rect.xml",
+        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_window_item_red_rect.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_orge_nullrect.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_orge_nullrect.xml"
     },
     {
+        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\radio_button_car_map.xml",
+        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\radio_button_car_map.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_personal_center.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_personal_center.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\radio_button_car_map.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\radio_button_car_map.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_check_but.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_check_but.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_ctrl_volume_mute.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_volume_mute.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_style_alert_dialog_special.xml",
@@ -216,6 +296,10 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_light_blue_round.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_ctrl_pause.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_pause.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_org_leftbottom_rect.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_org_leftbottom_rect.xml"
     },
@@ -224,12 +308,12 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_pause.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_progress.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\bg_progress.xml"
-    },
-    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_main_white_round.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_main_white_round.xml"
+    },
+    {
+        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_progress.xml",
+        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\bg_progress.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_org_val.xml",
@@ -244,8 +328,16 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_tab_venue_bg.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_tab_index_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_tab_index_bg.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_search_parent.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_search_parent.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_window_tab_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_window_tab_bg.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_venue_detail_tab_bg.xml",
@@ -260,12 +352,24 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_orger_oval.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_window_tab_left_while_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_window_tab_left_while_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\sieve_right_bg.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\sieve_right_bg.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_dialog_org_right.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_dialog_org_right.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_tab_event_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_tab_event_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_item_order_but.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_item_order_but.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_week_tc_bg_one.xml",
@@ -284,6 +388,14 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_weixinfriend_rect.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_white_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_white_rect.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_setting_set.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_setting_set.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_home_gear_but.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_home_gear_but.xml"
     },
@@ -296,16 +408,36 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_week_tc_bg_one.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_white_label_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_white_label_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_indent.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_personal_indent.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_pop_radiu_gray.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\home_pop_radiu_gray.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_ctrl_video_list.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_video_list.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_org_val.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_org_val.xml"
+    },
+    {
+        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_feedback_confirm.xml",
+        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_feedback_confirm.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_event_list_right_rect.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_event_list_right_rect.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_feedback_confirm.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_feedback_confirm.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_progress_bar.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\custom_progress_bar.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_ctrl_volume_mute.xml",
@@ -332,6 +464,18 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\seekbar_thumb.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_search_money.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_search_money.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_personal_center.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_personal_center.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\previours_month_btn_normal.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\previours_month_btn_normal.png"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_window_item_org_rect.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_window_item_org_rect.xml"
     },
@@ -348,12 +492,12 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_play.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_item_order_gray.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_item_order_gray.xml"
-    },
-    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\previours_month_btn_press.png",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\previours_month_btn_press.png"
+    },
+    {
+        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_item_order_gray.xml",
+        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_item_order_gray.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_pop_radiu_gray.xml",
@@ -364,12 +508,20 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\login_bt.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\main_dot_white.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\main_dot_white.png"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_org_val.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_org_val.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_gray_border.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\home_gray_border.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_next_month_selector.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\btn_next_month_selector.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\pausebutton.xml",
@@ -384,24 +536,52 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\home_gray_border.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_user_birthday.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_user_birthday.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_item_order_item.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_item_order_item.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\other_item_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\other_item_bg.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_money_round.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_money_round.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_vote_list_item_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_vote_list_item_bg.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\activity_host_subitem.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\activity_host_subitem.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\sieve_right_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\sieve_right_bg.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_label_style.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\home_label_style.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_window_tab_right.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_window_tab_right.xml"
+    },
+    {
+        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_check_but.xml",
+        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_check_but.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_ctrl_volume.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_volume.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_check_but.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_check_but.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\sieve_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\sieve_bg.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_money_round.xml",
@@ -410,6 +590,18 @@
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_myborder_press.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\home_myborder_press.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\ad_silent_selcetor.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\ad_silent_selcetor.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_ctrl_fullscreen.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_fullscreen.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_myborder.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\home_myborder.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\item_track.xml",
@@ -424,16 +616,20 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_activity_want_rcet.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\resolution_textcolor.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\resolution_textcolor.xml"
-    },
-    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\back_previous_button_normal.png",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\back_previous_button_normal.png"
     },
     {
+        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\resolution_textcolor.xml",
+        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\resolution_textcolor.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_activity_details_comment_bg.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_activity_details_comment_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_main_title_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_main_title_rect.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_vote_list_item_bg.xml",
@@ -456,12 +652,32 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_setting_left_rect.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_index_venue_title_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_index_venue_title_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_event_list_right_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_event_list_right_rect.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_style_alert_dialog_button.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\btn_style_alert_dialog_button.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_72.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\btn_72.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_while_left_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_while_left_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_window_tab_left_org_rect.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_window_tab_left_org_rect.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_activity_want_rcet.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_activity_want_rcet.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_main_top_edit_bg.xml",
@@ -472,8 +688,20 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\wheel_timebg.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_window_item_red_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_window_item_red_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_gray_nullcontent_rect.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_gray_nullcontent_rect.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_main_grid_item.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_main_grid_item.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_activity_details_comment_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_activity_details_comment_bg.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\activity_host_subitem.xml",
@@ -504,20 +732,20 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_activity_want_rcet.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_system.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_personal_system.xml"
-    },
-    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_myborder_press.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\home_myborder_press.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_white_rect.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_white_rect.xml"
+        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_system.xml",
+        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_personal_system.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_list_item_pop.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\bg_list_item_pop.xml"
+    },
+    {
+        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_white_rect.xml",
+        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_white_rect.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\main_dot_white.png",
@@ -532,8 +760,16 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_weixin_rect.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_item_order_gray.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_item_order_gray.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_window_tab_left.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_window_tab_left.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_light_blue_round.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_light_blue_round.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_window_item_white_rect.xml",
@@ -548,12 +784,24 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_reserver_rect_bg.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_venue_detail_tab_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_venue_detail_tab_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_main_top_edit_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_main_top_edit_bg.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_soundseekbar_background.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_soundseekbar_background.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_user_birthday.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_user_birthday.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\next_month_btn_normal.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\next_month_btn_normal.png"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_mychoosetimebg.xml",
@@ -564,12 +812,16 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_qq_rect.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_mychoosetimebg.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\wheel_mychoosetimebg.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_system.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_personal_system.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_ctrl_video_list.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_video_list.xml"
+    },
+    {
+        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_mychoosetimebg.xml",
+        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\wheel_mychoosetimebg.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_list_item.xml",
@@ -592,20 +844,28 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_title_button.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\radio_button_bus_map.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\radio_button_bus_map.xml"
-    },
-    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_border.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_border.xml"
+    },
+    {
+        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\radio_button_bus_map.xml",
+        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\radio_button_bus_map.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_search_money.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_search_money.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_mychoosetimeval.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\wheel_mychoosetimeval.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_org_rightbottom_rect.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_org_rightbottom_rect.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\login_bt.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\login_bt.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_bg_top.xml",
@@ -624,6 +884,10 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_item_order_item_gray.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_window_tab_right_while_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_window_tab_right_while_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_group_sexs.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_group_sexs.xml"
     },
@@ -636,8 +900,28 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_comment_rect.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_home_gear_but.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_home_gear_but.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\venue_ratingbar.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\venue_ratingbar.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_navi_bus_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_navi_bus_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_label_style.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\home_label_style.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\cricle_selelct.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\cricle_selelct.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\radio_button_foot_map.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\radio_button_foot_map.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\seekbar_color_style.xml",
@@ -656,6 +940,10 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\home_seacher.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\wff_shape_white_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\wff_shape_white_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_sina_rect.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_sina_rect.xml"
     },
@@ -668,12 +956,20 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\bg_progress.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_window_tab_right_org_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_window_tab_right_org_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_ctrl_volume_mute.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_volume_mute.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_comment_item_bg.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_comment_item_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\distance_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\distance_bg.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_item_order_item.xml",
@@ -688,12 +984,24 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_white_nullcontent_rect.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_all_select.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\home_all_select.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\point.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\point.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\collection_gv.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\collection_gv.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\main_dot_white.png",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\main_dot_white.png"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_gray_nullcontent_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_gray_nullcontent_rect.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_event_right_rect.xml",
@@ -704,12 +1012,24 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\btn_style_alert_dialog_special.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\comment_ratingbar.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\comment_ratingbar.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_yeoolo_rect.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_yeoolo_rect.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_white_label_rect.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_white_label_rect.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_orge_nullrect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_orge_nullrect.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\back_previous_button_normal.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\back_previous_button_normal.png"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_money_org_round.xml",
@@ -724,8 +1044,16 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\playbutton.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\relevant_why_border.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\relevant_why_border.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\radio_button_bus_map.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\radio_button_bus_map.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\quality_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\quality_bg.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_orage_nullrect.xml",
@@ -744,20 +1072,48 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\btn_style_alert_dialog_cancel.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_progress.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\bg_progress.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_fragment_tab_bg.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_fragment_tab_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_venue_white_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_venue_white_rect.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_window_date_bg.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_window_date_bg.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_style_alert_dialog_cancel.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\btn_style_alert_dialog_cancel.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_title_button.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_title_button.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_personal_relevance.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_personal_relevance.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_white_to_blue.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\btn_white_to_blue.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_dialog_order.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_dialog_order.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_personal_relevance.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_personal_relevance.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_ctrl_back.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_back.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\quality_bg.xml",
@@ -772,6 +1128,22 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\space_item_bg.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_toast_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_toast_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_org_round.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_org_round.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\venue_hollow_circle.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\venue_hollow_circle.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_gray_border.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\home_gray_border.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_setting_left_rect.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_setting_left_rect.xml"
     },
@@ -780,8 +1152,16 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\previours_month_btn_normal.png"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\playbutton.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\playbutton.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_message.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_personal_message.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\radio_button_car_map.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\radio_button_car_map.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_orge_rect.xml",
@@ -796,6 +1176,10 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\home_popuwindow_26_bg.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_activity_want_rcet_p.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_activity_want_rcet_p.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_navi_car_bg.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_navi_car_bg.xml"
     },
@@ -808,12 +1192,40 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_personal_frame.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_single.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_personal_single.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_previours_month_selector.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\btn_previours_month_selector.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_pop_radiu_blue.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\home_pop_radiu_blue.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_orage_nullrect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_orage_nullrect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_fragment_tab_bg.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_fragment_tab_bg.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\library\\unspecified\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_orge_rect.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_orge_rect.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_navi_car_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_navi_car_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_feedback_confirm.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_feedback_confirm.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_juli_white_border.xml",
@@ -836,8 +1248,20 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\home_white_border.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_search_item_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_search_item_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_org_left_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_org_left_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\resolution_textcolor.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\resolution_textcolor.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_white_nullcontent_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_white_nullcontent_rect.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_seekbar_color_bg.xml",
@@ -846,6 +1270,10 @@
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_previours_month_selector.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\btn_previours_month_selector.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_gray_nullrect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_gray_nullrect.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_message.xml",
@@ -872,6 +1300,22 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_dialog_org_left.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\back_previous_button_press.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\back_previous_button_press.png"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\library\\unspecified\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\venue_clickchange.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\venue_clickchange.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_while_nullround.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_while_nullround.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_activity_want_rcet_p.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_activity_want_rcet_p.xml"
     },
@@ -882,6 +1326,10 @@
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_seekbar_background.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_seekbar_background.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_item_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_item_bg.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_while_center_rect.xml",
@@ -896,6 +1344,10 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_item_white_rect.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\item_track.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\item_track.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_title_button.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_title_button.xml"
     },
@@ -904,12 +1356,20 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_item_order_item.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_pop_radiu.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\home_pop_radiu.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_pop_radiu.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\home_pop_radiu.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\back_previous_button_normal.png",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\back_previous_button_normal.png"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\main_dot_light.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\main_dot_light.png"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_next_month_selector.xml",
@@ -940,6 +1400,10 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_main_white_round.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_window_date_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_window_date_bg.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\nearby_checkbox_selector.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\nearby_checkbox_selector.xml"
     },
@@ -956,8 +1420,24 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\login_bt.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_org_rightbottom_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_org_rightbottom_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_window_tab_right.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_window_tab_right.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\radio_button_bus_map.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\radio_button_bus_map.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_listview_thumb.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_listview_thumb.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_orge_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_orge_rect.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_ctrl_video_list.xml",
@@ -966,6 +1446,10 @@
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_dialog_org_right.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_dialog_org_right.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_white_to_blue.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\btn_white_to_blue.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_indent.xml",
@@ -984,6 +1468,10 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_item_white_rect.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_bule_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_bule_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_label_price_style.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\home_label_price_style.xml"
     },
@@ -994,6 +1482,10 @@
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_ctrl_back.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_back.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_soundseekbar_background.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_soundseekbar_background.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_window_item_red_rect.xml",
@@ -1008,6 +1500,18 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_red_rect.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_fragment_tab_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_fragment_tab_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\seekbar_thumb.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\seekbar_thumb.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_list_item.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\selector_list_item.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_navi_car_bg.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_navi_car_bg.xml"
     },
@@ -1020,8 +1524,24 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_event_right_rect.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_setting_org_right.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_setting_org_right.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_orger_oval.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_orger_oval.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_ctrl_volume.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_volume.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\textview_home_bg_a9.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\textview_home_bg_a9.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_org_leftbottom_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_org_leftbottom_rect.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_bule_rect.xml",
@@ -1040,8 +1560,16 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_personal_relevance.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_setting_left_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_setting_left_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_ctrl_fullscreen.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_fullscreen.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_dialog_org_right.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_dialog_org_right.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\venue_hollow_circle.xml",
@@ -1056,6 +1584,14 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_money_org_round.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\loading_iamge_progress.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\loading_iamge_progress.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_border.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_border.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_style_alert_dialog_cancel.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\btn_style_alert_dialog_cancel.xml"
     },
@@ -1066,6 +1602,10 @@
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_list_item.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\selector_list_item.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_window_tab_left_org_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_window_tab_left_org_rect.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_persona_but.xml",
@@ -1084,8 +1624,16 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_weixin_rect.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_timeval.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\wheel_timeval.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_while_right_rect.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_while_right_rect.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_popuwindow_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\home_popuwindow_bg.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_event_list_right_rect.xml",
@@ -1096,12 +1644,20 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_tab_index_bg.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_72.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\btn_72.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_main_red_round.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_main_red_round.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_collect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_personal_collect.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\main_dot_light.png",
@@ -1116,6 +1672,10 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\point.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_weixin_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_weixin_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_style_alert_dialog_button.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\btn_style_alert_dialog_button.xml"
     },
@@ -1124,8 +1684,16 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_red_nullcontent_rect.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\previours_month_btn_press.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\previours_month_btn_press.png"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\main_dot_light.png",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\main_dot_light.png"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_dialog_org_left.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_dialog_org_left.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_popuwindow_bg.xml",
@@ -1156,6 +1724,10 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_toast_bg.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_like.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_personal_like.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\next_month_btn_press.png",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\next_month_btn_press.png"
     },
@@ -1176,6 +1748,10 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_order_give.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\pausebutton.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\pausebutton.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\relevant_why_border.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\relevant_why_border.xml"
     },
@@ -1190,6 +1766,10 @@
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_popuwindow_bg.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\home_popuwindow_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_bottom_radius.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\bg_bottom_radius.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_window_tab_right_while_rect.xml",
@@ -1216,6 +1796,14 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_while_nullround.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_pop_radiu_white.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\home_pop_radiu_white.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_window_item_white_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_window_item_white_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_gray_nullrect.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_gray_nullrect.xml"
     },
@@ -1224,12 +1812,28 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\sieve_bg.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\point.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\point.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_main_top_edit_bg.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_main_top_edit_bg.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\next_month_btn_press.png",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\next_month_btn_press.png"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_order_give.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_order_give.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_item_white_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_item_white_rect.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_feedback_fillet.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_feedback_fillet.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_activity_details_comment_bg.xml",
@@ -1252,8 +1856,16 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\collection_gv.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_seacher.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\home_seacher.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_week_tc_bg.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_week_tc_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\wff_gray_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\wff_gray_rect.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_collect.xml",
@@ -1272,6 +1884,14 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_group_message.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_search_parent.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_search_parent.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_idea.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_personal_idea.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_border.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_border.xml"
     },
@@ -1288,6 +1908,10 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_play.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_message.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_personal_message.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_white_label_rect.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_white_label_rect.xml"
     },
@@ -1300,8 +1924,20 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\playbutton.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\cricle_selelct.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\cricle_selelct.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_index_tab_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_index_tab_bg.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_setting_org_right.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_setting_org_right.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_money_org_round.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_money_org_round.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\loading_iamge_progress.xml",
@@ -1320,6 +1956,14 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\back_previous_button_press.png"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_pop_noradiu_gray.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\home_pop_noradiu_gray.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_weekday_btn.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_weekday_btn.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_pop_radiu_white.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\home_pop_radiu_white.xml"
     },
@@ -1332,8 +1976,28 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_setting_org_left.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_main_rect_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_main_rect_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_reserver_rect_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_reserver_rect_bg.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_timeval.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\wheel_timeval.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\seekbar_color_style.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\seekbar_color_style.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\nearby_checkbox_selector.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\nearby_checkbox_selector.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_frame.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_personal_frame.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_window_tab_right_org_rect.xml",
@@ -1352,12 +2016,40 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_item_order_but.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_window_tab_left.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_window_tab_left.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_yeoolo_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_yeoolo_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_mychoosetimeval.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\wheel_mychoosetimeval.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_group_message.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_group_message.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_money_round.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_money_round.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_org_right_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_org_right_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\radio_button_car_map.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\radio_button_car_map.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_main_red_round.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_main_red_round.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_popuwindow_26_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\home_popuwindow_26_bg.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_org_right_rect.xml",
@@ -1372,8 +2064,24 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_main_grid_item.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\mer_border.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\mer_border.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_item_order_item_gray.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_item_order_item_gray.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_weixinfriend_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_weixinfriend_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\seekbar_color_style.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\seekbar_color_style.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_red_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_red_rect.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_idea.xml",
@@ -1384,12 +2092,32 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_sina_rect.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_label_price_style.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\home_label_price_style.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_window_tab_bg.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_window_tab_bg.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_qq_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_qq_rect.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_comment_item_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_comment_item_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_red_nullcontent_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_red_nullcontent_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_myborder.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\home_myborder.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_while_center_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_while_center_rect.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_item_order_but.xml",
@@ -1404,6 +2132,18 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\item_track.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_seekbar_color_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_seekbar_color_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_week_tc_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_week_tc_bg.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_setting_right_rect.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_setting_right_rect.xml"
     },
@@ -1414,6 +2154,10 @@
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\other_item_bg.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\other_item_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_setting_org_left.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_setting_org_left.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_while_nullround.xml",
@@ -1440,12 +2184,20 @@
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\quality_bg.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_sina_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_sina_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\venue_clickchange.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\venue_clickchange.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_collect.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_personal_collect.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_ctrl_play.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_ctrl_play.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_qq_rect.xml",
@@ -1476,12 +2228,24 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_tab_index_bg.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_window_item_org_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_window_item_org_rect.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_while_right_rect.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_while_right_rect.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\home_pop_noradiu_gray.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\home_pop_noradiu_gray.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\venue_ratingbar.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\venue_ratingbar.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\play_seekbar_background.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable\\play_seekbar_background.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_white_rect.xml",
@@ -1496,8 +2260,16 @@
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_index_venue_title_bg.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_group_sexs.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_group_sexs.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_search_item_bg.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_search_item_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_orger_oval.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_orger_oval.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\next_month_btn_normal.png",
@@ -1510,6 +2282,10 @@
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_item_order_gray.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\shape_item_order_gray.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\space_item_bg.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\space_item_bg.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_item_bg.xml",
@@ -1526,6 +2302,10 @@
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_bg_bottom.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\library\\unspecified\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_personal_indent.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\select_personal_indent.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_org_left_rect.xml",
@@ -1558,6 +2338,10 @@
     {
         "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\select_window_tab_left.xml",
         "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable\\select_window_tab_left.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_week_tc_bg_one.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable\\shape_week_tc_bg_one.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable\\radio_button_foot_map.xml",

@@ -23,14 +23,12 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.amap.api.location.AMapLocation;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener2;
 import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
 import com.sun3d.culturalShanghai.MyApplication;
 import com.sun3d.culturalShanghai.R;
 import com.sun3d.culturalShanghai.Util.AppConfigUtil;
-import com.sun3d.culturalShanghai.Util.GaoDeLocationUtil;
 import com.sun3d.culturalShanghai.Util.JsonUtil;
 import com.sun3d.culturalShanghai.Util.NetWorkUtil;
 import com.sun3d.culturalShanghai.Util.ToastUtil;
@@ -52,6 +50,7 @@ import com.sun3d.culturalShanghai.object.EventInfo;
 import com.sun3d.culturalShanghai.object.HomeDetail_ContentInfor;
 import com.sun3d.culturalShanghai.object.HomeImgInfo;
 import com.sun3d.culturalShanghai.object.HttpResponseText;
+import com.sun3d.culturalShanghai.service.LocationMyLatService;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -61,8 +60,6 @@ import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-
-import static android.content.Context.MODE_PRIVATE;
 
 /**
  * 这个是首页的
@@ -117,17 +114,17 @@ public class HomeFragment extends Fragment implements OnClickListener,
     private List<EventInfo> mPopList;
     private List<EventInfo> mPopGvList;
     private int oldPostion = -1;
-    private String location_str;
+
     private TextView address_Nolocation_tv, address_location_tv;
     private Button mLeftNoLat_btn, mRightNolat_btn;
     private Button mLeftChange_btn, mRightChange_btn;
     private SharedPreferences sharedPreferences;
-    private boolean isFirstRun = true;
-    private boolean isHava = true;
-    private boolean isAddressChange = true;
-    private boolean fristStartLat = true;
+
+
     private MainFragmentActivity mfc;
-    private String NowAddress="";
+    private String NowAddress = "";
+    private String location_str;
+    private Intent iLocService;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -140,78 +137,11 @@ public class HomeFragment extends Fragment implements OnClickListener,
         return mView;
 
     }
-    public void setMainFragment(MainFragmentActivity mcf){
-        this.mfc=mcf;
+
+    public void setMainFragment(MainFragmentActivity mcf) {
+        this.mfc = mcf;
     }
-    private void getLat() {
-        if (isFirstRun) {
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putBoolean("isFirstRun", false);
-            editor.commit();
-        }
 
-
-        GaoDeLocationUtil mGaoDeLocationUtil = new GaoDeLocationUtil(mContext);
-        mGaoDeLocationUtil.startLocation();
-        mGaoDeLocationUtil.setOnLocationListener(new GaoDeLocationUtil
-                .OnLocationListener() {
-
-            @Override
-            public void onLocationSuccess(AMapLocation location) {
-                /*定位的情况
-                * 第一种：第一次进入APP 定位成功 且定位的地点有我们分公司  提示5秒鐘消失的小彈出框
-                * 第二种：第一次进入APP 定位成功 但是定位地点没有我们分公司  提示你所在的城市暂时未开通
-                * 第三种：第一次进入APP 定位失败 进入定位失败 提示定位失败   选择地址和全中国
-                * 第四种：第二次进入APP 定位成功 且当前位置和现在的位置一致   不弹出弹框
-                * 第五种：第二次进入APP 定位成功 但是当前位置产生变化   提示切换城市
-                * 第六种：第二次进入APP 定位失败 默认进入前一次的地点
-                *
-                * */
-                location_str = location.getCity();
-                //这里对两次的地点进行对比
-
-                if (isFirstRun) {
-                    //第一次进入定位成功
-                    if (isHava) {
-                        //定位地点有分公司
-                        MyApplication.saveNowAddress(getActivity(),location_str);
-                        mHomeDetail_TopLayout.total_banner_ll.setVisibility(View.VISIBLE);
-                        mHomeDetail_TopLayout.startTask();
-                    } else {
-                        //定位地点没有分公司
-                        address_location_tv.setText("你所在的城市尚未开通");
-                        popupWindowNoLat.showAsDropDown(middle_tv);
-
-
-                    }
-
-                } else {
-                    //第二次定位成功
-                    if (isAddressChange) {
-                        //地址没变
-                        mHomeDetail_TopLayout.total_banner_ll.setVisibility(View.VISIBLE);
-                        mHomeDetail_TopLayout.startTask();
-                    } else {
-                        popupWindowChangeCity.showAsDropDown(middle_tv);
-                        //地址变了
-                    }
-
-                }
-                StopLoading();
-
-
-                Log.i(TAG, "onLocationSuccess: " + location.getCity());
-            }
-
-            @Override
-            public void onLocationFailure(String error) {
-                address_location_tv.setText("当前无法定位你的位置");
-                popupWindowNoLat.showAsDropDown(middle_tv);
-                StopLoading();
-                Log.i(TAG, "onLocationFailure: " + error);
-            }
-        });
-    }
 
     private void getAddressData() {
 
@@ -373,12 +303,7 @@ public class HomeFragment extends Fragment implements OnClickListener,
                 //获取listview 的数据
                 case 3:
                     mHomeDetail_Content.setData(mImgList, mList);
-                    if (fristStartLat) {
-                        fristStartLat = false;
-                        getLat();
-                    }else{
-                        StopLoading();
-                    }
+                    StopLoading();
 
                     scrroll_view.onRefreshComplete();
                     break;
@@ -399,9 +324,12 @@ public class HomeFragment extends Fragment implements OnClickListener,
     };
 
     private void init(View view) {
-        sharedPreferences = getActivity().getSharedPreferences("share", MODE_PRIVATE);
-        isFirstRun = sharedPreferences.getBoolean("isFirstRun", true);
-        NowAddress=sharedPreferences.getString("nowAddress", "");
+        Log.i(TAG, "init: ");
+        //开启定位
+        iLocService = new Intent();
+        iLocService.setClass(getActivity(), LocationMyLatService.class);
+        getActivity().startService(iLocService);
+
         mImgHomeIndex = new ArrayList<HomeImgInfo>();
         loadingLayout = (RelativeLayout) view.findViewById(R.id.loading);
         mLoadingHandler = new LoadingHandler(loadingLayout);
@@ -473,7 +401,47 @@ public class HomeFragment extends Fragment implements OnClickListener,
         mPopGvList = new ArrayList<EventInfo>();
         mHomePopGridAdapter = new HomePopGridAdapter(getActivity(), mPopGvList);
         mHomePopListAdapter = new HomePopListAdapter(getActivity(), mPopList);
+        location_lat();
         StartLoading();
+    }
+
+    /**
+     * 回调定位的状态
+     * 1 第一次定位  有分公司
+     * 2 第一次定位  没有分公司
+     * 3 第二次定位  没有切换地址
+     * 4 第二次定位  位置变化
+     * 5 定位失败
+     */
+    private void location_lat() {
+        new location_address() {
+            @Override
+            public void LocationStatus(int status, String nowAddress) {
+                location_str = nowAddress;
+                switch (status) {
+                    case 1:
+                        mHomeDetail_TopLayout.total_banner_ll.setVisibility(View.VISIBLE);
+                        mHomeDetail_TopLayout.startTask();
+                        break;
+                    case 2:
+                        address_location_tv.setText("你所在的城市尚未开通");
+                        popupWindowNoLat.showAsDropDown(middle_tv);
+                        break;
+                    case 3:
+                        mHomeDetail_TopLayout.total_banner_ll.setVisibility(View.VISIBLE);
+                        mHomeDetail_TopLayout.startTask();
+                        break;
+                    case 4:
+                        popupWindowChangeCity.showAsDropDown(middle_tv);
+                        break;
+                    case 5:
+                        address_location_tv.setText("当前无法定位你的位置");
+                        popupWindowNoLat.showAsDropDown(middle_tv);
+                        break;
+
+                }
+            }
+        };
     }
 
     AdapterView.OnItemClickListener myGvOnClick = new AdapterView.OnItemClickListener() {
@@ -647,6 +615,7 @@ public class HomeFragment extends Fragment implements OnClickListener,
     public void onDestroyView() {
         super.onDestroyView();
         ButterKnife.unbind(this);
+        getActivity().stopService(iLocService);
     }
 
     public void openPopWindow() {
@@ -657,5 +626,9 @@ public class HomeFragment extends Fragment implements OnClickListener,
         } else {
             popupWindow.dismiss();
         }
+    }
+
+    public interface location_address {
+        public void LocationStatus(int status, String nowAddress);
     }
 }

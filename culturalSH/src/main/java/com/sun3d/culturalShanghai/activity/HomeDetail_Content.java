@@ -1,21 +1,10 @@
 package com.sun3d.culturalShanghai.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.Activity;
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.View.OnTouchListener;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.sun3d.culturalShanghai.MyApplication;
 import com.sun3d.culturalShanghai.R;
@@ -24,6 +13,9 @@ import com.sun3d.culturalShanghai.object.HomeDataInfo;
 import com.sun3d.culturalShanghai.object.HomeDetail_ContentInfor;
 import com.sun3d.culturalShanghai.object.HomeImgInfo;
 import com.sun3d.culturalShanghai.view.ScrollViewListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class HomeDetail_Content {
 	private LinearLayout content;
@@ -82,6 +74,8 @@ public class HomeDetail_Content {
 		HomeDetail_ContentAdapter ara = new HomeDetail_ContentAdapter(
 				mActivity, list, list_Info.size());
 		homedetail_list.setAdapter(ara);
+
+
 
 		// homedetail_list.setOnTouchListener(myTouch);
 		// MyApplication.setListViewHomeHeight(homedetail_list);

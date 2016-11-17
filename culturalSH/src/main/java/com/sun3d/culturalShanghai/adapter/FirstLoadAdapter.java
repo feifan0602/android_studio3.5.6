@@ -1,18 +1,12 @@
 package com.sun3d.culturalShanghai.adapter;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import android.content.Context;
 import android.graphics.Color;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
 
@@ -20,6 +14,10 @@ import com.sun3d.culturalShanghai.MyApplication;
 import com.sun3d.culturalShanghai.R;
 import com.sun3d.culturalShanghai.Util.Options;
 import com.sun3d.culturalShanghai.object.UserBehaviorInfo;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class FirstLoadAdapter extends BaseAdapter {
 	private Context mContext;
@@ -60,13 +58,11 @@ public class FirstLoadAdapter extends BaseAdapter {
 
 	public void isSelect(int position, boolean isSelect) {
 		if (isSelect) {
-			Log.i("ceshi", "选中了");
 			mMap.get(position).mTvAge
 					.setBackgroundResource(R.drawable.home_myborder_press);
 			mMap.get(position).mTvAge.setTextColor(Color.WHITE);
 			mMap.get(position).mIvSelect.setVisibility(View.GONE);
 		} else {
-			Log.i("ceshi", "没选中了");
 			mMap.get(position).mTvAge
 					.setBackgroundResource(R.drawable.home_myborder);
 			mMap.get(position).mTvAge.setTextColor(mContext.getResources()

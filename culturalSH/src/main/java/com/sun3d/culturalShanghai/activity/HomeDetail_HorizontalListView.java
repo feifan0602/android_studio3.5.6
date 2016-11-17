@@ -1,12 +1,7 @@
 package com.sun3d.culturalShanghai.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -14,21 +9,18 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
 import com.sun3d.culturalShanghai.MyApplication;
 import com.sun3d.culturalShanghai.R;
-import com.sun3d.culturalShanghai.Util.AppConfigUtil;
+import com.sun3d.culturalShanghai.Util.ToastUtil;
 import com.sun3d.culturalShanghai.adapter.HomeDetail_HorizonListAdapter;
-import com.sun3d.culturalShanghai.adapter.HomeDetail_TopLayoutAdapter;
-import com.sun3d.culturalShanghai.object.ActivityConditionInfo;
 import com.sun3d.culturalShanghai.object.HomeDetail_HorizonListInfor;
-import com.sun3d.culturalShanghai.object.HomeDetail_TopLayoutInfor;
 import com.sun3d.culturalShanghai.object.HomeImgInfo;
-import com.sun3d.culturalShanghai.object.ScreenInfo;
 import com.sun3d.culturalShanghai.view.HorizontalListView;
-import com.sun3d.culturalShanghai.view.ScrollScrollView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class HomeDetail_HorizontalListView {
 	private LinearLayout content;
@@ -134,10 +126,12 @@ public class HomeDetail_HorizontalListView {
 				long arg3) {
 			//Toast.makeText(mActivity, "看看位置pos" + position, 1000).show();
 			HomeDetail_HorizonListInfor info = (HomeDetail_HorizonListInfor) parent.getItemAtPosition(position);
+			MyApplication.SearchTagTitle = info.getAdvertTitle();
 			if (info.getAdvertLink() == 0) {
+				ToastUtil.showToast("selectImg==  "+info.getAdvertLinkType()+"  url==  "+info.getAdvertUrl());
 				MyApplication.selectImg(mContext,info.getAdvertLinkType(), info.getAdvertUrl());
 			} else {
-				
+				ToastUtil.showToast("selectWeb==  "+"  url==  "+info.getAdvertUrl());
 				MyApplication.selectWeb(mContext,info.getAdvertUrl());
 			}
 		}

@@ -107,6 +107,7 @@
         <service
             android:name="com.sun3d.culturalShanghai.service.DownloadTextFont"
             android:process="system" />
+        <service android:name="com.sun3d.culturalShanghai.service.LocationMyLatService" />
         <!-- 微信分享回调 -->
         <activity
             android:name="com.sun3d.culturalShanghai.wxapi.WXEntryActivity"
