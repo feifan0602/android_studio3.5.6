@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/nearby_map"
+        android:layout_width="match_parent"
+        android:layout_height="260dip" >
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/nearby_map1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/nearby_map_controls"
+            style="@style/style_nearby_mapview_textview" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/invis"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@color/white_color"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/nearby_one_label"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center|left"
+            android:paddingLeft="10dip"
+            android:textColor="@color/app_text_color" />
+
+        <ImageView
+            android:id="@+id/nearby_one_label_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/sh_icon_onfoot" />
+    </RelativeLayout>
+
+</LinearLayout>

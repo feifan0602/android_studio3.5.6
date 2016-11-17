@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_white_rect"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/dialog_trueschedule_title"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/dialog_text_size" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/trueschedule_style"
+                    android:text="@string/dialog_trueschedule_venue" />
+
+                <TextView
+                    android:id="@+id/trueschedule_venue"
+                    style="@style/trueschedule_style"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/dialog_trueschedule_venue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/trueschedule_style"
+                    android:text="@string/dialog_trueschedule_address" />
+
+                <TextView
+                    android:id="@+id/trueschedule_address"
+                    style="@style/trueschedule_style"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/dialog_trueschedule_address" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/trueschedule_style"
+                    android:text="@string/dialog_trueschedule_activity" />
+
+                <TextView
+                    android:id="@+id/trueschedule_activity"
+                    style="@style/trueschedule_style"
+                    android:text="@string/dialog_trueschedule_activity" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/trueschedule_style"
+                    android:text="@string/dialog_trueschedule_time" />
+
+                <TextView
+                    android:id="@+id/trueschedule_time"
+                    style="@style/trueschedule_style"
+                    android:text="@string/dialog_trueschedule_time" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/trueschedule_style"
+                    android:text="@string/dialog_trueschedule_schedulename" />
+
+                <TextView
+                    android:id="@+id/trueschedule_schedulename"
+                    style="@style/trueschedule_style"
+                    android:text="@string/dialog_trueschedule_schedulename" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/trueschedule_style"
+                    android:text="@string/dialog_trueschedule_phone" />
+
+                <TextView
+                    android:id="@+id/trueschedule_phone"
+                    style="@style/trueschedule_style"
+                    android:text="@string/dialog_trueschedule_phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/trueschedule_style"
+                    android:text="@string/dialog_trueschedule_group" />
+
+                <TextView
+                    android:id="@+id/trueschedule_group"
+                    style="@style/trueschedule_style"
+                    android:text="@string/dialog_trueschedule_group" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dialog_login_height"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/trueschedule_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_white_nullcontent_rect"
+                android:text="@string/dialog_trueschedule_cancel"
+                android:textColor="@color/dialog_schedule_btn_color" />
+
+            <Button
+                android:id="@+id/trueschedule_commit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_white_nullcontent_rect"
+                android:text="@string/dialog_trueschedule_title"
+                android:textColor="@color/dialog_schedule_btn_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

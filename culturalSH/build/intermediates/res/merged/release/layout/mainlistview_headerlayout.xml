@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/main_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.sun3d.culturalShanghai.view.SlideShowView
+            android:id="@+id/slideshowView"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/layout_head_height"
+            android:layout_gravity="center_horizontal" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.25dp"
+            android:background="@color/line_big_color" />
+
+        <com.sun3d.culturalShanghai.view.ScrollViewGridView
+            android:id="@+id/main_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:horizontalSpacing="1dp"
+            android:layoutAnimation="@anim/layout_anim_grid"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:verticalSpacing="1dp"
+            android:visibility="gone" >
+        </com.sun3d.culturalShanghai.view.ScrollViewGridView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_big_color"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/main_middle_layout"
+        layout="@layout/choose_lable_layout"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/main_morechoose"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_orge_nullrect"
+        android:gravity="center"
+        android:text="@string/more_choose"
+        android:textColor="@color/orange_color"
+        android:textSize="@dimen/text_size"
+        android:visibility="gone" />
+
+</LinearLayout>

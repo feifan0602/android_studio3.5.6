@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        layout="@layout/activity_top_iv_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/main_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/color_gray_bg"
+            android:dividerHeight="6dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarSize="@dimen/scrollbar_size"
+            android:scrollbarThumbVertical="@drawable/shape_listview_thumb"
+            android:smoothScrollbar="true"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrHeaderTextColor="@color/loading_text_color"
+            ptr:ptrListViewExtrasEnabled="false"
+            ptr:ptrMode="both"
+            ptr:ptrScrollingWhileRefreshingEnabled="true" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <TextView
+            android:id="@+id/null_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="内容还在采集中,过几天再来看看..."
+            android:textColor="@color/text_color_26"
+            android:textSize="@dimen/text_size_30px"
+            android:visibility="gone" />
+
+        <include layout="@layout/home_sieve" />
+
+        <include
+            android:id="@+id/loading"
+            layout="@layout/pageloading_layout"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_white_rect"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/colltection_item_name"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/colltection_details_time"
+            android:textColor="@color/app_text_color" />
+
+        <View style="@style/line_small_style" />
+
+        <TextView
+            android:id="@+id/spec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/colltection_details_spec"
+            android:textColor="@color/app_text_color" />
+
+        <View style="@style/line_small_style" />
+
+        <TextView
+            android:id="@+id/venue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/colltection_details_venue"
+            android:textColor="@color/app_text_color" />
+
+        <View style="@style/line_small_style" />
+
+        <TextView
+            android:id="@+id/detail_show"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/colltection_details_infro_text1"
+            android:textColor="@color/app_text_color" />
+
+        <WebView
+            android:id="@+id/detail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/event_dateils"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/details_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+        <include
+            android:id="@+id/music"
+            android:layout_marginBottom="10dp"
+            layout="@layout/muisc_playlayout" />
+    </LinearLayout>
+
+</LinearLayout>

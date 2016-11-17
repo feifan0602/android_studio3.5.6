@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="用户评论"
+            android:textColor="#97B3C7"
+            android:textSize="@dimen/details_title_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/activity_comment_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_activity_details_comment_bg"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/activity_comment_zan_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/sh_comment_zan_icon_while"
+                    android:drawablePadding="5dp"
+                    android:text="点赞"
+                    android:textColor="@color/white_color" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white_color" />
+
+                <TextView
+                    android:id="@+id/activity_comment_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/sh_comment_icon_while"
+                    android:drawablePadding="5dp"
+                    android:text="评论"
+                    android:textColor="@color/white_color" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/sh_add_comment_icon" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.2"
+            android:background="#97B3C7" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/top_fenge"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/text_color_df"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/zanguo_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/zanguo_tv"
+            android:layout_marginRight="10dp"
+            android:background="@color/text_color_df" />
+
+        <TextView
+            android:id="@+id/zanguo_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="共34人赞过，共17人浏览过"
+            android:textColor="@color/text_color_26"
+            android:textSize="@dimen/text_size_28px"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/like_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/sh_icon_grayhear"
+            android:visibility="gone" />
+
+        <com.sun3d.culturalShanghai.view.ScrollViewGridView
+            android:id="@+id/like_gridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zanguo_tv"
+            android:horizontalSpacing="5dp"
+            android:numColumns="10"
+            android:verticalSpacing="5dp" >
+        </com.sun3d.culturalShanghai.view.ScrollViewGridView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/fenge"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/text_color_df"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/comment_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="共XX人评论过"
+            android:textColor="@color/text_color_26"
+            android:textSize="@dimen/text_size_28px" />
+
+        <ImageView
+            android:id="@+id/commet_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/sh_icon_addcomment"
+            android:visibility="gone" />
+
+        <com.sun3d.culturalShanghai.view.ScrollViewListView
+            android:id="@+id/comment_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comment_num"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:divider="@color/text_color_df"
+            android:dividerHeight="1dp" >
+        </com.sun3d.culturalShanghai.view.ScrollViewListView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/more_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/sh_more_comment_icon"
+        android:text="更多评论"
+        android:textColor="#97B3C7"
+        android:visibility="gone" />
+
+</LinearLayout>

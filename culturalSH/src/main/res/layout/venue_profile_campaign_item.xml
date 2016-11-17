@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_item_bg"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/venue_listView_tv"
+        android:layout_width="@dimen/nearby_itme_list_w"
+        android:layout_height="@dimen/nearby_itme_list_h"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/shape_money_round"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/venue_listview_title"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/personal_my_mesge_text"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/item_title_size" />
+
+        <TextView
+            android:id="@+id/venue_listview_data"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/personal_my_mesge_text"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/item_text_size" />
+
+        <TextView
+            android:id="@+id/venue_listview_sala"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/personal_my_mesge_text"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/item_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

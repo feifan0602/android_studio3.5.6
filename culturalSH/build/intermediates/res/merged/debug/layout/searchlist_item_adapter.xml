@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+        <ImageView
+            android:id="@+id/space_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/text_color_9900"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/space_line_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:text="上海少年儿童图书馆"
+                android:textColor="@color/text_color_ef"
+                android:textSize="@dimen/text_size_34px" />
+
+            <ImageView
+                android:id="@+id/space_line_iv"
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:background="@color/text_color_df" />
+
+            <TextView
+                android:id="@+id/address_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space_line_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/icon_space_map"
+                android:drawablePadding="10dp"
+                android:text="徐汇区复兴中路1380号"
+                android:textColor="@color/text_color_ff"
+                android:textSize="@dimen/text_size_24px" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address_tv"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/activity_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/middle_tv"
+                    android:background="@drawable/space_item_bg"
+                    android:text="23个活动"
+                    android:textColor="@color/text_color_ff"
+                    android:textSize="@dimen/text_size_24px" />
+
+                <View
+                    android:id="@+id/middle_view"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/middle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/space_item_bg"
+                    android:textColor="@color/text_color_ff"
+                    android:textSize="@dimen/text_size_24px" />
+
+                <TextView
+                    android:id="@+id/room_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/middle_tv"
+                    android:background="@drawable/space_item_bg"
+                    android:text="23个活动室"
+                    android:textColor="@color/text_color_ff"
+                    android:textSize="@dimen/text_size_24px" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

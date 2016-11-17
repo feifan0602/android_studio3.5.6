@@ -1,0 +1,5 @@
+<resources>
+
+<!--         1920*1080 -->
+<dimen name="item_content_size">14sp</dimen>
+</resources>

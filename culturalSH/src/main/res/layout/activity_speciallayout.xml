@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/activity_specialla_layout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/white_color"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="实况直击"
+                android:textColor="@color/text_color_26"
+                android:textSize="@dimen/text_size_32px" />
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:src="@drawable/arrow_right" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:layout_alignParentBottom="true"
+                android:alpha="0.2"
+                android:background="#97B3C7" />
+        </RelativeLayout>
+
+        <com.sun3d.culturalShanghai.view.ScrollViewListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:divider="@color/white_color"
+            android:dividerHeight="10dp" >
+        </com.sun3d.culturalShanghai.view.ScrollViewListView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:paddingLeft="2dp"
+    android:background="@color/activity_bg_color" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/select_item_bg"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/activityroom_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/activityroom_reserve"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/text_color_72"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/activity_room_reserve"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/details_text_size"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/activityroom_reserve"
+            android:layout_toRightOf="@+id/activityroom_img"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/activityroom_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".3"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:text="@string/activity_room_name"
+                android:textColor="@color/text_color_26"
+                android:textSize="@dimen/text_size_32px" />
+
+            <include
+                android:id="@+id/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/tab_label_layout"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/activityroom_area"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".3"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:text="@string/activity_room_area"
+                android:textColor="@color/text_color_80"
+                android:textSize="@dimen/text_size_22px" />
+
+            <TextView
+                android:id="@+id/activityroom_isfree"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".3"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:text="@string/activity_room_people"
+                android:textColor="@color/text_color_26"
+                android:textSize="@dimen/text_size_28px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

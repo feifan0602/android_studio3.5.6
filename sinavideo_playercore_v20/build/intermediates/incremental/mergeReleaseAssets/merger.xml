@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\android_studio3.5.6\sinavideo_playercore_v20\src\main\assets"/><source path="E:\android_studio3.5.6\sinavideo_playercore_v20\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="E:\android_studio3.5.6\sinavideo_playercore_v20\src\release\assets"/></dataSet></merger>

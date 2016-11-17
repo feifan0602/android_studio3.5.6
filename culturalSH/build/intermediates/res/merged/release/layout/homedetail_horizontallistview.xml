@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+    android:orientation="vertical" >
+
+    <RelativeLayout
+         android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/icon_weinituijian"
+            android:gravity="center"
+            android:text="为你推荐"
+            android:textColor="@color/text_color_71"
+            android:textSize="@dimen/text_size_30px" />
+    </RelativeLayout>
+
+    <com.sun3d.culturalShanghai.view.HorizontalListView
+        android:id="@+id/horizon_listview"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="130dp"
+        android:background="@color/text_color_ff"
+        android:gravity="center" >
+    </com.sun3d.culturalShanghai.view.HorizontalListView>
+
+</LinearLayout>

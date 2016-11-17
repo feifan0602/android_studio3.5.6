@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white_color">
+
+    <com.sun3d.culturalShanghai.view.CustomScrollViewIos
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/third_fastlogin_return"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:src="@drawable/sh_icon_personal_return" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="25dp"
+                android:text="@string/dialog_third_fastlogin"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/dialog_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- 微信登陆 -->
+
+                <TextView
+                    android:id="@+id/third_fastlogin_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/sh_wechat"
+                    android:gravity="center"
+                    android:text="@string/weixin"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/dialog_text_size" />
+                <!-- QQ登陆 -->
+
+                <TextView
+                    android:id="@+id/third_fastlogin_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/sh_qq"
+                    android:gravity="center"
+                    android:text="@string/qq"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/dialog_text_size" />
+                <!-- 新浪登陆 -->
+
+                <TextView
+                    android:id="@+id/third_fastlogin_sina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/sh_sina"
+                    android:gravity="center"
+                    android:text="@string/weibo"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/dialog_text_size" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/dialog_third_fastlogin_account"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/dialog_text_size" />
+
+            <EditText
+                android:id="@+id/fastlogin_input_account"
+                style="@style/fastlogin_input_style"
+                android:hint="@string/reserve_phone_hint"
+                android:inputType="number"
+                android:maxLength="11" />
+
+            <EditText
+                android:id="@+id/fastlogin_input_password"
+                style="@style/fastlogin_input_style"
+                android:hint="@string/user_pw_error"
+                android:inputType="textPassword"
+                android:maxLength="12" />
+            <!-- 登陆 -->
+
+            <Button
+                android:id="@+id/fastlogin_login"
+                android:layout_width="@dimen/dialog_login_width"
+                android:layout_height="@dimen/dialog_input_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_white_nullcontent_rect"
+                android:text="@string/dialog_fastlogin_login"
+                android:textColor="@color/dialog_schedule_btn_color"
+                android:textSize="@dimen/dialog_text_size" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/dialog_login_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp" >
+
+                <!-- 忘记密码 -->
+
+                <Button
+                    android:id="@+id/fastlogin_forgotpw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:text="@string/dialog_fastlogin_forgotpw"
+                    android:textColor="@color/dialog_schedule_btn_color" />
+                <!-- 注册新用户 -->
+
+                <Button
+                    android:id="@+id/fastlogin_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:text="@string/dialog_fastlogin_regi_newaccount"
+                    android:textColor="@color/dialog_schedule_btn_color" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.sun3d.culturalShanghai.view.CustomScrollViewIos>
+
+</LinearLayout>

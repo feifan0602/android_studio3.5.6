@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/brithday_return"
+        android:layout_width="@dimen/activity_title_height"
+        android:layout_height="@dimen/activity_title_height"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:src="@drawable/sh_icon_personal_return" />
+
+    <TextView
+        android:id="@+id/brithday_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dialog_button_top"
+        android:text="@string/dialog_birthday_title"
+        android:textColor="@color/dialog_title_color"
+        android:textSize="@dimen/dialog_text_size" />
+
+    <include
+        android:id="@+id/brithday_timeview"
+        layout="@layout/timewheeelview_layout" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/dialog_schedule_btn_color" >
+
+        <RadioGroup
+            android:id="@+id/brithday_radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/brithday_1"
+                style="@style/brithday_radio_style"
+                android:text="@string/dialog_birthday_50" />
+
+            <RadioButton
+                android:id="@+id/brithday_2"
+                style="@style/brithday_radio_style"
+                android:text="@string/dialog_birthday_60" />
+
+            <RadioButton
+                android:id="@+id/brithday_3"
+                style="@style/brithday_radio_style"
+                android:text="@string/dialog_birthday_70" />
+
+            <RadioButton
+                android:id="@+id/brithday_4"
+                style="@style/brithday_radio_style"
+                android:text="@string/dialog_birthday_80" />
+
+            <RadioButton
+                android:id="@+id/brithday_5"
+                style="@style/brithday_radio_style"
+                android:text="@string/dialog_birthday_90" />
+
+            <RadioButton
+                android:id="@+id/brithday_6"
+                style="@style/brithday_radio_style"
+                android:text="@string/dialog_birthday_00" />
+
+            <RadioButton
+                android:id="@+id/brithday_7"
+                style="@style/brithday_radio_style"
+                android:text="@string/dialog_birthday_10" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dialog_button_top" >
+
+        <TextView
+            android:id="@+id/brithday_commit"
+            android:layout_width="@dimen/dialog_login_width"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_white_nullcontent_rect"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="10dp"
+            android:text="@string/dialog_ok"
+            android:textColor="@color/dialog_schedule_btn_color"
+            android:textSize="@dimen/dialog_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

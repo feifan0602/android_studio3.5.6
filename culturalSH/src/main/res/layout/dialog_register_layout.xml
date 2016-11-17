@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/register_return"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:src="@drawable/sh_icon_personal_return" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:text="@string/dialog_fastlogin_regi_newaccount"
+        android:textColor="@color/dialog_title_color"
+        android:textSize="@dimen/dialog_text_size" />
+
+    <EditText
+        android:id="@+id/register_input_phone"
+        style="@style/fastlogin_input_style"
+        android:hint="@string/dialog_forgotpw_input_phone"
+        android:inputType="number"
+        android:maxLength="11" />
+
+    <EditText
+        android:id="@+id/register_input_nickname"
+        style="@style/fastlogin_input_style"
+        android:hint="@string/dialog_update_linkname"
+        android:inputType="text"
+        android:maxLength="20" />
+
+    <EditText
+        android:id="@+id/register_input_truenewpw"
+        style="@style/fastlogin_input_style"
+        android:hint="@string/dialog_register_pw"
+        android:inputType="textPassword"
+        android:maxLength="12" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/register_input_verificationcode"
+            style="@style/phone_code_stysle"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/register_getcode"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dialog_input_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bule_rect"
+            android:text="@string/dialog_forgotpw_input_getcode"
+            android:textColor="@color/dialog_schedule_btn_color"
+            android:textSize="@dimen/dialog_text_size" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_commit"
+        android:layout_width="@dimen/dialog_login_width"
+        android:layout_height="@dimen/dialog_login_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_white_nullcontent_rect"
+        android:text="@string/dialog_register"
+        android:textColor="@color/dialog_schedule_btn_color" />
+
+</LinearLayout>

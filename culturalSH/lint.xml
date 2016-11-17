@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="HardcodedDebugMode">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
+    <issue id="IncludeLayoutParam">
+        <ignore path="res/layout/fragment_event.xml" />
+    </issue>
+    <issue id="NewApi" severity="ignore" />
+</lint>

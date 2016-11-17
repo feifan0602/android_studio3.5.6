@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_666"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_5dp"
+    android:paddingTop="@dimen/padding_5dp" >
+
+    <TextView
+        android:id="@+id/text_frist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/text_color_666"
+        android:gravity="center"
+        android:text="5.23 周一"
+        android:textColor="@color/text_color_ff"
+        android:textSize="@dimen/text_size_30px" />
+
+</LinearLayout>

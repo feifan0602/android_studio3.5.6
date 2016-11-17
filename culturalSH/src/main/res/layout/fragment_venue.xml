@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        layout="@layout/activity_top_layout" />
+
+    <LinearLayout
+        android:id="@+id/Classification_ll"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/title"
+        android:background="@color/text_color_ff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/region"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight=".1"
+            android:drawableRight="@drawable/icon_choosearrow"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="区域"
+            android:textColor="@color/text_color_49"
+            android:textSize="@dimen/text_size_34px" />
+
+        <View style="@style/venue_top_line" />
+
+        <TextView
+            android:id="@+id/classification"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight=".1"
+            android:drawableRight="@drawable/icon_choosearrow"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="分类"
+            android:textColor="@color/text_color_49"
+            android:textSize="@dimen/text_size_34px" />
+
+        <View style="@style/venue_top_line" />
+
+        <TextView
+            android:id="@+id/sort"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight=".1"
+            android:drawableRight="@drawable/icon_choosearrow"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="排序"
+            android:textColor="@color/text_color_49"
+            android:textSize="@dimen/text_size_34px" />
+
+        <View style="@style/venue_top_line" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight=".1"
+            android:drawableRight="@drawable/icon_choosearrow"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="状态"
+            android:textColor="@color/text_color_49"
+            android:textSize="@dimen/text_size_34px" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/fenge_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/Classification_ll"
+        android:background="@color/text_color_df" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/fenge_iv"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/loading"
+            layout="@layout/pageloading_layout"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/collection_null"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="内容还在采集中,过几天再来看看..."
+            android:textColor="@color/text_color_7c"
+            android:textSize="@dimen/text_size_28px"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/venue_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:animateLayoutChanges="true"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/activity_bg_color"
+                android:dividerHeight="@dimen/pullListView_DividerHeight"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="@android:color/transparent"
+                android:scrollbarSize="@dimen/scrollbar_size"
+                android:scrollbarThumbVertical="@drawable/shape_listview_thumb"
+                android:smoothScrollbar="true"
+                ptr:ptrAnimationStyle="flip"
+                ptr:ptrHeaderTextColor="@color/loading_text_color"
+                ptr:ptrListViewExtrasEnabled="false"
+                ptr:ptrMode="both"
+                ptr:ptrScrollingWhileRefreshingEnabled="true" >
+            </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        </FrameLayout>
+
+        <include
+            android:id="@+id/list_foot_main"
+            layout="@layout/list_foot_main" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/activity_page_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

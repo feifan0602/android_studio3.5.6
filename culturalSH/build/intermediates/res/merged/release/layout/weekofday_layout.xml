@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/mouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:text="一月"
+        android:textColor="@color/app_text_color"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/week1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="5dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:text="一"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/day1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_week_tc_bg_one"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="今天"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/week2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="5dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:text="二"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/day2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_color"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="明天"
+                android:textColor="@color/select_weekdate_text"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/week3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="5dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:text="三"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/day3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_color"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="27"
+                android:textColor="@color/select_weekdate_text"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/week4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="5dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:text="四"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/day4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_color"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="28"
+                android:textColor="@color/select_weekdate_text"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/week5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="5dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:text="五"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/day5"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_color"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="29"
+                android:textColor="@color/select_weekdate_text"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/week6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="5dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:text="六"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/day6"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_color"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="30"
+                android:textColor="@color/select_weekdate_text"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/week7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="5dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:text="日"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/day7"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_color"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="31"
+                android:textColor="@color/select_weekdate_text"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

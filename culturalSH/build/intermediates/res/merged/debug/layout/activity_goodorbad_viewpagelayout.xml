@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:gravity="center_horizontal"
+    android:layerType="software"
+    android:orientation="vertical" >
+
+    <com.sun3d.culturalShanghai.view.ScaleViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:clipChildren="false" >
+    </com.sun3d.culturalShanghai.view.ScaleViewPager>
+
+    <RelativeLayout
+        android:id="@+id/choose_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" >
+
+        <include
+            android:id="@+id/imageleft"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            layout="@layout/activity_userslike_itemlayout" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <RelativeLayout
+                android:id="@+id/imagebutton_badlayout"
+                android:layout_width="60dp"
+                android:layout_height="64dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/sh_icon_goodorbad_bg"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/imagebutton_bad"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/sh_icon_bad" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/imagebutton_goodlayout"
+                android:layout_width="60dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/sh_icon_goodorbad_bg"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/imagebutton_good"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/sh_icon_good" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

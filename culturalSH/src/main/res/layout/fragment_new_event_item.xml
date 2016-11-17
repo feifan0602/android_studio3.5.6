@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/event_order_code_a"
+                android:textColor="@color/app_text_color" />
+
+            <TextView
+                android:id="@+id/my_event_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="123456"
+                android:textColor="@color/orange_3.1_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/event_time_a"
+                android:textColor="@color/app_text_color" />
+
+            <TextView
+                android:id="@+id/my_event_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="2015-05-15"
+                android:textColor="@color/app_text_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/line_big_style" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_text1"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/my_event_title" />
+
+        <TextView
+            android:id="@+id/my_event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/collect_event_title"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/my_event_title" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/my_event_img"
+            android:layout_width="125dp"
+            android:layout_height="75dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/my_event_img"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/my_venue_text"
+                    android:text="@string/event_location_b" />
+
+                <TextView
+                    android:id="@+id/my_event_location"
+                    style="@style/my_venue_text"
+                    android:singleLine="false"
+                    android:text="@string/collect_event_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/my_venue_text"
+                    android:text="@string/event_session" />
+
+                <TextView
+                    android:id="@+id/my_event_session"
+                    style="@style/my_venue_text"
+                    android:text="@string/event_time_b" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_event_seatlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/my_event_seatshow"
+                    style="@style/my_venue_text"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/venue_seat" />
+
+                <com.sun3d.culturalShanghai.view.ScrollViewGridView
+                    android:id="@+id/my_event_seat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/my_event_seatshow"
+                    android:horizontalSpacing="2dp"
+                    android:columnWidth="3dp"
+                    android:listSelector="@null"
+                    android:numColumns="2"
+                    android:verticalSpacing="2dp" >
+                </com.sun3d.culturalShanghai.view.ScrollViewGridView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/my_venue_text"
+                    android:text="@string/venue_num" />
+
+                <TextView
+                    android:id="@+id/my_event_num"
+                    style="@style/my_venue_text"
+                    android:text="2人" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/my_venue_text"
+                    android:text="@string/event_money" />
+
+                <TextView
+                    android:id="@+id/my_event_cost"
+                    style="@style/my_venue_text"
+                    android:text="@string/event_cost" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/my_venue_text"
+                    android:text="@string/event_code" />
+
+                <TextView
+                    android:id="@+id/my_event_numbar"
+                    style="@style/my_venue_text"
+                    android:text="@string/event_code_test" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/line_big_style"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:id="@+id/erweima_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY" />
+
+    <View style="@style/line_big_style" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/my_event_comment_num"
+            android:textColor="@color/app_text_color"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/look_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/my_event_look"
+            android:textColor="@color/orange_color"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="false"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_orge_nullrect"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp"
+            android:text="取 消 订 单"
+            android:textColor="@color/orange_color" />
+    </RelativeLayout>
+
+    <View style="@style/line_big_style" />
+
+</LinearLayout>

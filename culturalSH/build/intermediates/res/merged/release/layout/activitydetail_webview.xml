@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/text_color_df" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/text_color_ff"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="温馨提示"
+        android:textColor="@color/text_color_4C"
+        android:textSize="@dimen/text_size_32px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_color_df" />
+
+    <WebView
+        android:id="@+id/reminder_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

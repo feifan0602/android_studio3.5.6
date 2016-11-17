@@ -1,0 +1,142 @@
+<resources>
+
+    <!-- 日程 -->
+    <dimen name="leader_schedule_content_paddingHorizontal">8dp</dimen>
+ <!-- 日程模块内容水平填充大小 -->
+    <dimen name="leader_schedule_content_paddingVertical">8dp</dimen>
+ <!-- 日程模块内容垂直填充大小 -->
+    <dimen name="leader_schedule_schedule_marginTop">8dp</dimen>
+ <!-- 日程模块日程内容上边距大小 -->
+    <dimen name="leader_schedule_calendar_bar_previours_btn_marginLeft">10dp</dimen>
+ <!-- 日程模块选择时间上一月按钮左边距 -->
+    <dimen name="leader_schedule_calendar_bar_next_btn_marginRight">10dp</dimen>
+ <!-- 日程模块选择时间下一月按钮右边距 -->
+    <dimen name="leader_schedule_view_maring_top_spacing">1dp</dimen>
+ <!-- 日程模块view之间的间隙 -->
+    <dimen name="leader_schedule_Schedule_TtileText_size">18sp</dimen>
+ <!-- 日程上下午字体大小 -->
+    <dimen name="leader_schedule_Schedule_TtileText_paddingSpacing">5dp</dimen>
+ <!-- 日程上下午字体内容填充大小 -->
+    <dimen name="leader_schedule_Schedule_DetailText_size">18sp</dimen>
+ <!-- 日程日程详情字体大小 -->
+    <dimen name="leader_schedule_Schedule_DetailText_paddingSpacing">5dp</dimen>
+ <!-- 日程日程详情内容填充大小 -->
+    <dimen name="leader_schedule_Schedule_Calendar_text_size">20sp</dimen>
+ <!-- 日程日期字体大小  2013年8月8日 -->
+    <!-- 日历 -->
+    <dimen name="calendar_item_layout_padding">1dp</dimen>
+ <!-- 日历GridView的Item布局内容填充大小 -->
+    <dimen name="calendar_item_text_size">14sp</dimen>
+ <!-- 日历Item日字体大小 -->
+    <dimen name="calendar_week_day_text_size">16sp</dimen>
+ <!-- 日历中的星期的字体大小 -->
+    <dimen name="calendar_week_day_item_marginLeft">3dp</dimen>
+ <!-- 日历中的星期的边距 -->
+    <dimen name="calendar_week_day_item_marginRight">3dp</dimen>
+ <!-- 日历中的星期的边距 -->
+    <dimen name="calendar_week_day_item_marginTop">6dp</dimen>
+ <!-- 日历中的星期的边距 -->
+    <dimen name="calendar_week_day_item_marginBottom">6dp</dimen>
+ <!-- 日历中的星期的边距 -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_title_height">44dp</dimen>
+    <dimen name="main_grid_image_size">60dp</dimen>
+    <dimen name="personal_head_size">85dp</dimen>
+    <dimen name="personal_item_height">50dp</dimen>
+    <dimen name="personal_admin_top">15dp</dimen>
+    <dimen name="personal_item_top">20dp</dimen>
+    <dimen name="user_center_head_height">200dp</dimen>
+    <dimen name="user_item_height">45dp</dimen>
+    <dimen name="venue_detail_item_height">40dp</dimen>
+    <dimen name="user_item_margin_right">10dp</dimen>
+    <dimen name="event_dateils_head_hight">200dp</dimen>
+    <dimen name="event_dateils_item_hight">40dp</dimen>
+    <dimen name="event_button_height">50dp</dimen>
+    <dimen name="search_title_height">45dp</dimen>
+    <dimen name="search_item_height">45dp</dimen>
+    <dimen name="dialog_linesize">0.2dp</dimen>
+    <dimen name="dialog_height">100dp</dimen>
+    <dimen name="dialog_width">250dp</dimen>
+    <dimen name="dialog_text_size">15sp</dimen>
+    <dimen name="dialog_login_width">250dp</dimen>
+    <dimen name="dialog_login_height">35dp</dimen>
+    <dimen name="activityroom_name_textsize">16sp</dimen>
+    <dimen name="collection_gridview_item_height">90dp</dimen>
+    <!-- 附近界面 -->
+    <dimen name="nearby_itme_distance_top">10sp</dimen>
+    <dimen name="collect_title">16sp</dimen>
+    <dimen name="collect_content">14sp</dimen>
+    <dimen name="tab_widget_margin">20dp</dimen>
+    <dimen name="tab_height">50dp</dimen>
+    <dimen name="my_event_title">15sp</dimen>
+    <dimen name="my_event_content">14sp</dimen>
+    <dimen name="nearby_itme_list_w">30dp</dimen>
+    <dimen name="nearby_itme_list_h">30dp</dimen>
+    <!-- 场馆详情 -->
+    <dimen name="venue_profile_details_title">21sp</dimen>
+    <dimen name="venue_profile_Comment_text_size">10sp</dimen>
+    <dimen name="venue_profile_sala_size">16sp</dimen>
+    <dimen name="reserve_text_size">18sp</dimen>
+    <dimen name="details_title_size">18sp</dimen>
+    <dimen name="details_text_size">14sp</dimen>
+    <dimen name="item_text_size">14sp</dimen>
+    <dimen name="scrollbar_size">2dp</dimen>
+    <dimen name="viewpager_text_size">18sp</dimen>
+    <dimen name="viewpager_text1_size">16sp</dimen>
+    <dimen name="viewpager_text_paddingTop">3dp</dimen>
+    <dimen name="comment_text_marginLeft">55dp</dimen>
+    <dimen name="comment_text_height">45dp</dimen>
+    <dimen name="comment_edit_height">220dp</dimen>
+    <dimen name="comment_text_size">16sp</dimen>
+    <dimen name="tab_text_size">15sp</dimen>
+    <dimen name="windows_money_size">21dp</dimen>
+    <dimen name="windows_money_line">70dp</dimen>
+    <dimen name="my_messge_size">60dp</dimen>
+    <dimen name="dialog_input_height">45dp</dimen>
+    <dimen name="shape_radius">3dp</dimen>
+    <dimen name="dialog_button_top">50dp</dimen>
+    <dimen name="activity_content_top">20dp</dimen>
+    <dimen name="messge_content_top">30dp</dimen>
+    <dimen name="layout_head_height">210dp</dimen>
+    <dimen name="title_text_size">18sp</dimen>
+    <dimen name="text_size">14sp</dimen>
+    <dimen name="main_text_size">13sp</dimen>
+    <dimen name="main_banner_round">8dp</dimen>
+    <!-- Loading页面 注册登录高度 -->
+    <dimen name="loading_login_height">50dp</dimen>
+
+    <!-- 列表的高度 -->
+    <dimen name="venue_item_height">230dp</dimen>
+    <dimen name="activity_viewpager_top_height">195dp</dimen>
+    <dimen name="group_item_height">250dp</dimen>
+    <dimen name="read_head_height">260dp</dimen>
+    <dimen name="read_content_margintop">30dp</dimen>
+    <dimen name="read_user_margintop">20dp</dimen>
+    <dimen name="window_tab_height">45dp</dimen>
+    <dimen name="window_item_height">30dp</dimen>
+    <dimen name="window_item_text_size">14sp</dimen>
+    <dimen name="window_item_rect_size">2dp</dimen>
+    <dimen name="adapter_event_list_height">160dp</dimen>
+    <dimen name="item_content_size">13sp</dimen>
+    <dimen name="item_title_size">20sp</dimen>
+    <dimen name="adapter_height">90dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines.选座的座位相关设置 -->
+    <dimen name="ss_seat_thum_size_h">100.0dip</dimen>
+    <dimen name="ss_seat_thum_size_w">150.0dip</dimen>
+    <dimen name="seat_max_height">60dip</dimen>
+    <dimen name="seat_min_height">30dip</dimen>
+    <dimen name="seat_max_width">60dip</dimen>
+    <dimen name="seat_min_width">30dip</dimen>
+    <dimen name="seat_init_width">35dip</dimen>
+    <dimen name="seat_init_height">35dip</dimen>
+    <dimen name="ss_between_offset">5.0dip</dimen>
+    <dimen name="ss_seat_check_size">30.0dip</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="main_weather_bg">50dp</dimen>
+    <dimen name="activity_reserve_mar_top">40dp</dimen>
+
+</resources>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/onlin_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/onlin_reserve"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white_color"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/seat_online"
+                android:textColor="@color/orange_color"
+                android:textSize="@dimen/details_text_size" />
+
+            <TextView
+                android:id="@+id/seat_select_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="5dp"
+                android:gravity="right|center_vertical"
+                android:text="@string/seat"
+                android:textColor="@color/orange_color"
+                android:textSize="@dimen/details_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/seat_v4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/seat_lock" />
+
+                <TextView
+                    android:id="@+id/seat_t4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/seat_v4"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/seat_t3"
+                    android:textColor="@color/event_text_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/seat_v2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/seat_checked" />
+
+                <TextView
+                    android:id="@+id/seat_t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/seat_v2"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/seat_t2"
+                    android:textColor="@color/event_text_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/seat_v3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/seat_normal" />
+
+                <TextView
+                    android:id="@+id/seat_t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/seat_v3"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/seat_t1"
+                    android:textColor="@color/event_text_color" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/center_stage" />
+
+            <TextView
+                android:id="@+id/seat_show"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/seat_center"
+                android:textColor="@color/event_text_color"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <com.sun3d.culturalShanghai.seat.SeatView
+            android:id="@+id/mSSView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+
+    <com.sun3d.culturalShanghai.seat.SSThumView
+        android:id="@+id/ss_ssthumview"
+        android:layout_width="@dimen/ss_seat_thum_size_w"
+        android:layout_height="@dimen/ss_seat_thum_size_h"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="100dp" />
+
+    <RelativeLayout
+        android:id="@+id/onlin_reserve"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/event_button_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/text_color_72" >
+
+        <TextView
+            style="@style/reserve_text"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@null"
+            android:text="@string/onlin_seat_but" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/loading"
+        layout="@layout/pageloading_layout"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title" />
+
+</RelativeLayout>

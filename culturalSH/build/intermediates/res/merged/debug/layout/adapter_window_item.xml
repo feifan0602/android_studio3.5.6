@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_windows_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/home_myborder"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/window_item_height"
+        android:singleLine="true"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="图书馆"
+        android:textColor="@color/text_color_7c"
+        android:textSize="@dimen/text_size_28px" />
+
+</LinearLayout>

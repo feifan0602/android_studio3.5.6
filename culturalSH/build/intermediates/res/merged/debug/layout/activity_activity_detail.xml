@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_f3"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/event_reserve"
+        android:layout_below="@+id/title"
+        android:focusableInTouchMode="true" >
+
+        <com.sun3d.culturalShanghai.view.ScrollScrollView
+            android:id="@+id/refreshscrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/contentlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </com.sun3d.culturalShanghai.view.ScrollScrollView>
+
+        <LinearLayout
+            android:id="@+id/activity_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_color_ff"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/activity_detail_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="活动详情"
+                        android:textColor="@color/text_color_666"
+                        android:textSize="@dimen/text_size_32px" />
+
+                    <ImageView
+                        android:id="@+id/left_line_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                   		android:layout_marginRight="@dimen/margin_10dp"
+                        android:background="@color/text_color_cc"
+                        android:visibility="gone"
+                        
+                         />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                	android:layout_marginBottom="4dp"
+                    android:background="@color/text_color_df" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/activity_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="活动单位"
+                        android:textColor="@color/text_color_666"
+                        android:textSize="@dimen/text_size_32px" />
+
+                    <ImageView
+                        android:id="@+id/right_line_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                    	android:layout_marginRight="@dimen/margin_15dp"
+                        android:background="@color/text_color_72"
+                        android:visibility="gone"
+                         />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            >
+            
+              <ImageView
+                    android:id="@+id/line_img_bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/text_color_72" 
+                    />
+            
+            
+            </RelativeLayout>
+            
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:background="@color/text_color_cc" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/loading"
+            layout="@layout/pageloading_layout"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/event_reserve"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/event_button_height"
+        android:layout_alignParentBottom="true"
+        android:background="#FF5152"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/reserve_text"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/event_event_reserve" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottom_ll"
+        android:background="@color/text_color_df" />
+
+    <LinearLayout
+        android:id="@+id/condition_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_ll"
+        android:background="@color/text_color_fff8df"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/condition_tv1"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:drawableLeft="@drawable/li"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_color_26"
+            android:textSize="@dimen/text_size_26px"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/condition_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:drawableLeft="@drawable/li"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_color_26"
+            android:textSize="@dimen/text_size_26px"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/activity_venue_details_bottom_layout" />
+
+    <ImageView
+        android:id="@+id/venue_top"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back_circle"
+        android:visibility="gone" />
+
+</RelativeLayout>

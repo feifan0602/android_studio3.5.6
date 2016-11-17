@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.sun3d.culturalShanghai.view.ScrollViewListView
+        android:id="@+id/comment_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/white_color"
+        android:listSelector="@android:color/transparent"
+        android:padding="10dp"
+        android:dividerHeight="10dp" />
+
+
+        <TextView
+            android:id="@+id/dateils_comment_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/venue_profile_Comment_text"
+            android:textColor="@color/app_text_color"
+            android:visibility="gone"
+            android:textSize="@dimen/venue_profile_Comment_text_size" />
+
+        <RelativeLayout
+            android:id="@+id/commit_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="@dimen/comment_text_marginLeft"
+            android:layout_marginRight="@dimen/comment_text_marginLeft"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_comment_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/sh_icon_event_comment"
+                android:drawablePadding="5dp"
+                android:text="@string/event_event_comment"
+                android:textColor="@color/orange_3.1_color"
+                android:textSize="@dimen/comment_text_size" />
+        </RelativeLayout>
+
+</LinearLayout>

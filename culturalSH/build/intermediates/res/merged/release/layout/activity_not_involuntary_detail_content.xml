@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_white_rect"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/not_involuntary_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white_color"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/event_name"
+            android:textColor="@color/event_title_color"
+            android:textSize="@dimen/details_title_size" />
+
+        <View style="@style/line_small_style" />
+
+        <RelativeLayout
+            android:id="@+id/not_involuntary_type_layout"
+            style="@style/event_dateils_item" >
+
+            <TextView
+                android:id="@+id/not_involuntary_item_name_text"
+                style="@style/event_dateils_item_left_text"
+                android:layout_alignParentLeft="true"
+                android:text="@string/group_type" />
+
+            <TextView
+                android:id="@+id/not_involuntary_item_name"
+                style="@style/event_dateils_item_left_text"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/not_involuntary_item_name_text"
+                android:text="@string/event_venue_name" />
+        </RelativeLayout>
+
+        <View style="@style/line_small_style" />
+
+        <RelativeLayout
+            android:id="@+id/not_involuntary_quyu_layout"
+            style="@style/event_dateils_item" >
+
+            <TextView
+                android:id="@+id/not_involuntary_item_quyu_text"
+                style="@style/event_dateils_item_left_text"
+                android:layout_alignParentLeft="true"
+                android:text="@string/group_quyu" />
+
+            <TextView
+                android:id="@+id/not_involuntary_item_quyu"
+                style="@style/event_dateils_item_left_text"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/not_involuntary_item_quyu_text"
+                android:text="@string/event_venue_name" />
+        </RelativeLayout>
+
+        <View style="@style/line_small_style" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/not_involuntary_detial_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/NotInvoluntaryDetail"
+                android:textColor="@color/event_title_color"
+                android:textSize="@dimen/details_title_size" />
+
+            <WebView
+                android:id="@+id/not_involuntary_dateils"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/event_dateils"
+                android:textColor="@color/event_text_color"
+                android:textSize="@dimen/details_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/text_color_8000"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@drawable/home_pop_radiu_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="1dp"
+                android:paddingTop="20dp"
+                android:text="定位到你的位置:"
+                android:textColor="@color/text_color_26"
+                android:textSize="@dimen/text_size_28px"
+                />
+
+            <TextView
+                android:id="@+id/address_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_71"
+                android:textSize="@dimen/text_size_28px"
+                android:paddingTop="20dp"
+                android:text="上海"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_28px"
+                android:textColor="@color/text_color_26"
+                android:text="是否切换"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_color_99"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/left_change_btn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/middle_img"
+                android:background="@drawable/home_pop_radiu_gray"
+                android:textColor="@color/text_color_7c"
+                android:textSize="@dimen/text_size_26px"
+                android:text="不切换"/>
+            <View
+                android:id="@+id/middle_img"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp"></View>
+            <Button
+                android:id="@+id/right_change_btn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/home_pop_radiu_blue"
+                android:layout_toRightOf="@+id/middle_img"
+                android:textColor="@color/text_color_ff"
+                android:textSize="@dimen/text_size_26px"
+                android:text="切换"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

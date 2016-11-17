@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\exploded-aar\com.alipay.euler\andfix\0.3.1\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="1de293ae438f1031f515cb12dd8dfeb011f554c0">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\com.alipay.euler-andfix-0.3.1_83e5b26aa489691c9ad87383ed9cc755c7ab9ace.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\exploded-aar\android_studio_space_svn\sinavideo_playersdk_v20\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="c5b6103b4be28cb9fe01b9de168bfe0344890c8e">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\android_studio_space_svn-sinavideo_playersdk_v20-unspecified_24a2d340c917131eecd78324e421039908552a4c.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\exploded-aar\android_studio_space_svn\library\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="3108bba443a9b651272229fd624d62e86cc0ec80">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\android_studio_space_svn-library-unspecified_bb16aeba6e279a0d80c0e847f7372813f0b6405f.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\MobTools.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="b2cba35ceab382729de67845f613556d38a32133">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\MobTools_37e789d51e7bcc960e5aeef9af9024c93abc5867.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\ShareSDK-Core-2.6.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="ce77708798f39a79b83785dd24dd551b4680e469">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\ShareSDK-Core-2.6.0_a93e30b8a28ea3c92817ba4a4bfdc8d0781c78af.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\fastjson-1.2.2.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="b3cd06ff3f21c8cf487c241ed145154fbae6b4e2">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\fastjson-1.2.2_06bb76c6f3d4755e7b8289aad96935aaf9da7d53.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\swipemenulistview.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="696315121bfd4238970d74316fc9fdf3ee0bd9e0">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\swipemenulistview_cd1870947381454dcda41a0d3b5b2f2acedfc574.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_4ecc30ac2760ccb41a093d8abf72b490ea8e30fe.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\Afinal-0.3.4.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="4dc7b1e80f1a446bf1b5ff720d7d039a70b115fd">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\Afinal-0.3.4_d0d3ca95cd9571446850dfd2725a4e4aa1cdfc4d.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\AMap_Location_V3.1.0_20161027.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="bd57103bd88f0f9ae21c8531cc18c6dce172cc2a">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\AMap_Location_V3.1.0_20161027_aaac072aac054531fd467130c1a77c57740401bb.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\ShareSDK-QZone-2.6.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="220b0f41eb09db85c24113a0f8d69cf1011b0e07">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\ShareSDK-QZone-2.6.0_15b7f392b7e3da27312427a270b8e6f15f5e0706.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_b4efab29e9f467fd9f5691454039f45378e6c7c5.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_05ccd5756bd9cc0a98dc4633ec0de7f48923b3d3.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\ShareSDK-SinaWeibo-2.6.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="4850471ee42c51d046ac83448be0d56aa1dff1f5">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\ShareSDK-SinaWeibo-2.6.0_677d9dc0246c001185afa5c8f8fe0e4e2c116923.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\jsoup-1.8.1.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="3d57e95c0f150b885ccdbda7a12bef353fd31d02">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\jsoup-1.8.1_71aa9fc2236cf76e06c9f62a2e49ec78465d79aa.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_f104b0cdeaa1521fb40e5d95048ec09bbfdcb32d.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_0b7159c00938fb2c5825d5954da119620bad4934.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\ShareSDK-QQ-2.6.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="e6c6b568ccacd915fbf96b9b73697fecb778d36e">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\ShareSDK-QQ-2.6.0_ddfe7dde1b612945c796dd886386b12b20cd8e44.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\umeng-analytics-v5.6.3.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="8a8255ad63bcf5d7609e26b24d6cc38a3d961d40">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\umeng-analytics-v5.6.3_1a2aeb593c5af80142323ce4dbf0e3e46d06eec4.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0_14110e8e5179eb1390194e76042c091292e77394.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_5a6ee8e86be7f3c3ee9717f6ce5d6381b1850855.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\exploded-aar\android_studio_space_svn\sinavideo_playercore_v20\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="6900843d018d4fb499ca20e1b6361cb024e44d06">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\android_studio_space_svn-sinavideo_playercore_v20-unspecified_d8d7abc517a389634ac6ef77cd6cffabd02ff99b.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\glide-3.7.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\glide-3.7.0_ba31ecc0b4bf0c0d55d0e8667af40fa5c4d3c626.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\ShareSDK-Wechat-2.6.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="af48a61a1270951dc870e1579a48a415ff10c1cc">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-2.6.0_496cc8092be490d8c04565721fb341d2ad644e0b.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_582697d9474b265437fceccfbb0cf99b7bb0f47f.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\Msc.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="14e02a95fa56eb18b385a4f156b4fb14d4721df4">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\Msc_abcc84dd1ba78a15cad65381fdbc8079e497af45.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_4ad57a73cd834dca9c1c473c884fdc8dbea23147.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\ShareSDK-Wechat-Moments-2.6.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="58cc538afcaea68397481e5447836e62797551cc">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Moments-2.6.0_580211130ea19097c9912bb092ac12f637c879f7.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\AMap_Navi_v1.8.0_20160421.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="33cd64a2233ad4f3db2545c1564470187de0d051">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\AMap_Navi_v1.8.0_20160421_045b073524406fdb1e107b346f09d6e480a99596.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\gson-2.8.0_eca52502deb48db964b5e6d39d16c5eaa7bb0998.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\exploded-aar\com.mani\thindownloadmanager\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="e84e184cb18746a8507b27a691b084571d552a4c">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\com.mani-thindownloadmanager-1.0.0_cd6b9c3c26557738a341c28d75b7eed6f2dc0a27.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\AMap_Search_V3.2.1_20160308.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="f2ca076e4192ab39f1fae2e265b15e6005a5615d">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\AMap_Search_V3.2.1_20160308_ac79e3b5e72f7b734b571f3ed2dd4e6f203ebd53.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\jpush-android-2.2.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="ec655472ad073dd34019d3e2134e028f570598d9">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\jpush-android-2.2.0_0c4b8e829fde74ceaa0451e6f4655019257c4324.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_302013ac1b9756137b559b3834435b7206974e54.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\AMap_3DMap_V3.3.1_20160419.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="b4f86608ad453f27dfbc7f8a51a2e13f4fc9f2c2">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\AMap_3DMap_V3.3.1_20160419_1474fc19803a41eb63b174a2d0ec18afed9debab.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\butterknife-7.0.1_fc861cbde294a7e4a9efd57936d766cb077b60e2.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\ShareSDK-ShortMessage-2.6.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="b684edab91a8650bacc82b42a19ad683776d6eb4">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\ShareSDK-ShortMessage-2.6.0_f067b4d35c6a74316c4f3249bd2969e553420c8c.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_090bcbcaeb15e295f689c00731bcee25135c12d1.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_b3467fd4f9ca2b6caf477b6c54ec7ce1e72cae22.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\universal-image-loader-1.9.3-SNAPSHOT.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="29cf65d299e133ec68caba92b29f69289713975b">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3-SNAPSHOT_386fff84a94ccfd9d7277ffbd091ab29ce959552.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\libs\ShareSDK-Wechat-Core-2.6.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="026345fd0ea8105f21cd9688849f1301232eecf9">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Core-2.6.0_26ae392fe08070a986f5816e5c00b5fb965dc5cf.jar" />
+    </item>
+    <item
+        jar="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="E:\android_studio_space_svncopy\android_studio_space_svn\culturalSH\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_d70dc54bfacdcdea036bc99cf0d94fe00d888b2c.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/publish_item_frameLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <com.sun3d.culturalShanghai.view.PhotoView
+        android:id="@+id/imageView1"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="left|center_vertical"
+        android:src="@drawable/sh_icon_addpictrue" />
+
+    <TextView
+        android:id="@+id/publish_item_delete"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:padding="5dp"
+        android:layout_gravity="right|top"
+        android:background="@drawable/sh_icon_delete"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_alignEnd="@+id/imageView1" />
+</RelativeLayout>

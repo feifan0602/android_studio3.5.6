@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/text_color_f4"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/share_ll"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/text_color_f4"
+                android:gravity="center_horizontal"
+                android:text="@string/third_share_title"
+                android:textColor="@color/dialog_title_color"
+                android:textSize="@dimen/dialog_text_size" />
+
+            <LinearLayout
+                android:id="@+id/share_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/share_cancel"
+                android:layout_marginBottom="20dp"
+                android:background="@color/text_color_f4"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/third_share_weixin_friend"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/personal_item_height"
+                    android:layout_weight=".2"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="5"
+                        android:src="@drawable/wff_pengyouquan" />
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="fill_parent"
+                        android:alpha="0.1"
+                        android:background="@color/third_shareline_bg"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/third_weixin_frieng"
+                        android:textColor="@color/dialog_schedule_btn_color"
+                        android:textSize="@dimen/dialog_text_size"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/third_share_weixin"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/personal_item_height"
+                    android:layout_weight=".2"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="5"
+                        android:src="@drawable/wff_weixin" />
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="fill_parent"
+                        android:alpha="0.1"
+                        android:background="@color/third_shareline_bg"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/third_weixin_s"
+                        android:textColor="@color/dialog_schedule_btn_color"
+                        android:textSize="@dimen/dialog_text_size"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/third_share_qq"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/personal_item_height"
+                    android:layout_weight=".2"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="5"
+                        android:src="@drawable/wff_qq" />
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="fill_parent"
+                        android:alpha="0.1"
+                        android:background="@color/third_shareline_bg"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/third_qq_"
+                        android:textColor="@color/dialog_schedule_btn_color"
+                        android:textSize="@dimen/dialog_text_size"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/third_share_sina"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/personal_item_height"
+                    android:layout_weight=".2"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="5"
+                        android:src="@drawable/wff_weibo" />
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="fill_parent"
+                        android:alpha="0.1"
+                        android:background="@color/third_shareline_bg"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/third_sina"
+                        android:textColor="@color/dialog_schedule_btn_color"
+                        android:textSize="@dimen/dialog_text_size"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/share_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialog_login_height"
+                android:layout_alignParentBottom="true"
+                android:background="@color/text_color_ff"
+                android:text="@string/dialog_cancel"
+                android:textColor="@color/text_color_80" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

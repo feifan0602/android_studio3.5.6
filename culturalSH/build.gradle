@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.sun3d.culturalShanghai"
+        minSdkVersion 15
+        targetSdkVersion 24
+
+        //testApplicationId "com.sun3d.test.culturalShanghai"
+        //testInstrumentationRunner "android.test.InstrumentationTestRunner"
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':sinavideo_playersdk_v20')
+    compile project(':library')
+    //下载器相关
+    compile 'com.mani:thindownloadmanager:1.0.0'
+    compile 'com.alipay.euler:andfix:0.3.1@aar'
+    compile 'com.google.code.gson:gson:+'
+    compile 'com.android.support:support-v4:24.+'
+    compile files('libs/AMap_3DMap_V3.3.1_20160419.jar')
+    compile files('libs/AMap_Navi_v1.8.0_20160421.jar')
+    compile files('libs/AMap_Search_V3.2.1_20160308.jar')
+    compile files('libs/Afinal-0.3.4.jar')
+    compile files('libs/MobTools.jar')
+    compile files('libs/Msc.jar')
+    compile files('libs/ShareSDK-Core-2.6.0.jar')
+    compile files('libs/ShareSDK-QQ-2.6.0.jar')
+    compile files('libs/ShareSDK-QZone-2.6.0.jar')
+    compile files('libs/ShareSDK-ShortMessage-2.6.0.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.6.0.jar')
+    compile files('libs/ShareSDK-Wechat-2.6.0.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.6.0.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.6.0.jar')
+    compile files('libs/fastjson-1.2.2.jar')
+    compile files('libs/glide-3.7.0.jar')
+    compile files('libs/jsoup-1.8.1.jar')
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile files('libs/swipemenulistview.jar')
+    compile files('libs/umeng-analytics-v5.6.3.jar')
+    compile files('libs/universal-image-loader-1.9.3-SNAPSHOT.jar')
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile files('libs/AMap_Location_V3.1.0_20161027.jar')
+    compile files('libs/jpush-android-2.2.0.jar')
+}

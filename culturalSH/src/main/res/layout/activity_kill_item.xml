@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kill_item_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".1"
+        android:padding="5dp"
+        android:src="@drawable/clock_white" />
+
+    <TextView
+        android:id="@+id/item_date"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".3"
+        android:gravity="center"
+        android:text="2016.05.18"
+        android:textColor="@color/text_color_ff"
+        android:textSize="@dimen/text_size_28px" />
+
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".2"
+        android:gravity="center"
+        android:text="15:00"
+        android:textColor="@color/text_color_ff"
+        android:textSize="@dimen/text_size_28px" />
+
+    <TextView
+        android:id="@+id/item_num"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".2"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:text="2张"
+        android:textColor="@color/text_color_ff"
+        android:textSize="@dimen/text_size_28px" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/text_color_ff" />
+
+    <TextView
+        android:id="@+id/item_stutas"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".2"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/padding_5dp"
+        android:text="正在秒杀"
+        android:textColor="@color/text_color_ff"
+        android:textSize="@dimen/text_size_28px" />
+
+</LinearLayout>

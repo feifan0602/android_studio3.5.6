@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/top_background" >
+
+        <ImageButton
+            android:id="@+id/search_cancel"
+            android:layout_width="@dimen/search_title_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:src="@drawable/sh_icon_title_return"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/search_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/select_title_button"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/text_cancel"
+            android:textSize="@dimen/text_size_30px"
+            android:textColor="@color/white_color" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/search_reset"
+            android:background="@drawable/shape_main_top_edit_bg" >
+
+            <ImageView
+                android:id="@+id/search_ic"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/sh_icon_search" />
+
+            <EditText
+                android:id="@+id/search_et"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@id/search_ic"
+                android:background="@drawable/home_white_border"
+                android:hint="@string/text_search"
+                android:paddingLeft="5dp"
+                android:paddingRight="3dp"
+                android:singleLine="true"
+                android:textColor="@color/hint_text_color"
+                android:textColorHint="@color/text_color_99"
+                android:textSize="@dimen/text_size_28px" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/top_line"
+        style="@style/line_big_style" />
+
+</LinearLayout>

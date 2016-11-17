@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/findpw_return"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:src="@drawable/sh_icon_personal_return" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:text="@string/dialog_forgotpw_title"
+        android:textColor="@color/dialog_title_color"
+        android:textSize="@dimen/dialog_text_size" />
+
+    <EditText
+        android:id="@+id/findtpw_input_newpw"
+        style="@style/fastlogin_input_style"
+        android:hint="@string/dialog_findpw_input_newpw"
+        android:inputType="textPassword"
+        android:maxLength="12" />
+
+    <EditText
+        android:id="@+id/findpw_input_truenewpw"
+        style="@style/fastlogin_input_style"
+        android:hint="@string/dialog_findpw_input_truenewpw"
+        android:inputType="textPassword"
+        android:maxLength="12" />
+
+    <Button
+        android:id="@+id/findpw_commit"
+        android:layout_width="@dimen/dialog_login_width"
+        android:layout_height="@dimen/dialog_login_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_white_nullcontent_rect"
+        android:text="@string/dialog_ok"
+        android:textColor="@color/dialog_schedule_btn_color" />
+
+</LinearLayout>

@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sun3d.culturalShanghai"
+    android:versionCode="11"
+    android:versionName="3.5.3" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="24" />
+
+    <permission
+        android:name="com.sun3d.culturalShanghai.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.sun3d.culturalShanghai.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!--
+        <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="aaa"
+        android:targetPackage="com.sun3d.culturalShanghai"/>
+    -->
+
+
+    <!-- 使当前的Android程序支持多种分辨率，得到正确的物理尺寸 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.sun3d.culturalShanghai.MyApplication"
+        android:allowBackup="true"
+        android:configChanges="keyboardHidden|orientation"
+        android:icon="@drawable/sh_icon_logo"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:testOnly="false"
+        android:theme="@style/DuoappNormal" >
+
+        <!--
+      高德地图appkey：测试，109c8022389a138550279d6a95af44d2
+      正式：16eb621de90f447c712b97fb5a0550c4
+我的  ：341b5b679cb55c59386826e88a8d6783
+        -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="341b5b679cb55c59386826e88a8d6783" />
+
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 分享 -->
+        <!--
+             <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+        <service
+            android:name="com.sun3d.culturalShanghai.service.DownloadAPKService"
+            android:label="DownloadAPKService" >
+        </service>
+        <service
+            android:name="com.sun3d.culturalShanghai.service.DownloadTextFont"
+            android:process="system" />
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.sun3d.culturalShanghai.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.HomeGearActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.MoreSpecialActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.VoteDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.NewDetailsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.PersonalCenterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_transulcent" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.VenueDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.FirstLoadActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.SelectThemeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.MyLoveActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.ActivityMap"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.SearchNearbyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.BannerInfoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.LookActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.MainFragmentActivity"
+            android:alwaysRetainTaskState="true"
+            android:clearTaskOnLaunch="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.BigMapViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.UserCenterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.EventDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.MyMessageDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.FeedbackActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.SettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.RegionChoiceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.MyMessageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.MyCollectActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.MyOrderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.EventReserveActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.EventRoomActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.EventListActivity"
+            android:label="@string/title_activity_lable_choose"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_Theme" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.UserDialogActivity"
+            android:label="@string/title_activity_user_dialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_transulcent" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.MoreCommentActivity"
+            android:label="@string/title_activity_more_comment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.WriteCommentActivity"
+            android:label="@string/title_activity_write_comment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.ExhiBitionActivity"
+            android:label="@string/title_activity_exhi_bition"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.ActivityRoomActivity"
+            android:label="@string/title_activity_activity_room"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.ActivityRoomDateilsActivity"
+            android:label="@string/title_activity_activity_room_dateils"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.dialog.MessageDialog"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.CollectionListActivity"
+            android:label="@string/title_activity_collection_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.CollcetionDetailsActivity"
+            android:label="@string/title_activity_collcetion_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.NaviRoute.NaviActivity"
+            android:label="@string/title_activity_navi"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.VenueListActivity"
+            android:label="@string/title_activity_group_message_manage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.ExplainTextActivity"
+            android:label="@string/title_activity_explain_text"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.ThirdBindActivity"
+            android:label="@string/title_activity_explain_text"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.AboutInfoActivity"
+            android:label="@string/title_activity_explain_text"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.RelevantWHYInfoActivity"
+            android:label="@string/title_activity_explain_text"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.PublishActivity"
+            android:label="@string/title_activity_explain_text"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.ImageOriginalActivity"
+            android:label="@string/title_activity_image_original"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.NewOnlinSeatActivity"
+            android:label="@string/title_activity_new_onlin_seat"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.sun3d.culturalShanghai.activity.TestActivity" >
+            <intent-filter>
+                <action android:name="jpush.testAction" />
+
+                <category android:name="jpush.testCategory" />
+            </intent-filter>
+        </activity>
+
+        <!--
+        友盟566a5fe9e0f55a58e9000da7
+        我的:  582141f6677baa5784002b2c
+        -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="582141f6677baa5784002b2c" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="WenHuaYun" />
+
+        <!-- JPush -->
+        <!-- Required SDK核心功能 -->
+        <!--
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.sun3d.culturalShanghai" />
+            </intent-filter>
+        </activity>
+        Required  SDK核心功能
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        Required SDK 核心功能
+        可配置android:process参数将PushService放在其他进程中
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        -->
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <!--
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.sun3d.culturalShanghai" />
+            </intent-filter>
+        </service>
+        -->
+
+
+        <!-- Required SDK核心功能 -->
+        <!--
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                Required  显示通知栏
+                <category android:name="com.sun3d.culturalShanghai" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            Optional
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        -->
+
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- </>值来自开发者平台取得的AppKey -->
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.ScanUsersActivity"
+            android:label="@string/title_activity_scan_users"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.NearbyParkingActivity"
+            android:label="@string/title_activity_nearby_parking"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.image.ChooseAlbumActivity"
+            android:label="@string/title_activity_choose_album"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.CameraChooseActivity"
+            android:label="@string/title_activity_camera_choose"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.ActivityDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_activity_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.ThisWeekActivity"
+            android:label="@string/title_activity_this_week"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.Activity_Login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.MyCommentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.VenueMoreActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.BannerWebView"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="com.wenhuayun.app" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.MyCodeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.ActivityOrderDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.MyRoomStutasActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.TestWebView"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.MyMoreCodeActivtiy"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 调用新浪原生SDK，需要注册的回调activity -->
+        <activity
+            android:name="cn.sharesdk.sina.weibo.SinaActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <!--
+            	AuthorizeAdapter表示一个继承自cn.sharesdk.framework.authorize.AuthorizeAdapter
+            	的类，这个类可以监听到页面的生命周期，也可以获取授权页面的各种UI控件。 
+            	开发者可以通过继承AuthorizeAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。
+            -->
+            <meta-data
+                android:name="AuthorizeAdapter"
+                android:value="cn.sharesdk.demo.MyAdapter" />
+            <!--
+            	QZoneWebShareAdapter表示一个继承自cn.sharesdk.tencent.qzone.QZoneWebShareAdapter
+            	的类，这个类可以监听到页面的生命周期，也可以获QQ空间网页分享权页面的各种UI控件。 
+            	开发者可以通过继承QZoneWebShareAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。
+            <meta-data android:name="QZoneWebShareAdapter" android:value="cn.sharesdk.demo.MyQZoneWebShareAdapter" />
+            <meta-data android:name="QQWebShareAdapter" android:value="cn.sharesdk.demo.MyQQWebShareAdapter" />
+            -->
+
+
+            <!--
+            	如果集成QQ分享，或者使用QQ客户端来进行QQ空间的分享，须要在此处添加一个对ACTION_VIEW
+            	事件的过滤器，其中的scheme是“tencent”前缀再开发者应用的加上appId。如果此过滤器不设置，
+            	则分享结束以后不能得到正确的回调
+            -->
+            <intent-filter>
+                <data android:scheme="tencent1104771371" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.TicketContentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.SearchListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 单元测试用 -->
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.CalenderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.object.OtherActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sun3d.culturalShanghai.activity.SearchTagListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Rich push 核心功能 since 2.0.6 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.sun3d.culturalShanghai" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.sun3d.culturalShanghai" />
+            </intent-filter>
+        </service>
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.sun3d.culturalShanghai.jpush.MyReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.sun3d.culturalShanghai" />
+            </intent-filter>
+        </receiver>
+        <!--
+                 <receiver
+                 android:name="com.sun3d.culturalShanghai.jpush.MyReceiver_new"
+                 android:enabled="true"
+                 android:exported="false">
+                 <intent-filter>
+                     <action android:name="cn.jpush.android.intent.REGISTRATION"/> &lt;!&ndash;Required  用户注册SDK的intent&ndash;&gt;
+                     <action android:name="cn.jpush.android.intent.UNREGISTRATION"/>
+                     <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/> &lt;!&ndash;Required  用户接收SDK消息的intent&ndash;&gt;
+                     <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/> &lt;!&ndash;Required  用户接收SDK通知栏信息的intent&ndash;&gt;
+                     <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/> &lt;!&ndash;Required  用户打开自定义通知栏的intent&ndash;&gt;
+                     <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK"/> &lt;!&ndash;Optional 用户接受Rich Push Javascript 回调函数的intent&ndash;&gt;
+                     <action android:name="cn.jpush.android.intent.CONNECTION"/>&lt;!&ndash; 接收网络变化 连接/断开 since 1.6.3 &ndash;&gt;
+                     <category android:name="com.sun3d.culturalShanghai"/>
+                 </intent-filter>
+             </receiver>
+        -->
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+ <!-- Required  显示通知栏 -->
+                <category android:name="com.sun3d.culturalShanghai" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+        <!--
+             Required .4450b2d326961103d1544e90
+               我的  ：1f630125b28bd51817e82635
+
+               Enable it you can get statistics data with channel
+        -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="1f630125b28bd51817e82635" />
+    </application>
+
+</manifest>

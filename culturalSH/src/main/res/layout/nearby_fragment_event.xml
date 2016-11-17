@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        layout="@layout/activity_top_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@color/white_color" >
+
+        <ImageView
+            android:id="@+id/activity_add_type"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/sh_index_add_icon" />
+
+        <com.sun3d.culturalShanghai.view.HorizontalListView
+            android:id="@+id/index_hor_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/activity_add_type"
+            android:background="@color/white_color"
+            android:paddingLeft="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/activity_page"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/map"
+                layout="@layout/fragment_map"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/collection_null"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="内容还在采集中,过几天再来看看..."
+                    android:textColor="@color/text_color_7c"
+                    android:textSize="@dimen/text_size_28px"
+                    android:visibility="gone" />
+
+                <com.handmark.pulltorefresh.library.PullToRefreshListView
+                    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/main_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:animateLayoutChanges="true"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@color/activity_bg_color"
+                    android:dividerHeight="@dimen/pullListView_DividerHeight"
+                    android:fadingEdge="none"
+                    android:fastScrollEnabled="false"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbarSize="@dimen/scrollbar_size"
+                    android:scrollbarThumbVertical="@drawable/shape_listview_thumb"
+                    android:smoothScrollbar="true"
+                    ptr:ptrAnimationStyle="flip"
+                    ptr:ptrHeaderTextColor="@color/loading_text_color"
+                    ptr:ptrListViewExtrasEnabled="false"
+                    ptr:ptrMode="both"
+                    ptr:ptrScrollingWhileRefreshingEnabled="true" >
+                </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+                <include layout="@layout/nearby_sieve" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/activity_page_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true" />
+
+        <include
+            android:id="@+id/activity_tablayout_activity_layout"
+            android:layout_height="42dp"
+            layout="@layout/index_tab_host"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/loading"
+            layout="@layout/pageloading_layout"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/activity_title_height"
+    android:background="@color/top_background"
+    android:gravity="center_vertical" >
+
+    <ImageButton
+        android:id="@+id/title_left"
+        android:layout_width="@dimen/activity_title_height"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/select_title_button"
+        android:src="@drawable/sh_icon_title_return" />
+
+    <TextView
+        android:id="@+id/title_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/activity_title_height"
+        android:layout_marginRight="@dimen/activity_title_height"
+        android:background="@null"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:singleLine="true"
+        android:textColor="@color/text_color_ff"
+        android:textSize="@dimen/text_size_44px"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_content_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/activity_title_height"
+        android:layout_marginRight="@dimen/activity_title_height"
+        android:background="@null"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:singleLine="true"
+        android:textColor="@color/text_color_ff"
+        android:textSize="@dimen/text_size_44px"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/title_right"
+        android:layout_width="@dimen/activity_title_height"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/select_title_button"
+        android:src="@drawable/sh_icon_title_map"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_send"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="提交"
+        android:textColor="@color/orange_color"
+        android:textSize="@dimen/item_title_size"
+        android:visibility="gone" />
+
+</RelativeLayout>

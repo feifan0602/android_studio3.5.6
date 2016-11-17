@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/android_studio3.5.6.iml" filepath="$PROJECT_DIR$/android_studio3.5.6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/culturalSH/culturalSH.iml" filepath="$PROJECT_DIR$/culturalSH/culturalSH.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sinavideo_playercore_v20/sinavideo_playercore_v20.iml" filepath="$PROJECT_DIR$/sinavideo_playercore_v20/sinavideo_playercore_v20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sinavideo_playersdk_v20/sinavideo_playersdk_v20.iml" filepath="$PROJECT_DIR$/sinavideo_playersdk_v20/sinavideo_playersdk_v20.iml" />
+    </modules>
+  </component>
+</project>

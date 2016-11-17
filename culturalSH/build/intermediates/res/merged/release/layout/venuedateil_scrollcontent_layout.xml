@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_marginTop="10dip" >
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/venue_map"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" >
+        </com.amap.api.maps.MapView>
+
+        <TextView
+            android:id="@+id/venue_map_label"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/shape_white_label_rect"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/title_color" />
+    </RelativeLayout>
+
+    <View style="@style/line_small_style" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+        android:background="@drawable/shape_white_rect"
+        android:orientation="vertical" >
+
+        <!-- 电话号码 -->
+
+        <RelativeLayout
+            android:id="@+id/venue_profile_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_item_height"
+            android:background="@drawable/select_item_bg" >
+
+            <TextView
+                android:id="@+id/venue_profile_telephone_text1"
+                style="@style/venue_profile_item_left"
+                android:drawableLeft="@drawable/sh_icon_venue_profile_phone"
+                android:text="@string/activity_room_dateils_consult" />
+
+            <TextView
+                android:id="@+id/venue_profile_telephone_text"
+                style="@style/venue_profile_item_text"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/venue_profile_telephone_text1"
+                android:text="@string/venue_profile_phone" />
+
+            <ImageView
+                style="@style/venue_profile_item_right"
+                android:background="@drawable/sh_icon_event_phone" />
+        </RelativeLayout>
+
+        <View style="@style/line_small_style" />
+        <!-- 场馆开放时间 -->
+
+        <RelativeLayout
+            android:id="@+id/venue_profile_data"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_item_height"
+            android:background="@color/table_bg" >
+
+            <!-- 场馆费用 -->
+
+            <TextView
+                android:id="@+id/venue_profile_data_text1"
+                style="@style/venue_profile_item_left"
+                android:drawableLeft="@drawable/sh_icon_venue_profile_data"
+                android:text="@string/activity_room_dateils_time" />
+
+            <TextView
+                android:id="@+id/venue_profile_data_text"
+                style="@style/venue_profile_item_text"
+                android:layout_toRightOf="@id/venue_profile_data_text1"
+                android:text="@string/venue_profile_data" />
+        </RelativeLayout>
+
+        <View style="@style/line_small_style" />
+
+        <RelativeLayout
+            android:id="@+id/venue_profile_timemakert"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_item_height"
+            android:background="@color/table_bg" >
+
+            <TextView
+                android:id="@+id/venue_profile_data_text1_show"
+                style="@style/venue_profile_item_left"
+                android:drawableLeft="@drawable/sh_icon_venue_profile_maker"
+                android:text="@string/activity_room_dateils_time_show" />
+
+            <TextView
+                android:id="@+id/venue_profile_data_text_show"
+                style="@style/venue_profile_item_text"
+                android:layout_toRightOf="@id/venue_profile_data_text1_show"
+                android:text="@string/venue_profile_data_show" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/venue_profile_timemakert_line"
+            style="@style/line_small_style" />
+
+        <!-- 场馆费用 -->
+
+        <RelativeLayout
+            android:id="@+id/venue_profile_cost"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_item_height"
+            android:background="@color/table_bg" >
+
+            <TextView
+                android:id="@+id/linear_text"
+                style="@style/venue_profile_item_left"
+                android:drawableLeft="@drawable/sh_icon_venue_profile_cost"
+                android:text="@string/activity_room_dateils_money" />
+
+            <!-- 场馆费用 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/linear_text"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/event_text_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/venue_profile_cost"
+                    android:textColor="@color/event_text_color"
+                    android:textSize="@dimen/text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/sh_icon_event_money"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/event_text_ordinary_consume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="50"
+                    android:textColor="@color/venue_size"
+                    android:textSize="@dimen/venue_profile_sala_size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/venue_profile_student"
+                    android:textColor="@color/event_text_color"
+                    android:textSize="@dimen/text_size"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/sh_icon_event_money"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/event_text_student_consume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="25"
+                    android:textColor="@color/venue_size"
+                    android:textSize="@dimen/venue_profile_sala_size"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View style="@style/line_small_style" />
+        <!-- 查看车位 -->
+
+        <RelativeLayout
+            android:id="@+id/venue_profile_parking"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_item_height"
+            android:background="@drawable/select_item_bg" >
+
+            <TextView
+                android:id="@+id/venue_profile_parking_text1"
+                style="@style/venue_profile_item_left"
+                android:drawableLeft="@drawable/sh_icon_venue_profile_parking"
+                android:text="@string/venue_profile_parking_text" />
+
+            <TextView
+                android:id="@+id/venue_profile_parking_text"
+                style="@style/venue_profile_item_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/venue_profile_parking_text1"
+                android:text="@string/venue_profile_parking" />
+
+            <ImageView style="@style/venue_profile_item_right" />
+        </RelativeLayout>
+
+        <View style="@style/line_small_style" />
+        <!-- 活动室  查看其它活动室 -->
+
+        <RelativeLayout
+            android:id="@+id/venue_profile_activity"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_item_height"
+            android:background="@drawable/select_item_bg" >
+
+            <TextView
+                android:id="@+id/venue_profile_activity_text1"
+                style="@style/venue_profile_item_left"
+                android:drawableLeft="@drawable/sh_icon_venue_profile_activity"
+                android:text="@string/event_class" />
+
+            <TextView
+                android:id="@+id/venue_profile_activity_text"
+                style="@style/venue_profile_item_text"
+                android:layout_toRightOf="@id/venue_profile_activity_text1"
+                android:text="@string/venue_profile_activity" />
+
+            <ImageView style="@style/venue_profile_item_right" />
+        </RelativeLayout>
+
+        <View style="@style/line_small_style" />
+        <!-- 查看更多藏品 -->
+
+        <RelativeLayout
+            android:id="@+id/collect_activity"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_item_height"
+            android:background="@drawable/select_item_bg" >
+
+            <TextView
+                android:id="@+id/collect_activity_text1"
+                style="@style/venue_profile_item_left"
+                android:drawableLeft="@drawable/sh_icon_venue_collect"
+                android:text="@string/event_venue_collect" />
+
+            <TextView
+                android:id="@+id/collect_activity_text"
+                style="@style/venue_profile_item_text"
+                android:layout_toRightOf="@id/collect_activity_text1"
+                android:text="@string/venue_profile_collect" />
+
+            <ImageView style="@style/venue_profile_item_right" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 展览 -->
+
+    <com.sun3d.culturalShanghai.view.ScrollViewListView
+        android:id="@+id/venue_profile_lv_exhibition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/table_bg" />
+
+    <!-- <View style="@style/line_small_style" /> -->
+
+
+    <!-- 查看更多展览 -->
+
+    <LinearLayout
+        android:id="@+id/venue_profile_exhibition"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/table_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/venue_profile_exhibition_str"
+            android:textColor="@color/venue_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sh_icon_next" />
+    </LinearLayout>
+
+    <!-- 场馆详情 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/table_bg"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/event_title_text"
+            android:text="@string/venue_profile_venue_details" />
+
+        <WebView
+            android:id="@+id/venue_profile_details"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/event_text_color"
+            android:textSize="@dimen/text_size" />
+
+        <ImageButton
+            android:id="@+id/venue_profile_details_more"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:src="@drawable/sh_icon_venue_profile_down" />
+    </LinearLayout>
+
+    <!-- 场馆点评 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/table_bg"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/event_title_text"
+                android:text="@string/venue_profile_Comment" />
+
+            <ImageButton
+                android:id="@+id/venue_profile_comment_next"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/sh_icon_next" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/venue_profile_commentlayout"
+            layout="@layout/detaildown_commtent_layout" >
+        </include>
+    </LinearLayout>
+
+</LinearLayout>

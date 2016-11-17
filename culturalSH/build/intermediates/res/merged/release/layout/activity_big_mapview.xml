@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/big_mapview_title"
+        layout="@layout/activity_title" />
+
+    <View style="@style/line_big_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/big_mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/map_labeladdress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/shape_white_label_rect"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/app_text_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/big_mapview_lable"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/big_mapview_enlarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sh_icon_big_enlarge" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sh_icon_big_linear" />
+
+            <ImageView
+                android:id="@+id/big_mapview_nerrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sh_icon_big_narrow" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/big_mapview_lable"
+            style="@style/style_nearby_mapview_textview"
+            android:visibility="gone"
+            android:drawableLeft="@drawable/sh_icon_nearby_narrow"
+            android:text="@string/string_nearby_mapview_textview" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+           >
+
+            <RadioGroup
+                android:id="@+id/big_mapview_radigb"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/car"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_navi_car_bg"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/radio_button_car_map"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:visibility="gone"
+                    android:text="@string/map_car"
+                    android:textColor="@color/orange_3.1_color"
+                    android:textSize="@dimen/dialog_text_size" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/personal_item_line_color"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/bus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_navi_bus_bg"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/radio_button_bus_map"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="@string/map_bus"
+                    android:visibility="gone"
+                    android:textColor="@color/orange_3.1_color"
+                    android:textSize="@dimen/dialog_text_size" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/personal_item_line_color"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/foot"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/radio_button_foot_map"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="@string/map_foot"
+                    android:textColor="@color/color_text_orge"
+                    android:textSize="@dimen/dialog_text_size"
+                    android:visibility="gone" />
+            </RadioGroup>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

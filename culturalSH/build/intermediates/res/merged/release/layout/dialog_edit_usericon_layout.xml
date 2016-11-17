@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/usericon_takepic"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/dialog_schedule_btn_color"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/dialog_edit_usericon_takepic"
+            android:textColor="@color/light_blue" />
+
+        <TextView
+            android:id="@+id/usericon_choosepic"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/dialog_schedule_btn_color"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/dialog_edit_usericon_choosepic"
+            android:textColor="@color/light_blue" />
+
+        <TextView
+            android:id="@+id/usericon_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/dialog_schedule_btn_color"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/dialog_edit_usericon_cancel"
+            android:textColor="@color/light_blue" />
+    </LinearLayout>
+
+</RelativeLayout>

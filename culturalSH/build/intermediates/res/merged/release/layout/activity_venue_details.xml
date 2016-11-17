@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_ff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/venue_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/event_button_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/orange_3.1_color"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:drawableLeft="@drawable/sh_venue_comment_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="场馆点评"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/reserve_text_size" />
+    </LinearLayout>
+
+    <com.sun3d.culturalShanghai.view.ScrollScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/venue_comment"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="50dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/layout_head_height" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/menban" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/layout_head_height" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" />
+
+                    <ImageView
+                        android:id="@+id/back_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/back_circle" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/dictname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/home_white_border"
+                            android:gravity="center"
+                            android:textColor="@color/text_color_ff"
+                            android:textSize="@dimen/text_size_28px"
+                             />
+
+                        <TextView
+                            android:id="@+id/tagname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/home_white_border"
+                            android:gravity="center"
+                            android:textColor="@color/text_color_ff"
+                            android:textSize="@dimen/text_size_28px"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/subItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/home_white_border"
+                            android:gravity="center"
+                            android:textColor="@color/text_color_ff"
+                            android:textSize="@dimen/text_size_28px"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/subItem1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/home_white_border"
+                            android:gravity="center"
+                            android:textColor="@color/text_color_ff"
+                            android:textSize="@dimen/text_size_28px"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_weight=".3"
+                            android:gravity="center_vertical|right"
+                            android:textColor="@color/text_color_ff"
+                            android:textSize="@dimen/text_size_60px" />
+
+                        <TextView
+                            android:id="@+id/price_last"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_weight=".1"
+                            android:gravity="center_vertical|right"
+                            android:text="元/人"
+                            android:textColor="@color/text_color_ff"
+                            android:textSize="@dimen/text_size_28px"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#66000000"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/venue_room_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center"
+                            android:textColor="@color/white_color"
+                            android:textSize="@dimen/item_content_size" />
+
+                        <ImageView
+                            android:id="@+id/venue_collect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/sh_icon_collect_befor" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </FrameLayout>
+
+            <include
+                android:id="@+id/venue_head"
+                layout="@layout/fragment_venue_details_head" />
+
+            <ImageView
+                android:id="@+id/fenge_muisc"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/activity_bg_color"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/venue_muisc_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:text="语音导览"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/item_title_size" />
+
+                <View style="@style/line_small_style" />
+
+                <include
+                    android:id="@+id/venue_muisc"
+                    layout="@layout/muisc_venuedetail_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_videolayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <include
+                    android:id="@+id/activity_video"
+                    android:layout_marginTop="10dp"
+                    layout="@layout/why_video_layout" />
+
+                <View style="@style/line_big_style" />
+            </LinearLayout>
+            <!-- 相关活动 -->
+
+            <ImageView
+                android:id="@+id/fenge_detail_event"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/activity_bg_color"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/venue_details_event"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_color_ff"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.sun3d.culturalShanghai.view.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:text="场馆活动"
+                        android:textColor="@color/text_color_26"
+                        android:textSize="@dimen/text_size_32px" />
+
+                    <TextView
+                        android:id="@+id/venue_more_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:drawableRight="@drawable/arrow_right"
+                        android:gravity="center"
+                        android:textColor="@color/text_color_80"
+                        android:textSize="@dimen/text_size_28px" />
+                </RelativeLayout>
+
+                <com.sun3d.culturalShanghai.view.ScrollViewListView
+                    android:id="@+id/venue_activity_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/text_color_df"
+                    android:dividerHeight="1dp"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <!-- 场馆详情 -->
+
+            <ImageView
+                android:id="@+id/fenge_detail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/activity_bg_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_color_ff"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/event_title_text"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/venue_profile_venue_details" />
+
+                <WebView
+                    android:id="@+id/venue_profile_details"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/event_text_color"
+                    android:textSize="@dimen/text_size" />
+
+                <ImageButton
+                    android:id="@+id/venue_profile_details_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@null"
+                    android:src="@drawable/arrow_down"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <!-- 相关活动室 -->
+
+            <ImageView
+                android:id="@+id/fenge_room"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/activity_bg_color"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/venue_detail_room"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_color_ff"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <com.sun3d.culturalShanghai.view.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:text="活动室"
+                    android:textColor="@color/text_color_26"
+                    android:textSize="@dimen/text_size_32px" />
+
+                <TextView
+                    android:id="@+id/venue_more_room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_80"
+                    android:textSize="@dimen/text_size_28px" />
+            </RelativeLayout>
+
+            <com.sun3d.culturalShanghai.view.ScrollViewListView
+                android:id="@+id/venue_room_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/activity_bg_color"
+                android:dividerHeight="10dp"
+                android:padding="10dp" />
+            <!-- 这个是收藏的 -->
+
+            <ImageView
+                android:id="@+id/fenge_collection"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/activity_bg_color"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/Collection_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_color_ff"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/Collecton_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:text="藏品"
+                    android:textColor="@color/text_color_26"
+                    android:textSize="@dimen/text_size_32px"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/Collection_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:gravity="center"
+                    android:text="共10个工作室 "
+                    android:textColor="@color/text_color_80"
+                    android:textSize="@dimen/text_size_28px"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/Collection_num"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/text_color_df" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/Collect_gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_color_ff"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:verticalSpacing="50dp" >
+            </GridView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="fill_parent"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:gravity="center|left"
+                    android:paddingLeft="15dp"
+                    android:text="共25条评论"
+                    android:textColor="@color/text_color_26"
+                    android:textSize="@dimen/text_size_32px" />
+
+                <include
+                    android:id="@+id/venue_dateils_commentlayout"
+                    layout="@layout/detaildown_commtent_layout" >
+                </include>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/venue_comment_activity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@color/text_color_ff"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="用户评论"
+                        android:textColor="#97B3C7"
+                        android:textSize="@dimen/details_title_size" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/activity_comment_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_activity_details_comment_bg"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+id/activity_comment_zan_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/sh_comment_zan_icon_while"
+                                android:drawablePadding="5dp"
+                                android:text="点赞"
+                                android:textColor="@color/white_color" />
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="15dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/white_color" />
+
+                            <TextView
+                                android:id="@+id/activity_comment_tv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/sh_comment_icon_while"
+                                android:drawablePadding="5dp"
+                                android:text="评论"
+                                android:textColor="@color/white_color" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:src="@drawable/sh_add_comment_icon" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.2dp"
+                        android:layout_alignParentBottom="true"
+                        android:alpha="0.2"
+                        android:background="#97B3C7" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/fenge_zan"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height"
+                    android:background="@color/activity_bg_color"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/zanguo_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/zanguo_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="共34人赞过，共17人浏览过"
+                        android:textColor="@color/text_color_26"
+                        android:textSize="@dimen/text_size_28px" />
+
+                    <ImageView
+                        android:id="@+id/like_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/sh_icon_grayhear"
+                        android:visibility="gone" />
+
+                    <com.sun3d.culturalShanghai.view.ScrollViewGridView
+                        android:id="@+id/like_gridview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/zanguo_tv"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:horizontalSpacing="5dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="10"
+                        android:verticalSpacing="5dp" >
+                    </com.sun3d.culturalShanghai.view.ScrollViewGridView>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/fenge_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height"
+                    android:background="@color/activity_bg_color"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="10dp" >
+
+                    <TextView
+                        android:id="@+id/comment_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="共XX人评论过"
+                        android:textColor="@color/text_color_26"
+                        android:textSize="@dimen/text_size_28px" />
+
+                    <ImageView
+                        android:id="@+id/commet_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/sh_icon_addcomment"
+                        android:visibility="gone" />
+
+                    <com.sun3d.culturalShanghai.view.ScrollViewListView
+                        android:id="@+id/comment_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/comment_num"
+                        android:layout_marginRight="10dp"
+                        android:divider="@android:color/transparent" >
+                    </com.sun3d.culturalShanghai.view.ScrollViewListView>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/more_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/sh_more_comment_icon"
+                    android:text="更多评论"
+                    android:textColor="#97B3C7"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.sun3d.culturalShanghai.view.ScrollScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottom_ll"
+        android:background="@color/text_color_f4" >
+    </View>
+
+    <include
+        android:id="@+id/bottom_ll"
+        android:layout_alignParentBottom="true"
+        layout="@layout/activity_venue_details_bottom_layout" />
+
+    <include
+        android:id="@+id/loading"
+        layout="@layout/pageloading_layout"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/venue_top"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back_circle"
+        android:visibility="gone" />
+
+</RelativeLayout>

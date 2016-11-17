@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_top_iv_layout" />
+
+    <View style="@style/setting_line_style_m" />
+
+    <!-- android:background="@drawable/shape_feedback_fillet" -->
+
+    <RelativeLayout
+        android:id="@+id/feedback_select"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/feedback_select_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/feedback_select_text"
+            android:textColor="@color/app_text_color"
+            android:textColorHint="@color/app_text_color" />
+
+        <ImageView
+            android:id="@+id/feedback_select_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/sh_icon_next_break" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_tv0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/feedback_prompt"
+        android:textColor="@color/app_text_color"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/comment_edit_height"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/feedback_content"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/comment_edit_height"
+            android:layout_above="@+id/feedback_content_num"
+            android:background="@drawable/shape_feedback_fillet"
+            android:gravity="top"
+            android:hint="@string/feedback_ed_hint"
+            android:padding="15dp"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/feedback_content_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="120"
+            android:textColor="@android:color/darker_gray" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:horizontalSpacing="10dp"
+        android:listSelector="@color/transparent" >
+    </GridView>
+
+    <TextView
+        android:id="@+id/feedback_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/text_color_72"
+        android:gravity="center"
+        android:text="@string/feedback_confirm"
+        android:textColor="@color/white_color"
+        android:textSize="17sp" />
+
+</LinearLayout>

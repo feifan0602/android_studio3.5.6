@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_white_rect"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/activityroom_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/event_dateils_item_hight"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/activity_room_dateils_name"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/title_text_size" />
+
+            <include
+                android:id="@+id/activityroom_label_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activityroom_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                layout="@layout/tab_label_layout" />
+        </RelativeLayout>
+
+        <View
+            style="@style/line_small_style"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/event_dateils_item_hight"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/activityroom_time_show"
+                style="@style/event_dateils_item_left_text"
+                android:layout_centerVertical="true"
+                android:text="@string/activity_room_dateils_time" />
+
+            <TextView
+                android:id="@+id/activityroom_time"
+                style="@style/event_dateils_item_left_text"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/activityroom_time_show"
+                android:text="@string/activity_room_dateils_time_test" />
+        </RelativeLayout>
+
+        <View style="@style/line_small_style" />
+
+        <RelativeLayout
+            android:id="@+id/room_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/event_dateils_item_hight"
+            android:background="@drawable/select_item_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/activityroom_consult_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/wff_room_dateils_consult1"
+                android:textColor="@color/text_color_26"
+                android:textSize="@dimen/text_size_30px" />
+
+            <TextView
+                android:id="@+id/activityroom_consult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/activityroom_consult_show"
+                android:text="@string/activity_room_dateils_consult_test"
+                android:textColor="@color/text_color_a1"
+                android:textSize="@dimen/text_size_30px" />
+
+            <ImageView
+                android:id="@+id/activityroom_consult_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sh_icon_venue_phone"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/line_small_style" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/event_dateils_item_hight"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/activityroom_area_show"
+                style="@style/event_dateils_item_left_text"
+                android:layout_centerVertical="true"
+                android:text="@string/wff_room_dateils_area" />
+
+            <TextView
+                android:id="@+id/activityroom_area"
+                style="@style/event_dateils_item_left_text"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/activityroom_area_show"
+                android:text="@string/activity_room_dateils_area_test" />
+        </RelativeLayout>
+
+        <View style="@style/line_small_style" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/event_dateils_item_hight"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/activityroom_pople_show"
+                style="@style/event_dateils_item_left_text"
+                android:layout_centerVertical="true"
+                android:text="@string/wff_room_dateils_pople" />
+
+            <TextView
+                android:id="@+id/activityroom_pople"
+                style="@style/event_dateils_item_left_text"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/activityroom_pople_show"
+                android:text="@string/activity_room_dateils_pople_test" />
+        </RelativeLayout>
+
+        <View style="@style/line_small_style" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/event_dateils_item_hight"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/activityroom_money_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/activity_room_dateils_money"
+                android:textColor="@color/app_text_color" />
+
+            <TextView
+                android:id="@+id/activityroom_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/activityroom_money_show"
+                android:drawableLeft="@drawable/sh_icon_event_money"
+                android:text="@string/activity_room_dateils_money_test"
+                android:textColor="@color/orange_color"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+
+        <View
+            style="@style/line_small_style"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/activityroom_memo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/activityroom_memo_show"
+                style="@style/event_dateils_item_left_text"
+                android:text="@string/wff_room_dateils_memo"
+                android:textColor="@color/app_text_color" />
+
+            <TextView
+                android:id="@+id/activityroom_memo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/activityroom_memo_show"
+                android:layout_toRightOf="@+id/activityroom_memo_show"
+                android:text="周末不开放"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+
+        <View style="@style/line_small_style" />
+
+        <LinearLayout
+            android:id="@+id/activityroom_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/activityroom_device_show"
+                style="@style/event_dateils_item_left_text"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/wff_room_dateils_device" />
+
+            <com.sun3d.culturalShanghai.view.ScrollViewGridView
+                android:id="@+id/activityroom_device_gv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@drawable/select_search_item_bg"
+                android:numColumns="4"
+                android:padding="5dp"
+                android:scrollbars="none"
+                android:verticalSpacing="15dp" />
+
+            <TextView
+                android:id="@+id/activityroom_device"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="left|center_vertical"
+                android:text="@string/event_dateils"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/details_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View style="@style/line_small_style" />
+    </LinearLayout>
+
+</LinearLayout>

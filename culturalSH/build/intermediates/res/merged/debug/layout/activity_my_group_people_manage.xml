@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="5dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1dp"
+        android:scrollbarSize="@dimen/scrollbar_size"
+        android:scrollbarThumbVertical="@drawable/shape_listview_thumb" />
+
+    <include
+        android:id="@+id/loading"
+        layout="@layout/pageloading_layout" />
+
+    <include
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        layout="@layout/activity_title" />
+
+    <View
+        style="@style/line_small_style"
+        android:layout_below="@+id/title" />
+
+</RelativeLayout>

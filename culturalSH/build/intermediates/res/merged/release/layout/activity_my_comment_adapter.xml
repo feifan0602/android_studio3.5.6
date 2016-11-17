@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_ff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="世界史诗级舞台剧战马中文版"
+        android:textColor="@color/text_color_26"
+        android:textSize="@dimen/text_size_28px" />
+
+    <LinearLayout
+        android:id="@+id/address_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:padding="5dp"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".9"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="世界史诗级舞台剧战马中文版"
+            android:textColor="@color/text_color_80"
+            android:textSize="@dimen/text_size_24px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/text_color_df"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="非常棒的表演，很喜欢这个演出"
+            android:textColor="@color/text_color_26"
+            android:textSize="@dimen/text_size_26px" />
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:horizontalSpacing="10dp"
+            android:scrollbars="none"
+            android:verticalSpacing="10dp"
+            android:listSelector="@color/transparent" >
+        </GridView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical|right"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="2016.03.06  13:12"
+        android:textColor="@color/text_color_26"
+        android:textSize="@dimen/text_size_26px" />
+
+</LinearLayout>

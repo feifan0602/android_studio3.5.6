@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white_color"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/activity_week_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/sh_index_week_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="近期活动"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tab_count"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_red_oval"
+                android:gravity="center"
+                android:text="24"
+                android:textColor="@color/white_color"
+                android:textSize="10sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="fill_parent"
+            android:background="@color/activity_bg_color" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/activity_map_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/sh_index_map_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="附近活动"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@color/white_color" >
+
+        <ImageView
+            android:id="@+id/activity_add_type"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/sh_index_add_icon" />
+
+        <com.sun3d.culturalShanghai.view.HorizontalListView
+            android:id="@+id/index_hor_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/activity_add_type"
+            android:background="@color/white_color"
+            android:paddingLeft="10dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/activity_bg_color" />
+
+</LinearLayout>

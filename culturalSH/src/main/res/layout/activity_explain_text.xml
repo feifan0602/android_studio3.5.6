@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color" >
+
+    <ImageView
+        android:id="@+id/explain_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@drawable/sh_explain_bg" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="27dp"
+        android:text="购票须知："
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/explain_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/explain_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="35dp"
+        android:text="活动最终解释权归举办方"
+        android:textColor="#DF8B4F"
+        android:textSize="14sp" />
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title" />
+
+</RelativeLayout>

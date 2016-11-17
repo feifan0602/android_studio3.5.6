@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 已经选中 -->
+
+    <item android:drawable="@drawable/sh_btn_check_on" android:state_checked="true" android:state_enabled="true" android:state_window_focused="false"/>
+
+    <!-- 未被选中 -->
+
+    <item android:drawable="@drawable/sh_btn_check_off" android:state_checked="false" android:state_enabled="true" android:state_window_focused="false"/>
+
+</selector>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_item_bg" >
+
+    <TextView
+        android:id="@+id/exhibition_id"
+        android:layout_width="@dimen/nearby_itme_list_w"
+        android:layout_height="@dimen/nearby_itme_list_h"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_money_round"
+        android:gravity="center"
+        android:text="@string/dialog_birthday_00" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/exhibition_id"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/exhibition_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exhi_bition_title"
+            android:textSize="@dimen/item_title_size" />
+
+        <TextView
+            android:id="@+id/exhibition_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/item_text_size"
+            android:text="@string/exhi_bition_time"
+            android:textColor="@color/event_text_color" />
+
+        <TextView
+            android:id="@+id/exhibition_mony"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/item_text_size"
+            android:text="@string/exhi_bition_mony"
+            android:textColor="@color/event_text_color" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/exhibition_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/sh_icon_next" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+
+    <!-- 场馆预约 -->
+
+    <RelativeLayout
+        android:id="@+id/venue_profile_reserve"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/venue_size"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/reserve_text"
+            android:text="@string/event_reserve" />
+    </RelativeLayout>
+
+    <com.sun3d.culturalShanghai.view.pulltozoomscrollview.PullToZoomScrollViewEx
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/venue_profile_reserve"
+        android:layout_below="@+id/line"
+        android:scrollbars="none" >
+    </com.sun3d.culturalShanghai.view.pulltozoomscrollview.PullToZoomScrollViewEx>
+
+    <include
+        android:id="@+id/loading"
+        layout="@layout/pageloading_layout"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/venue_title"
+        android:layout_alignParentTop="true"
+        layout="@layout/activity_title" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/line_big_style"
+        android:layout_below="@+id/venue_title" />
+
+</RelativeLayout>

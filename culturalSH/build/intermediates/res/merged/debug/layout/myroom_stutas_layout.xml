@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/title"
+                layout="@layout/activity_top_iv_layout" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/text_color_72"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <com.sun3d.culturalShanghai.view.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical|left"
+                    android:text="提交成功，请等待审核！"
+                    android:textColor="@color/text_color_ff"
+                    android:textSize="@dimen/text_size_40px" />
+
+                <com.sun3d.culturalShanghai.view.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".6"
+                    android:gravity="top|left"
+                    android:text="你的活动室预定信息已经提交成功，我们将在三个工作日之内予以审核,请及时关注短信信息，谢谢！"
+                    android:textColor="@color/text_color_ff"
+                    android:textSize="@dimen/text_size_28px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/venue_title_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="3级阶级教室"
+                    android:textColor="@color/text_color_26"
+                    android:textSize="@dimen/text_size_30px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/myroom_stutas_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <com.sun3d.culturalShanghai.view.MyTextView
+                        android:layout_width="80dp"
+                        android:layout_height="@dimen/myroom_stutas_height"
+                        android:gravity="center_vertical"
+                        android:text="场    馆  :"
+                        android:textColor="@color/text_color_26"
+                        android:textSize="@dimen/text_size_30px" />
+
+                    <TextView
+                        android:id="@+id/venue_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/myroom_stutas_height"
+                        android:gravity="center_vertical"
+                        android:text="上海图书馆"
+                        android:textColor="@color/text_color_80"
+                        android:textSize="@dimen/text_size_30px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/myroom_stutas_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <com.sun3d.culturalShanghai.view.MyTextView
+                        android:layout_width="80dp"
+                        android:layout_height="@dimen/myroom_stutas_height"
+                        android:gravity="center_vertical"
+                        android:text="日    期  :"
+                        android:textColor="@color/text_color_26"
+                        android:textSize="@dimen/text_size_30px" />
+
+                    <TextView
+                        android:id="@+id/venue_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/myroom_stutas_height"
+                        android:gravity="center_vertical"
+                        android:text="2015年4月 21日  周六  14:00--20:00"
+                        android:textColor="@color/text_color_80"
+                        android:textSize="@dimen/text_size_30px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/myroom_stutas_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <com.sun3d.culturalShanghai.view.MyTextView
+                        android:layout_width="80dp"
+                        android:layout_height="@dimen/myroom_stutas_height"
+                        android:gravity="center_vertical"
+                        android:text="使 用 人  :"
+                        android:textColor="@color/text_color_26"
+                        android:textSize="@dimen/text_size_30px" />
+
+                    <TextView
+                        android:id="@+id/venue_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/myroom_stutas_height"
+                        android:gravity="center_vertical"
+                        android:text="阿拉蕾"
+                        android:textColor="@color/text_color_80"
+                        android:textSize="@dimen/text_size_30px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/myroom_stutas_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <com.sun3d.culturalShanghai.view.MyTextView
+                        android:layout_width="80dp"
+                        android:layout_height="@dimen/myroom_stutas_height"
+                        android:gravity="center_vertical"
+                        android:text="联 系 人  :"
+                        android:textColor="@color/text_color_26"
+                        android:textSize="@dimen/text_size_30px" />
+
+                    <TextView
+                        android:id="@+id/venue_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/myroom_stutas_height"
+                        android:gravity="center_vertical"
+                        android:text="孫紅雷  1500000000"
+                        android:textColor="@color/text_color_80"
+                        android:textSize="@dimen/text_size_30px" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/Partition_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/text_color_df" />
+
+                <com.sun3d.culturalShanghai.view.MyTextView
+                    android:id="@+id/Myroom_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/myroom_stutas_height"
+                    android:layout_marginTop="30dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="本活动室预约需要进行实名认证，请进行资料完善，以便通过预约审核，谢谢"
+                    android:textColor="@color/text_color_d0"
+                    android:textSize="@dimen/text_size_28px" />
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_72"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="前往认证"
+                    android:textColor="@color/text_color_ff"
+                    android:textSize="@dimen/text_size_30px" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/text_color_f4"
+        android:orientation="horizontal" >
+
+        <com.sun3d.culturalShanghai.view.MyTextView
+            android:id="@+id/next_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="进入我的订单信息"
+            android:textColor="@color/text_color_72"
+            android:textSize="@dimen/text_size_30px" />
+    </LinearLayout>
+
+</RelativeLayout>

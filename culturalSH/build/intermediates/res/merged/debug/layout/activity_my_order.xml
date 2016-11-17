@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_top_iv_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_white_rect"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/sh_my_search_icon" />
+
+        <EditText
+            android:id="@+id/order_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="搜索"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@color/text_color_ff"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/being_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_weight=".3"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/being_top_iv"
+                android:layout_width="@dimen/my_order_img_height_width"
+                android:layout_height="@dimen/my_order_img_height_width"
+                android:layout_gravity="center"
+                android:background="@drawable/examine" />
+
+            <TextView
+                android:id="@+id/being_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="待审核"
+                android:textColor="@color/text_color_5e"
+                android:textSize="@dimen/text_size_30px" />
+
+            <ImageView
+                android:id="@+id/being_iv"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/my_order_line_margin"
+                android:layout_marginRight="@dimen/my_order_line_margin"
+                android:background="@color/text_color_5e" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/text_color_df" />
+
+        <LinearLayout
+            android:id="@+id/join_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_weight=".3"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <ImageView
+                    android:id="@+id/join_top_iv"
+                    android:layout_width="@dimen/my_order_img_height_width"
+                    android:layout_height="@dimen/my_order_img_height_width"
+                    android:layout_gravity="center"
+                    android:background="@drawable/join"
+                    android:padding="@dimen/my_order_img_padding" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/join_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="待参加"
+                android:textColor="@color/text_color_49"
+                android:textSize="@dimen/text_size_30px" />
+
+            <ImageView
+                android:id="@+id/join_iv"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/my_order_line_margin"
+                android:layout_marginRight="@dimen/my_order_line_margin"
+                android:background="@color/text_color_5e"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/text_color_df" />
+
+        <LinearLayout
+            android:id="@+id/history_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_weight=".3"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/history_top_iv"
+                android:layout_width="@dimen/my_order_img_height_width"
+                android:layout_height="@dimen/my_order_img_height_width"
+                android:layout_gravity="center"
+                android:background="@drawable/history"
+                android:padding="@dimen/my_order_img_padding" />
+
+            <TextView
+                android:id="@+id/history_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="历史"
+                android:textColor="@color/text_color_49"
+                android:textSize="@dimen/text_size_30px" />
+
+            <ImageView
+                android:id="@+id/history_iv"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/my_order_line_margin"
+                android:layout_marginRight="@dimen/my_order_line_margin"
+                android:background="@color/text_color_5e"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/collection_null"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="我还没有进行中的订单,赶快\n去预定个活动或场馆吧"
+            android:textColor="@color/text_color_7c"
+            android:textSize="@dimen/text_size_28px"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/loading"
+            layout="@layout/pageloading_layout" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:cacheColorHint="#00000000"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarSize="@dimen/scrollbar_size"
+            android:scrollbarThumbVertical="@drawable/shape_listview_thumb"
+            android:smoothScrollbar="true"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrHeaderTextColor="@color/loading_text_color"
+            ptr:ptrListViewExtrasEnabled="false"
+            ptr:ptrMode="both"
+            ptr:ptrScrollingWhileRefreshingEnabled="true" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </RelativeLayout>
+
+</LinearLayout>
