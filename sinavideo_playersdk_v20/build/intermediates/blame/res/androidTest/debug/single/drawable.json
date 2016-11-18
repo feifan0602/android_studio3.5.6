@@ -12,12 +12,24 @@
         "source": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\play_seekbar_color_bg.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\play_ctrl_back.xml",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\play_ctrl_back.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\play_seekbar_background.xml",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\play_seekbar_background.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\play_ctrl_play.xml",
         "source": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\play_ctrl_play.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\play_seekbar_background.xml",
         "source": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\play_seekbar_background.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\quality_bg.xml",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\quality_bg.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\resolution_textcolor.xml",
@@ -44,6 +56,22 @@
         "source": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\play_ctrl_volume.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\pausebutton.xml",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\pausebutton.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\play_soundseekbar_background.xml",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\play_soundseekbar_background.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\play_ctrl_pause.xml",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\play_ctrl_pause.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\play_ctrl_fullscreen.xml",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\play_ctrl_fullscreen.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\play_ctrl_video_list.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\play_ctrl_video_list.xml"
     },
@@ -56,12 +84,32 @@
         "source": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\ad_silent_selcetor.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\play_ctrl_volume_mute.xml",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\play_ctrl_volume_mute.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\resolution_textcolor.xml",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\resolution_textcolor.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\play_seekbar_color_bg.xml",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\play_seekbar_color_bg.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\playbutton.xml",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\playbutton.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\play_seekbar_background.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\play_seekbar_background.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\playbutton.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\playbutton.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\play_ctrl_volume.xml",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\play_ctrl_volume.xml"
     },
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\play_ctrl_volume_mute.xml",
@@ -104,6 +152,10 @@
         "source": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\pausebutton.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\play_ctrl_play.xml",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\play_ctrl_play.xml"
+    },
+    {
         "merged": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\playbutton.xml",
         "source": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\playbutton.xml"
     },
@@ -114,6 +166,14 @@
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\resolution_textcolor.xml",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\resolution_textcolor.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\ad_silent_selcetor.xml",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\ad_silent_selcetor.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\play_ctrl_video_list.xml",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable\\play_ctrl_video_list.xml"
     },
     {
         "merged": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\play_ctrl_back.xml",

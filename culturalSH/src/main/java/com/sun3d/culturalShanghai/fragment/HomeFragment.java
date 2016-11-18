@@ -1,10 +1,12 @@
 package com.sun3d.culturalShanghai.fragment;
 
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
+import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.IBinder;
 import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -49,7 +51,7 @@ import com.sun3d.culturalShanghai.http.MyHttpRequest;
 import com.sun3d.culturalShanghai.object.EventInfo;
 import com.sun3d.culturalShanghai.object.HomeDetail_ContentInfor;
 import com.sun3d.culturalShanghai.object.HomeImgInfo;
-import com.sun3d.culturalShanghai.object.HttpResponseText;
+import com.sun3d.culturalShanghai.service.DownNewApkService;
 import com.sun3d.culturalShanghai.service.LocationMyLatService;
 
 import org.json.JSONException;
@@ -60,6 +62,8 @@ import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+
+import static android.content.Context.BIND_AUTO_CREATE;
 
 /**
  * 这个是首页的
@@ -80,7 +84,6 @@ public class HomeFragment extends Fragment implements OnClickListener,
     TextView mSelectTv;
     @Bind(R.id.all_address)
     TextView mAllAddress;
-
     private View mView;
     private PullToRefreshScrollView scrroll_view;
     private LinearLayout content_layout;
@@ -92,8 +95,6 @@ public class HomeFragment extends Fragment implements OnClickListener,
     private TextView left_tv, middle_tv;
     public ImageView right_iv;
     private String TAG = "HomeFragment";
-    private HttpResponseText httpBackContent;
-    private HttpResponseText httpBackDataContent;
     private JSONObject json;
     private JSONObject json_data;
     private List<HomeImgInfo> mImgList;
@@ -102,10 +103,7 @@ public class HomeFragment extends Fragment implements OnClickListener,
     private List<HomeDetail_ContentInfor> mList;
     private RelativeLayout loadingLayout;
     private LoadingHandler mLoadingHandler;
-    //    private RelativeLayout mPopRelativeLayout;
-//    private LoadingHandler mPopLoadingHandler;
     private int pageIndex = 0;
-    private int currentListPosition = 0;
     private boolean isRefresh = false;
     private View popupWindow_view, popupWindowNoLat_view, popupWindowChangeCity_view;
     private PopupWindow popupWindow, popupWindowNoLat, popupWindowChangeCity;
@@ -118,13 +116,41 @@ public class HomeFragment extends Fragment implements OnClickListener,
     private TextView address_Nolocation_tv, address_location_tv;
     private Button mLeftNoLat_btn, mRightNolat_btn;
     private Button mLeftChange_btn, mRightChange_btn;
-    private SharedPreferences sharedPreferences;
-
-
     private MainFragmentActivity mfc;
-    private String NowAddress = "";
     private String location_str;
+    private Location_address mLocationAddress;
+    private LocationMyLatService mLocationMyLatService;
     private Intent iLocService;
+    private Intent updateAPK;
+    private LocationMyLatService.MyBind mMyBind;
+    private DownNewApkService.MyDownApkBind mDownApkBind;
+    private ServiceConnection mServiceConnection = new ServiceConnection() {
+        @Override
+        public void onServiceConnected(ComponentName name, IBinder service) {
+            mMyBind = (LocationMyLatService.MyBind) service;
+            mMyBind.startService();
+            mLocationMyLatService=mMyBind.getService();
+            location_lat(mLocationMyLatService);
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName name) {
+
+        }
+    };
+    private ServiceConnection downApkServiceConnection = new ServiceConnection() {
+        @Override
+        public void onServiceConnected(ComponentName name, IBinder service) {
+            mDownApkBind = (DownNewApkService.MyDownApkBind) service;
+            mDownApkBind.startService();
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName name) {
+
+        }
+    };
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -175,16 +201,12 @@ public class HomeFragment extends Fragment implements OnClickListener,
             e.printStackTrace();
         }
 
-        Log.i(TAG, "getData: " + HttpUrlList.IP + "  IP==  " + HttpUrlList.HomeFragment
-                .RECOMMENDACTIVITY + "  new  ip" + HttpUrlList.NEW_IP);
         MyHttpRequest.onStartHttpPostJSON(
                 HttpUrlList.HomeFragment.RECOMMENDACTIVITY, json_data,
                 new HttpRequestCallback() {
                     @Override
                     public void onPostExecute(int statusCode, String resultStr) {
                         isRefresh = false;
-                        Log.i(TAG, "Data   statusCode  ==  " + statusCode
-                                + "  resultStr==  " + resultStr);
                         if (HttpCode.HTTP_Request_OK == statusCode) {
                             try {
                                 mDataList = JsonUtil.getHomeDataList(resultStr);
@@ -226,8 +248,6 @@ public class HomeFragment extends Fragment implements OnClickListener,
                     @Override
                     public void onPostExecute(int statusCode, String resultStr) {
                         // TODO Auto-generated method stub
-                        Log.i(TAG, "状态==  " + statusCode + " resultStr== "
-                                + resultStr);
                         if (HttpCode.HTTP_Request_OK == statusCode) {
                             try {
                                 mImgList = JsonUtil.getHomeImgList(resultStr);
@@ -307,6 +327,9 @@ public class HomeFragment extends Fragment implements OnClickListener,
 
                     scrroll_view.onRefreshComplete();
                     break;
+                case 4:
+                    location_lat(mLocationMyLatService);
+                    break;
                 //错误的请求
                 case 404:
                     mLoadingHandler.isNotContent();
@@ -325,10 +348,6 @@ public class HomeFragment extends Fragment implements OnClickListener,
 
     private void init(View view) {
         Log.i(TAG, "init: ");
-        //开启定位
-        iLocService = new Intent();
-        iLocService.setClass(getActivity(), LocationMyLatService.class);
-        getActivity().startService(iLocService);
 
         mImgHomeIndex = new ArrayList<HomeImgInfo>();
         loadingLayout = (RelativeLayout) view.findViewById(R.id.loading);
@@ -348,6 +367,7 @@ public class HomeFragment extends Fragment implements OnClickListener,
         middle_tv.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+//                location_lat();
                 ToastUtil.showToast("我修改好了 哈哈哈哈哈哈哈哈哈哈");
             }
         });
@@ -401,7 +421,13 @@ public class HomeFragment extends Fragment implements OnClickListener,
         mPopGvList = new ArrayList<EventInfo>();
         mHomePopGridAdapter = new HomePopGridAdapter(getActivity(), mPopGvList);
         mHomePopListAdapter = new HomePopListAdapter(getActivity(), mPopList);
-        location_lat();
+        //开启定位
+        iLocService = new Intent();
+        iLocService.setClass(getActivity(), LocationMyLatService.class);
+        getActivity().bindService(iLocService, mServiceConnection, BIND_AUTO_CREATE);
+        updateAPK = new Intent();
+        updateAPK.setClass(getActivity(), DownNewApkService.class);
+        getActivity().bindService(updateAPK, downApkServiceConnection, BIND_AUTO_CREATE);
         StartLoading();
     }
 
@@ -413,35 +439,37 @@ public class HomeFragment extends Fragment implements OnClickListener,
      * 4 第二次定位  位置变化
      * 5 定位失败
      */
-    private void location_lat() {
-        new location_address() {
-            @Override
-            public void LocationStatus(int status, String nowAddress) {
-                location_str = nowAddress;
-                switch (status) {
-                    case 1:
-                        mHomeDetail_TopLayout.total_banner_ll.setVisibility(View.VISIBLE);
-                        mHomeDetail_TopLayout.startTask();
-                        break;
-                    case 2:
-                        address_location_tv.setText("你所在的城市尚未开通");
-                        popupWindowNoLat.showAsDropDown(middle_tv);
-                        break;
-                    case 3:
-                        mHomeDetail_TopLayout.total_banner_ll.setVisibility(View.VISIBLE);
-                        mHomeDetail_TopLayout.startTask();
-                        break;
-                    case 4:
-                        popupWindowChangeCity.showAsDropDown(middle_tv);
-                        break;
-                    case 5:
-                        address_location_tv.setText("当前无法定位你的位置");
-                        popupWindowNoLat.showAsDropDown(middle_tv);
-                        break;
+    private void location_lat(Location_address interface_address) {
+        HomeFragment.this.setLocationInterface(interface_address);
+        int status = HomeFragment.this.call();
+        if(status==0){
+            handler.sendEmptyMessage(4);
+            return;
+        }
+        location_str = "";
+        Log.i(TAG, "LocationStatus: " + status);
+        switch (status) {
+            case 1:
+                mHomeDetail_TopLayout.total_banner_ll.setVisibility(View.VISIBLE);
+                mHomeDetail_TopLayout.startTask();
+                break;
+            case 2:
+                address_location_tv.setText("你所在的城市尚未开通");
+                popupWindowNoLat.showAsDropDown(middle_tv);
+                break;
+            case 3:
+                mHomeDetail_TopLayout.total_banner_ll.setVisibility(View.VISIBLE);
+                mHomeDetail_TopLayout.startTask();
+                break;
+            case 4:
+                popupWindowChangeCity.showAsDropDown(middle_tv);
+                break;
+            case 5:
+                address_location_tv.setText("当前无法定位你的位置");
+                popupWindowNoLat.showAsDropDown(middle_tv);
+                break;
 
-                }
-            }
-        };
+        }
     }
 
     AdapterView.OnItemClickListener myGvOnClick = new AdapterView.OnItemClickListener() {
@@ -615,7 +643,8 @@ public class HomeFragment extends Fragment implements OnClickListener,
     public void onDestroyView() {
         super.onDestroyView();
         ButterKnife.unbind(this);
-        getActivity().stopService(iLocService);
+        getActivity().unbindService(mServiceConnection);
+        getActivity().unbindService(downApkServiceConnection);
     }
 
     public void openPopWindow() {
@@ -628,7 +657,18 @@ public class HomeFragment extends Fragment implements OnClickListener,
         }
     }
 
-    public interface location_address {
-        public void LocationStatus(int status, String nowAddress);
+    public interface Location_address {
+        public int LocationStatus();
     }
+
+
+    public void setLocationInterface(Location_address la) {
+        this.mLocationAddress = la;
+    }
+
+    public int call() {
+        return this.mLocationAddress.LocationStatus();
+    }
+
+
 }

@@ -14,5 +14,13 @@
     {
         "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\libsplayer.7z",
         "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playercore_v20\\unspecified\\res\\raw\\libsplayer.7z"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\config.properties",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\raw\\config.properties"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\libsplayer.7z",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playercore_v20\\unspecified\\res\\raw\\libsplayer.7z"
     }
 ]

@@ -6,5 +6,9 @@
     {
         "merged": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\ic_launcher.png",
         "source": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_launcher.png"
     }
 ]

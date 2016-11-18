@@ -96,6 +96,7 @@
             android:process="system"
             ></service>
         <service android:name=".service.LocationMyLatService"></service>
+        <service android:name=".service.DownNewApkService"></service>
         <!-- 微信分享回调 -->
         <activity
             android:name="com.sun3d.culturalShanghai.wxapi.WXEntryActivity"

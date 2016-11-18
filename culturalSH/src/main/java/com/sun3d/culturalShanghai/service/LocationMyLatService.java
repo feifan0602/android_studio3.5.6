@@ -3,7 +3,10 @@ package com.sun3d.culturalShanghai.service;
 import android.app.Service;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Binder;
+import android.os.Handler;
 import android.os.IBinder;
+import android.os.Message;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
@@ -17,23 +20,23 @@ import com.sun3d.culturalShanghai.fragment.HomeFragment;
  * Created by Administrator on 2016/11/17 0017.
  */
 
-public class LocationMyLatService extends Service  {
+public class LocationMyLatService extends Service implements HomeFragment.Location_address {
     private String location_str;
     private boolean isAddressChange = true;
     private boolean isFirstRun = true;
     private boolean isHava = true;
     private String NowAddress = "";
-    private String TAG="LocationMyLatService";
-    private HomeFragment.location_address mLocationAddress_interface;
+    private String TAG = "LocationMyLatService";
+    private MyBind bind = new MyBind();
+    private int status_int = 0;
 
     @Override
     public void onCreate() {
-        init();
-        getLat();
         super.onCreate();
     }
 
     private void init() {
+        Log.i(TAG, "init: ");
         SharedPreferences sharedPreferences = this.getSharedPreferences("share", MODE_PRIVATE);
         isFirstRun = sharedPreferences.getBoolean("isFirstRun", true);
         NowAddress = sharedPreferences.getString("nowAddress", "");
@@ -46,10 +49,11 @@ public class LocationMyLatService extends Service  {
     }
 
 
-    private void getLat() {
+    private int getLat() {
         Log.i(TAG, "getLat: ");
         GaoDeLocationUtil mGaoDeLocationUtil = new GaoDeLocationUtil(this);
         mGaoDeLocationUtil.startLocation();
+
         mGaoDeLocationUtil.setOnLocationListener(new GaoDeLocationUtil
                 .OnLocationListener() {
 
@@ -66,48 +70,96 @@ public class LocationMyLatService extends Service  {
                 * */
                 location_str = location.getCity();
                 //这里对两次的地点进行对比
-
+                Log.i(TAG, "onLocationSuccess: " + location.getCity() + "isFirstRun  ==" +
+                        isFirstRun + "  isAddressChange  " + isAddressChange + "  isHava  " +
+                        isHava);
                 if (isFirstRun) {
                     //第一次进入定位成功
                     if (isHava) {
                         //定位地点有分公司
                         MyApplication.saveNowAddress(LocationMyLatService.this, location_str);
-                        mLocationAddress_interface.LocationStatus(1,location_str);
+                        status_int = 1;
+//                        mLocationAddress_interface.LocationStatus(1, location_str);
                     } else {
                         //定位地点没有分公司
-                        mLocationAddress_interface.LocationStatus(2,location_str);
+                        status_int = 2;
+//                        mLocationAddress_interface.LocationStatus(2, location_str);
                     }
 
                 } else {
                     //第二次定位成功
                     if (isAddressChange) {
                         //地址没变
-                        mLocationAddress_interface.LocationStatus(3,location_str);
+                        status_int = 3;
+//                        mLocationAddress_interface.LocationStatus(3, location_str);
 
                     } else {
-                        mLocationAddress_interface.LocationStatus(4,location_str);
+                        status_int = 4;
+//                        mLocationAddress_interface.LocationStatus(4, location_str);
                         //地址变了
                     }
 
                 }
 
 
-                Log.i(TAG, "onLocationSuccess: " + location.getCity());
             }
 
             @Override
             public void onLocationFailure(String error) {
-                mLocationAddress_interface.LocationStatus(5,location_str);
-
                 Log.i(TAG, "onLocationFailure: " + error);
+                status_int = 5;
+//                mLocationAddress_interface.LocationStatus(5, location_str);
+
             }
         });
+        return status_int;
     }
 
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
-        return null;
+        return bind;
+    }
+
+    @Override
+    public int LocationStatus() {
+        if (status_int == 0) {
+            handler.sendEmptyMessage(1);
+            return 0;
+        }
+        int i = status_int;
+        Log.i(TAG, "LocationStatus: " + status_int);
+        return i;
+    }
+
+    Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            switch (msg.what) {
+                case 1:
+                    try {
+                        Thread.sleep(2000);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    LocationStatus();
+                    break;
+                case 2:
+                    break;
+            }
+            super.handleMessage(msg);
+        }
+    };
+
+    public class MyBind extends Binder {
+        public void startService() {
+            init();
+        }
+
+        public LocationMyLatService getService() {
+            getLat();
+            return LocationMyLatService.this;
+        }
     }
 
 }
