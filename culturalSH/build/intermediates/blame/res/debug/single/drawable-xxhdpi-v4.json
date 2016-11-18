@@ -1,127 +1,19 @@
 [
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_sound_gestrue.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_sound_gestrue.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_fullscreen_press_bg.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_fullscreen_press_bg.png"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_pause_bg.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_pause_bg.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\net_tip_icon.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\net_tip_icon.png"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\orientation_lock_close.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\orientation_lock_close.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_pause_press_bg.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_pause_press_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\tvicon.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\tvicon.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ad_silent_press.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\ad_silent_press.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_error_tip.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_error_tip.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\close_tip.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\close_tip.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_search.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-xxhdpi\\ic_action_search.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_back_bg.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_back_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_pause_bg.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_pause_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_volume_press_bg.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_volume_press_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_seek_backward.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_seek_backward.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_search.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-xxhdpi\\ic_action_search.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_video_list_bg.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_video_list_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_volume_press_bg.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_volume_press_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ad_silent_press.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\ad_silent_press.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ad_silent_press.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\ad_silent_press.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\more.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\more.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quality_bg_press.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\quality_bg_press.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_fullscreen_press_bg.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_fullscreen_press_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quality_bg_normal.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\quality_bg_normal.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\orientation_lock_open.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\orientation_lock_open.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_retry_play.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\btn_retry_play.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\light_high.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\light_high.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_back_bg.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_back_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quality_bg_press.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\quality_bg_press.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\orientation_lock_open.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\orientation_lock_open.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_pause_press_bg.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_pause_press_bg.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\orientation_lock_open.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\orientation_lock_open.png"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\indicater_progress.png",
         "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\indicater_progress.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_seek_forward.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_seek_forward.png"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_pause_press_bg.png",
@@ -132,28 +24,40 @@
         "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\indicater_brightness.png"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_sound_ball.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_sound_ball.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\tvicon.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\tvicon.png"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_video_list_bg.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_video_list_bg.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_video_list_bg.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_video_list_bg.png"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\arrow_shang.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-xxhdpi\\arrow_shang.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ad_silent_press.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\ad_silent_press.png"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_sound_gestrue_silent.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_sound_gestrue_silent.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_back_bg.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_back_bg.png"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\close_tip.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\close_tip.png"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_search.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-xxhdpi\\ic_action_search.png"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_pause_bg.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_pause_bg.png"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_fullscreen_bg.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_fullscreen_bg.png"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_video_list_press_bg.png",
         "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_video_list_press_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_search.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-xxhdpi\\ic_action_search.png"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quality_bg_normal.png",
@@ -164,40 +68,36 @@
         "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_sound_gestrue.png"
     },
     {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ad_silent_normal.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\ad_silent_normal.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\arrow_xia.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-xxhdpi\\arrow_xia.png"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_volume_bg.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_volume_bg.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ad_silent_normal.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\ad_silent_normal.png"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_sound_gestrue_silent.png",
         "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_sound_gestrue_silent.png"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\indicater_sound.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\indicater_sound.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\decoding_setting.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\decoding_setting.png"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_sound_gestrue.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_sound_gestrue.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\indicater_sound.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\indicater_sound.png"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_fullscreen_bg.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_fullscreen_bg.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_seek_backward.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_seek_backward.png"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\decoding_setting.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\decoding_setting.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\dlna_unable_icon.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\dlna_unable_icon.png"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quality_bg_press.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\quality_bg_press.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_volume_bg.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_volume_bg.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_seek_forward.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_seek_forward.png"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_error_tip.png",
@@ -208,24 +108,8 @@
         "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\dlna_icon.png"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\dlna_unable_icon.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\dlna_unable_icon.png"
-    },
-    {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\more.png",
         "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\more.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_video_list_press_bg.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_video_list_press_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\net_tip_icon.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\net_tip_icon.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\indicater_progress.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\indicater_progress.png"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
@@ -236,212 +120,8 @@
         "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\btn_retry_play.png"
     },
     {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_volume_bg.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_volume_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\orientation_lock_close.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\orientation_lock_close.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\arrow_shang.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-xxhdpi\\arrow_shang.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_retry_play.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\btn_retry_play.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\light_high.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\light_high.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\gestrue_brightness.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\gestrue_brightness.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_back_press_bg.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_back_press_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\indicater_sound.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\indicater_sound.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_fullscreen_press_bg.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_fullscreen_press_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_fullscreen_press_bg.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_fullscreen_press_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\orientation_lock_close.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\orientation_lock_close.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_error_tip.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_error_tip.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\indicater_brightness.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\indicater_brightness.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_video_list_bg.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_video_list_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\dlna_icon.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\dlna_icon.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_back_bg.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_back_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_fullscreen_bg.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_fullscreen_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_seek_backward.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_seek_backward.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_pause_bg.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_pause_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_sound_gestrue_silent.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_sound_gestrue_silent.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\dlna_unable_icon.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\dlna_unable_icon.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\tvicon.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\tvicon.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_volume_press_bg.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_volume_press_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\gestrue_brightness.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\gestrue_brightness.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ad_silent_normal.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\ad_silent_normal.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\arrow_xia.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-xxhdpi\\arrow_xia.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\dlna_unable_icon.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\dlna_unable_icon.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ad_silent_normal.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\ad_silent_normal.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\arrow_xia.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-xxhdpi\\arrow_xia.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\close_tip.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\close_tip.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_video_list_press_bg.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_video_list_press_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\light_high.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\light_high.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\light_low.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\light_low.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_back_press_bg.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_back_press_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\dlna_icon.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\dlna_icon.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\net_tip_icon.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\net_tip_icon.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\indicater_progress.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\indicater_progress.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_fullscreen_bg.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_fullscreen_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\orientation_lock_open.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\orientation_lock_open.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_seek_forward.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_seek_forward.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\light_low.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\light_low.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\decoding_setting.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\decoding_setting.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\arrow_xia.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-xxhdpi\\arrow_xia.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\decoding_setting.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\decoding_setting.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\close_tip.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\close_tip.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_sound_ball.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_sound_ball.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_back_press_bg.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_back_press_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\indicater_sound.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\indicater_sound.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_seek_forward.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_seek_forward.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\gestrue_brightness.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\gestrue_brightness.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\tvicon.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\tvicon.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_volume_press_bg.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_volume_press_bg.png"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\light_low.png",
@@ -452,28 +132,28 @@
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-xxhdpi\\arrow_shang.png"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quality_bg_normal.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\quality_bg_normal.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_volume_bg.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_volume_bg.png"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_seek_backward.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_seek_backward.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\orientation_lock_close.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\orientation_lock_close.png"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\indicater_brightness.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\indicater_brightness.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\light_high.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\light_high.png"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\net_tip_icon.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\net_tip_icon.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\gestrue_brightness.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\gestrue_brightness.png"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\more.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\more.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_back_press_bg.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\play_ctrl_back_press_bg.png"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quality_bg_press.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xxhdpi-v4\\quality_bg_press.png"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\play_ctrl_sound_ball.png",

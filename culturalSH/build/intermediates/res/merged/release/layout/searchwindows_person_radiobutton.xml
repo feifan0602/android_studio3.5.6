@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/popwin_item_style"
-    android:drawableTop="@drawable/select_search_parent"
-    android:text="@string/search_personal_parent" >
-
-</RadioButton>

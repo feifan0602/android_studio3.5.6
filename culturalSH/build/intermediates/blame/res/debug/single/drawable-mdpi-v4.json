@@ -1,13 +1,5 @@
 [
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\sh_icon_goodorbad_bg.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-mdpi\\sh_icon_goodorbad_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
-    },
-    {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\seat_lock.png",
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-mdpi\\seat_lock.png"
     },
@@ -20,32 +12,20 @@
         "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\library\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_rotate.png"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\seat_checked.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-mdpi\\seat_checked.png"
+    },
+    {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\default_ptr_flip.png",
         "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\library\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_flip.png"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\sh_icon_good.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-mdpi\\sh_icon_good.png"
+    },
+    {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\default_ptr_rotate.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\library\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_rotate.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_search.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-mdpi\\ic_action_search.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\seat_checked.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-mdpi\\seat_checked.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_search.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-mdpi\\ic_action_search.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\seat_normal.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-mdpi\\seat_normal.png"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\sh_icon_goodorbad_bg.png",
@@ -56,67 +36,7 @@
         "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\library\\unspecified\\res\\drawable-mdpi-v4\\indicator_arrow.png"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\seat_lock.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-mdpi\\seat_lock.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\indicator_arrow.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\library\\unspecified\\res\\drawable-mdpi-v4\\indicator_arrow.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\default_ptr_flip.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\library\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_flip.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\default_ptr_flip.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\library\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_flip.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\seat_lock.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-mdpi\\seat_lock.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\sh_icon_good.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-mdpi\\sh_icon_good.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\seat_checked.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-mdpi\\seat_checked.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\indicator_arrow.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\library\\unspecified\\res\\drawable-mdpi-v4\\indicator_arrow.png"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\sh_icon_good.png",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-mdpi\\sh_icon_good.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\sh_icon_goodorbad_bg.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-mdpi\\sh_icon_goodorbad_bg.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\sh_icon_good.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-mdpi\\sh_icon_good.png"
-    },
-    {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_search.png",
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-mdpi\\ic_action_search.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\seat_checked.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-mdpi\\seat_checked.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\seat_normal.png",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\drawable-mdpi\\seat_normal.png"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\default_ptr_rotate.png",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio_space_svn\\library\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_rotate.png"
     }
 ]

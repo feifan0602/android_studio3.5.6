@@ -1,51 +1,35 @@
 [
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\nearby_parking.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\nearby_parking.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\collcetion_details.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\collcetion_details.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\this_week.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\this_week.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\exhi_bition.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\exhi_bition.xml"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\more_comment.xml",
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\more_comment.xml"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\activity_room.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\activity_room.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\camera_choose.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\camera_choose.xml"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\gallery_pictrue.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\gallery_pictrue.xml"
+    },
+    {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\user_dialog.xml",
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\user_dialog.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\gallery_pictrue.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\gallery_pictrue.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\group_edit.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\group_edit.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\image_original.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\image_original.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\splash.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\splash.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\main.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\activity_cricle_progress.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\activity_cricle_progress.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\exhi_bition.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\exhi_bition.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\choose_album.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\choose_album.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\collection_list.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\collection_list.xml"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\nearby_parking.xml",
@@ -56,44 +40,28 @@
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\main.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\explain_text.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\explain_text.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\activity_cricle_progress.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\activity_cricle_progress.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\more_comment.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\more_comment.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\not_involuntary_detail.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\not_involuntary_detail.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\collcetion_details.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\collcetion_details.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\nearby_parking.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\nearby_parking.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\scan_users.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\scan_users.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\collection_list.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\collection_list.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\my_group_people_manage.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\my_group_people_manage.xml"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\lable_choose.xml",
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\lable_choose.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\navi.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\navi.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\scan_users.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\scan_users.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\lable_choose.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\lable_choose.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\exhi_bition.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\exhi_bition.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\choose_album.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\choose_album.xml"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\group_detail.xml",
@@ -104,52 +72,36 @@
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\new_onlin_seat.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\onlin_seat.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\onlin_seat.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\onlin_seat.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\onlin_seat.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\activity_room_dateils.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\activity_room_dateils.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\activity_detail.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\activity_detail.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\image_original.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\image_original.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\splash.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\splash.xml"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\this_week.xml",
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\this_week.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\choose_album.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\choose_album.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\activity_detail.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\activity_detail.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\group_message_manage.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\group_message_manage.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\main.xml"
-    },
-    {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\activity_room_dateils.xml",
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\activity_room_dateils.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\lable_choose.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\lable_choose.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\group_edit.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\group_edit.xml"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\explain_text.xml",
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\explain_text.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\new_onlin_seat.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\new_onlin_seat.xml"
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\navi.xml",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\navi.xml"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\add_group.xml",
@@ -162,198 +114,6 @@
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\image_original.xml",
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\image_original.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\user_dialog.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\user_dialog.xml"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\collcetion_details.xml",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\collcetion_details.xml"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\exhi_bition.xml",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\exhi_bition.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\more_comment.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\more_comment.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\add_group.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\add_group.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\user_dialog.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\user_dialog.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\onlin_seat.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\onlin_seat.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\not_involuntary_detail.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\not_involuntary_detail.xml"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\activity_room.xml",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\activity_room.xml"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\camera_choose.xml",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\camera_choose.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\not_involuntary_detail.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\not_involuntary_detail.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\write_comment.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\write_comment.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\group_message_manage.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\group_message_manage.xml"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\gallery_pictrue.xml",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\gallery_pictrue.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\group_detail.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\group_detail.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\activity_cricle_progress.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\activity_cricle_progress.xml"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\collection_list.xml",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\collection_list.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\navi.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\navi.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\camera_choose.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\camera_choose.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\my_group_people_manage.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\my_group_people_manage.xml"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\activity_cricle_progress.xml",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\activity_cricle_progress.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\group_edit.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\group_edit.xml"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\not_involuntary_detail.xml",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\not_involuntary_detail.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\my_group_people_manage.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\my_group_people_manage.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\splash.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\splash.xml"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\my_group_people_manage.xml",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\my_group_people_manage.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\camera_choose.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\camera_choose.xml"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\scan_users.xml",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\scan_users.xml"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\choose_album.xml",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\choose_album.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\new_onlin_seat.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\new_onlin_seat.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\activity_room.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\activity_room.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\activity_room.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\activity_room.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\this_week.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\this_week.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\group_detail.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\group_detail.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\add_group.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\add_group.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\collcetion_details.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\collcetion_details.xml"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\onlin_seat.xml",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\onlin_seat.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\explain_text.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\explain_text.xml"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\activity_detail.xml",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\activity_detail.xml"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\splash.xml",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\splash.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\activity_room_dateils.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\activity_room_dateils.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\gallery_pictrue.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\gallery_pictrue.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\collection_list.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\collection_list.xml"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\group_edit.xml",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\group_edit.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\scan_users.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\scan_users.xml"
-    },
-    {
-        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\navi.xml",
-        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\menu\\navi.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\write_comment.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\write_comment.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\activity_detail.xml",
-        "source": "E:\\android_studio_space_svn\\culturalSH\\src\\main\\res\\menu\\activity_detail.xml"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\menu\\group_message_manage.xml",
