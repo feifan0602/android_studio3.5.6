@@ -127,7 +127,6 @@ public class SplashActivity extends Activity implements OnClickListener,
 
     private void getPath() {
         JSONObject json = new JSONObject();
-
         // Log.i(TAG, "请求的参数  ==  " + _param.toString());
         MyHttpRequest.onStartHttpPostJSON(HttpUrlList.ActivityDetail.PATH,
                 json, new HttpRequestCallback() {
@@ -149,7 +148,6 @@ public class SplashActivity extends Activity implements OnClickListener,
                         }
                     }
                 });
-
     }
 
     /**

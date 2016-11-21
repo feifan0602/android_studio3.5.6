@@ -4,24 +4,19 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.os.Handler;
-import android.os.Message;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.Button;
 import android.widget.GridView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
 import com.sun3d.culturalShanghai.MyApplication;
 import com.sun3d.culturalShanghai.R;
 import com.sun3d.culturalShanghai.adapter.HomeDetail_TopLayoutAdapter;
-import com.sun3d.culturalShanghai.fragment.HomeFragment;
 import com.sun3d.culturalShanghai.object.HomeDetail_TopLayoutInfor;
 import com.sun3d.culturalShanghai.object.HomeImgInfo;
 import com.sun3d.culturalShanghai.view.PageControlView;
@@ -31,10 +26,8 @@ import com.sun3d.culturalShanghai.view.SlideShowView;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
 
-public class HomeDetail_TopLayout implements View.OnClickListener {
+public class HomeDetail_TopLayout {
     private LinearLayout content;
     private Context mContext;
     private Activity mActivity;
@@ -48,31 +41,20 @@ public class HomeDetail_TopLayout implements View.OnClickListener {
     private PullToRefreshScrollView Scroll_view;
     private List<HomeImgInfo> mList;
     private List<HomeDetail_TopLayoutInfor> topImgInfoList;
-    public Timer timer;
+
     private SlideShowView mSlideShowView;
-    private TextView tv, tv1, tv2, tv3, tv4;
-    private TextView top_banner_address_tv;
-    private TextView closetime_tv;
-    private Button change_btn;
-    private TextView top_banner_address_china_tv;
-    private Button change_china_btn;
-    private HomeFragment hf;
-    public LinearLayout total_banner_ll, total_banner_china_ll;
-    private int i = 5;
+
 
     public HomeDetail_TopLayout(Context context, Activity activity,
-                                PullToRefreshScrollView ssv, HomeFragment hf) {
+                                PullToRefreshScrollView ssv) {
         super();
-        this.hf = hf;
         this.mContext = context;
         this.mActivity = activity;
         this.Scroll_view = ssv;
 
     }
 
-    public void startTask() {
-        timer.schedule(task, 0, 10000);//
-    }
+
 
     public void setData(List<HomeImgInfo> mImgList) {
         content = (LinearLayout) LayoutInflater.from(mContext).inflate(
@@ -252,33 +234,7 @@ public class HomeDetail_TopLayout implements View.OnClickListener {
         topImgInfoList = new ArrayList<HomeDetail_TopLayoutInfor>();
         mList = new ArrayList<HomeImgInfo>();
         dataLoad = new DataLoading();
-        tv = (TextView) content.findViewById(R.id.tv);
-        tv1 = (TextView) content.findViewById(R.id.tv1);
-        tv2 = (TextView) content.findViewById(R.id.tv2);
-        top_banner_address_tv = (TextView) content.findViewById(R.id.top_banner_address_tv);
-        closetime_tv = (TextView) content.findViewById(R.id.closetime);
-        change_btn = (Button) content.findViewById(R.id.change_btn);
-        total_banner_ll = (LinearLayout) content.findViewById(R.id.total_banner_ll);
-        total_banner_china_ll= (LinearLayout) content.findViewById(R.id.total_banner_china_ll);
-        tv3 = (TextView) content.findViewById(R.id.tv3);
-        tv4 = (TextView) content.findViewById(R.id.tv4);
-        top_banner_address_china_tv = (TextView) content.findViewById(R.id
-                .top_banner_address_china_tv);
-        change_china_btn= (Button) content.findViewById(R.id.change_china_btn);
 
-
-        tv.setTypeface(MyApplication.GetTypeFace());
-        tv1.setTypeface(MyApplication.GetTypeFace());
-        tv2.setTypeface(MyApplication.GetTypeFace());
-        tv3.setTypeface(MyApplication.GetTypeFace());
-        tv4.setTypeface(MyApplication.GetTypeFace());
-        top_banner_address_china_tv.setTypeface(MyApplication.GetTypeFace());
-        change_china_btn.setTypeface(MyApplication.GetTypeFace());
-        top_banner_address_tv.setTypeface(MyApplication.GetTypeFace());
-        closetime_tv.setTypeface(MyApplication.GetTypeFace());
-        change_btn.setTypeface(MyApplication.GetTypeFace());
-        change_btn.setOnClickListener(this);
-        change_china_btn.setOnClickListener(this);
 
         mSlideShowView = (SlideShowView) content
                 .findViewById(R.id.slideshowView);
@@ -289,7 +245,7 @@ public class HomeDetail_TopLayout implements View.OnClickListener {
         // one_horizon_Listview = (ScrollLayout) content
         // .findViewById(R.id.one_Scroll_ll);
         list_Info = new ArrayList<HomeDetail_TopLayoutInfor>();
-        timer = new Timer();
+
     }
 
     /**
@@ -340,17 +296,6 @@ public class HomeDetail_TopLayout implements View.OnClickListener {
         android.os.Process.killProcess(android.os.Process.myPid());
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.change_btn:
-                hf.openPopWindow();
-                break;
-            case R.id.change_china_btn:
-                hf.openPopWindow();
-                break;
-        }
-    }
 
     // 分页数据
     class DataLoading {
@@ -376,32 +321,5 @@ public class HomeDetail_TopLayout implements View.OnClickListener {
         }
     }
 
-    Handler handler = new Handler() {
-        public void handleMessage(Message msg) {
-            if (msg.what == 1) {
-                int num = i--;
-                closetime_tv.setText(num + "");
-                if (num <= 0) {
-                    timer.cancel();
-                    task.cancel();
-                    total_banner_ll.setVisibility(View.GONE);
 
-                }
-            }
-            super.handleMessage(msg);
-        }
-
-        ;
-    };
-    //
-    TimerTask task = new TimerTask() {
-
-        @Override
-        public void run() {
-            // 需要做的事:发送消息
-            Message message = new Message();
-            message.what = 1;
-            handler.sendMessage(message);
-        }
-    };
 }

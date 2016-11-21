@@ -392,6 +392,10 @@
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-xhdpi\\btn_shetuan.png"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tomy.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-xhdpi\\tomy.png"
+    },
+    {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\sh_weather_lzy_bb.png",
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-xhdpi\\sh_weather_lzy_bb.png"
     },
@@ -1140,6 +1144,10 @@
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-xhdpi\\sh_btn_check_on.png"
     },
     {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\xiasanjiao.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-xhdpi\\xiasanjiao.png"
+    },
+    {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\sh_icon_numbar_add.png",
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-xhdpi\\sh_icon_numbar_add.png"
     },
@@ -1350,6 +1358,10 @@
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\gestrue_brightness.png",
         "source": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\exploded-aar\\android_studio3.5.6\\sinavideo_playersdk_v20\\unspecified\\res\\drawable-xhdpi-v4\\gestrue_brightness.png"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\map_select_bg.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-xhdpi\\map_select_bg.png"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\wff_pengyouquan.png",
@@ -1626,6 +1638,10 @@
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\sh_icon_navi_carred.png",
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-xhdpi\\sh_icon_navi_carred.png"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\main_dot_white.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-xhdpi\\main_dot_white.png"
     },
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\play_ctrl_video_list_item_bg.png",
@@ -1910,5 +1926,9 @@
     {
         "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\select_cricle.png",
         "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-xhdpi\\select_cricle.png"
+    },
+    {
+        "merged": "E:\\android_studio3.5.6\\culturalSH\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\main_dot_light.png",
+        "source": "E:\\android_studio3.5.6\\culturalSH\\src\\main\\res\\drawable-xhdpi\\main_dot_light.png"
     }
 ]

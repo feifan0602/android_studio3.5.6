@@ -1,25 +1,5 @@
 package com.sun3d.culturalShanghai;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.URLConnection;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Application;
@@ -46,9 +26,6 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
-
-import cn.jpush.android.api.JPushInterface;
 
 import com.alipay.euler.andfix.patch.PatchManager;
 import com.bumptech.glide.Glide;
@@ -63,28 +40,44 @@ import com.sun3d.culturalShanghai.Util.WindowsUtil;
 import com.sun3d.culturalShanghai.activity.ActivityDetailActivity;
 import com.sun3d.culturalShanghai.activity.BannerWebView;
 import com.sun3d.culturalShanghai.activity.CalenderActivity;
-import com.sun3d.culturalShanghai.activity.EventListActivity;
 import com.sun3d.culturalShanghai.activity.SearchListActivity;
 import com.sun3d.culturalShanghai.activity.SearchTagListActivity;
 import com.sun3d.culturalShanghai.activity.VenueDetailActivity;
-import com.sun3d.culturalShanghai.activity.VenueListActivity;
 import com.sun3d.culturalShanghai.http.HttpUrlList;
-import com.sun3d.culturalShanghai.object.ActivityConditionInfo;
 import com.sun3d.culturalShanghai.object.ActivityListRoomInfo;
 import com.sun3d.culturalShanghai.object.EventAddressInfo;
 import com.sun3d.culturalShanghai.object.HttpResponseText;
 import com.sun3d.culturalShanghai.object.MyUserInfo;
-import com.sun3d.culturalShanghai.object.ScreenInfo;
 import com.sun3d.culturalShanghai.object.SearchListInfo;
 import com.sun3d.culturalShanghai.object.UserBehaviorInfo;
 import com.sun3d.culturalShanghai.object.UserInfor;
 import com.sun3d.culturalShanghai.object.WindowInfo;
 import com.sun3d.culturalShanghai.view.HorizontalListView;
 import com.sun3d.culturalShanghai.view.ScrollViewListView;
-import com.sun3d.culturalShanghai.R;
 import com.umeng.analytics.MobclickAgent;
 
-import static com.sun3d.culturalShanghai.Util.FileSizeUtil.getAutoFileOrFilesSize;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLConnection;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import cn.jpush.android.api.JPushInterface;
 
 public class MyApplication extends Application {
     public static String Text_Url = "http://new-img2.ol-img.com/985x695/116/31/lirqOsEqHWnuE.jpg";
@@ -252,7 +245,15 @@ public class MyApplication extends Application {
     public static String TEXTFONTTYPEPATH = Environment.getExternalStorageDirectory()
             .getAbsolutePath() + "/YuanTi.TTF";
     public static String FONTSIZI;
-
+    public  static final int GB_SP_DIFF = 160;
+    // 存放国标一级汉字不同读音的起始区位码
+    public static final int[] secPosValueList = { 1601, 1637, 1833, 2078, 2274, 2302,
+            2433, 2594, 2787, 3106, 3212, 3472, 3635, 3722, 3730, 3858, 4027,
+            4086, 4390, 4558, 4684, 4925, 5249, 5600 };
+    // 存放国标一级汉字不同读音的起始区位码对应读音
+    public static final char[] firstLetter = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+            'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'w', 'x',
+            'y', 'z' };
     @Override
     public void onCreate() {
         // TODO Auto-generated method stub
@@ -1627,5 +1628,58 @@ public class MyApplication extends Application {
         return address;
     }
 
+    public static String getSpells(String characters) {
+        StringBuffer buffer = new StringBuffer();
+        for (int i = 0; i < characters.length(); i++) {
 
+            char ch = characters.charAt(i);
+            if ((ch >> 7) == 0) {
+                // 判断是否为汉字，如果左移7为为0就不是汉字，否则是汉字
+            } else {
+                char spell = getFirstLetter(ch);
+                buffer.append(String.valueOf(spell));
+            }
+        }
+        return buffer.toString();
+    }
+
+    // 获取一个汉字的首字母
+    public static Character getFirstLetter(char ch) {
+
+        byte[] uniCode = null;
+        try {
+            uniCode = String.valueOf(ch).getBytes("GBK");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+            return null;
+        }
+        if (uniCode[0] < 128 && uniCode[0] > 0) { // 非汉字
+            return null;
+        } else {
+            return convert(uniCode);
+        }
+    }
+
+    /**
+     * 获取一个汉字的拼音首字母。 GB码两个字节分别减去160，转换成10进制码组合就可以得到区位码
+     * 例如汉字“你”的GB码是0xC4/0xE3，分别减去0xA0（160）就是0x24/0x43
+     * 0x24转成10进制就是36，0x43是67，那么它的区位码就是3667，在对照表中读音为‘n’
+     */
+    static char convert(byte[] bytes) {
+        char result = '-';
+        int secPosValue = 0;
+        int i;
+        for (i = 0; i < bytes.length; i++) {
+            bytes[i] -= GB_SP_DIFF;
+        }
+        secPosValue = bytes[0] * 100 + bytes[1];
+        for (i = 0; i < 23; i++) {
+            if (secPosValue >= secPosValueList[i]
+                    && secPosValue < secPosValueList[i + 1]) {
+                result = firstLetter[i];
+                break;
+            }
+        }
+        return result;
+    }
 }

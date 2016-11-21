@@ -48,7 +48,6 @@ public class DownNewApkService extends Service {
     private String update_url;
     private String TAG = "DownNewApkService";
     private MyDownApkBind mybind = new MyDownApkBind();
-    ;
 
     @Override
     public void onCreate() {
@@ -228,6 +227,7 @@ public class DownNewApkService extends Service {
             try {
                 URL url = new URL(params[0]);
                 httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setConnectTimeout(5000);
                 if (httpURLConnection.getResponseCode() != HttpURLConnection.HTTP_OK) {
                     return 404;
                 }
@@ -240,7 +240,7 @@ public class DownNewApkService extends Service {
                         Environment.getExternalStorageDirectory(),
                         UPDATE_SERVERAPK);
                 output = new FileOutputStream(file);
-                byte data[] = new byte[4096];
+                byte data[] = new byte[1024];
                 long total = 0;
                 int count;
                 while ((count = input.read(data)) != -1) {
@@ -273,7 +273,7 @@ public class DownNewApkService extends Service {
         @Override
         protected void onProgressUpdate(Integer... values) {
             Log.i(TAG, "onProgressUpdate: " );
-            pd.setMessage("请稍后。。。" + values[0] + "%");
+            pd.setMessage("请稍后。。。");
             super.onProgressUpdate(values);
         }
 

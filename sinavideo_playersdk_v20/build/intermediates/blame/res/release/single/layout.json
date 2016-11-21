@@ -1,15 +1,7 @@
 [
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\dlna_connection_layout_include.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\dlna_connection_layout_include.xml"
-    },
-    {
         "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\dlna_device_list_item.xml",
         "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\dlna_device_list_item.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\tip_layout.xml",
-        "source": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\tip_layout.xml"
     },
     {
         "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\indicater_layer_include.xml",
@@ -20,60 +12,12 @@
         "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\default_decodingtype_adapter.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\indicater_layer_include.xml",
-        "source": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\indicater_layer_include.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\dlna_list_layout_include.xml",
-        "source": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\dlna_list_layout_include.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\video_play_error_layout.xml",
-        "source": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\video_play_error_layout.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\dlna_device_list_item.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\dlna_device_list_item.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\dlna_connection_layout_include.xml",
-        "source": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\dlna_connection_layout_include.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\dlna_device_list_item.xml",
-        "source": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\dlna_device_list_item.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\default_decodingtype_adapter.xml",
-        "source": "E:\\android_studio_space_svn\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\default_decodingtype_adapter.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\tip_layout.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\tip_layout.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\indicater_layer_include.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\indicater_layer_include.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\video_play_error_layout.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\video_play_error_layout.xml"
-    },
-    {
         "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\video_play_error_layout.xml",
         "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\video_play_error_layout.xml"
     },
     {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\dlna_list_layout_include.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\dlna_list_layout_include.xml"
-    },
-    {
         "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\dlna_connection_layout_include.xml",
         "source": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\dlna_connection_layout_include.xml"
-    },
-    {
-        "merged": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\default_decodingtype_adapter.xml",
-        "source": "E:\\android_studio_space_svncopy\\android_studio_space_svn\\sinavideo_playersdk_v20\\src\\main\\res\\layout\\default_decodingtype_adapter.xml"
     },
     {
         "merged": "E:\\android_studio3.5.6\\sinavideo_playersdk_v20\\build\\intermediates\\res\\merged\\release\\layout\\dlna_list_layout_include.xml",

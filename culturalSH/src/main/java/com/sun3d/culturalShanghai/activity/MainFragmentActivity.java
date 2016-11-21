@@ -204,7 +204,7 @@ public class MainFragmentActivity extends FragmentActivity implements
 
     public void closeBottom() {
         MyApplication.OPENORCLOSEBOTTOM = false;
-        home_view.right_iv.setImageResource(R.drawable.ic_launcher);
+        home_view.right_iv.setImageResource(R.drawable.tomy);
         frame_bottom.setVisibility(View.GONE);
     }
 

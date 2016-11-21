@@ -3,6 +3,7 @@ package com.sun3d.culturalShanghai.service;
 import android.app.Service;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.os.Binder;
 import android.os.Handler;
 import android.os.IBinder;
@@ -100,7 +101,7 @@ public class LocationMyLatService extends Service implements HomeFragment.Locati
                     }
 
                 }
-
+                handler.sendEmptyMessage(1);
 
             }
 
@@ -108,6 +109,7 @@ public class LocationMyLatService extends Service implements HomeFragment.Locati
             public void onLocationFailure(String error) {
                 Log.i(TAG, "onLocationFailure: " + error);
                 status_int = 5;
+                handler.sendEmptyMessage(1);
 //                mLocationAddress_interface.LocationStatus(5, location_str);
 
             }
@@ -123,13 +125,16 @@ public class LocationMyLatService extends Service implements HomeFragment.Locati
 
     @Override
     public int LocationStatus() {
-        if (status_int == 0) {
-            handler.sendEmptyMessage(1);
-            return 0;
-        }
         int i = status_int;
         Log.i(TAG, "LocationStatus: " + status_int);
         return i;
+    }
+
+    @Override
+    public String LocationAddress() {
+        String address = location_str;
+        Log.i(TAG, "LocationAddress: " + address);
+        return address;
     }
 
     Handler handler = new Handler() {
@@ -137,12 +142,8 @@ public class LocationMyLatService extends Service implements HomeFragment.Locati
         public void handleMessage(Message msg) {
             switch (msg.what) {
                 case 1:
-                    try {
-                        Thread.sleep(2000);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
                     LocationStatus();
+                    LocationAddress();
                     break;
                 case 2:
                     break;
@@ -157,8 +158,17 @@ public class LocationMyLatService extends Service implements HomeFragment.Locati
         }
 
         public LocationMyLatService getService() {
-            getLat();
+            MyThread run = new MyThread();
+            run.execute("");
             return LocationMyLatService.this;
+        }
+    }
+
+    class MyThread extends AsyncTask<String, String, String> {
+        @Override
+        protected String doInBackground(String... params) {
+            getLat();
+            return null;
         }
     }
 

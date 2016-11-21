@@ -57,28 +57,40 @@ public class HomePopListAdapter extends BaseAdapter {
                     null);
             mHolder.mRelativeLayout = (RelativeLayout) convertView.findViewById(R.id.rl);
             mHolder.mGridView = (GridView) convertView.findViewById(R.id.gv);
+            mHolder.mText_Frist = (TextView) convertView.findViewById(R.id.text_frist);
             mHolder.mGridView.setFocusable(false);
             mHolder.mTextView = (TextView) convertView.findViewById(R.id.tv);
             mHolder.mTextView.setTypeface(MyApplication.GetTypeFace());
+            mHolder.mText_Frist.setTypeface(MyApplication.GetTypeFace());
             convertView.setTag(mHolder);
         } else {
             mHolder = (ViewHolder) convertView.getTag();
         }
-        if (info.getActivityIsWant()){
+        if (info.getActivityIsWant()) {
             mHolder.mRelativeLayout.setVisibility(View.GONE);
-        }else{
+        } else {
             mHolder.mRelativeLayout.setVisibility(View.VISIBLE);
-            HomePopGridAdapter mHomePopGridAdapter=new HomePopGridAdapter(mContext,info.getEventInfosList());
+            HomePopGridAdapter mHomePopGridAdapter = new HomePopGridAdapter(mContext, info
+                    .getEventInfosList());
             mHolder.mGridView.setAdapter(mHomePopGridAdapter);
-            MyApplication.setGridViewHeight(mHolder.mGridView,4,9);
+            MyApplication.setGridViewHeight(mHolder.mGridView, 4, 9);
 
         }
-            mHolder.mTextView.setText(list.get(position).getActivityArea());
+        String frist_str = "";
+        if (list.get(position).getActivityArea() != "" && list.get(position).getActivityArea() !=
+                null) {
+            frist_str = MyApplication.getSpells(list.get(position).getActivityArea());
+            frist_str = frist_str.substring(0, 1).toUpperCase();
+        }
+
+        mHolder.mText_Frist.setText(frist_str);
+        mHolder.mTextView.setText(list.get(position).getActivityArea());
         return convertView;
     }
 
     class ViewHolder {
         TextView mTextView;
+        TextView mText_Frist;
         RelativeLayout mRelativeLayout;
         GridView mGridView;
 

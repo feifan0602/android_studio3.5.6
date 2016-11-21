@@ -4,6 +4,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
@@ -59,6 +60,8 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -112,7 +115,7 @@ public class HomeFragment extends Fragment implements OnClickListener,
     private List<EventInfo> mPopList;
     private List<EventInfo> mPopGvList;
     private int oldPostion = -1;
-
+    private int isFristRun = 0;
     private TextView address_Nolocation_tv, address_location_tv;
     private Button mLeftNoLat_btn, mRightNolat_btn;
     private Button mLeftChange_btn, mRightChange_btn;
@@ -124,12 +127,23 @@ public class HomeFragment extends Fragment implements OnClickListener,
     private Intent updateAPK;
     private LocationMyLatService.MyBind mMyBind;
     private DownNewApkService.MyDownApkBind mDownApkBind;
+
+    private TextView tv, tv1, tv2, tv3, tv4;
+    private TextView top_banner_address_tv;
+    private TextView closetime_tv;
+    private Button change_btn;
+    private TextView top_banner_address_china_tv;
+    private Button change_china_btn;
+
+    public LinearLayout total_banner_ll, total_banner_china_ll;
+    public Timer timer;
+    private int i = 5;
     private ServiceConnection mServiceConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             mMyBind = (LocationMyLatService.MyBind) service;
             mMyBind.startService();
-            mLocationMyLatService=mMyBind.getService();
+            mLocationMyLatService = mMyBind.getService();
             location_lat(mLocationMyLatService);
         }
 
@@ -278,7 +292,6 @@ public class HomeFragment extends Fragment implements OnClickListener,
                     mHomeDetail_TopLayout.setData(mImgList);
                     mHomeDetail_Index.setData(mImgList);
                     mHomeDetail_HorizontalListView.setData(mImgList);
-
                     content_layout.addView(mHomeDetail_TopLayout.getContent());
                     mImgHomeIndex.clear();
                     for (int j = 0; j < mImgList.size(); j++) {
@@ -323,12 +336,37 @@ public class HomeFragment extends Fragment implements OnClickListener,
                 //获取listview 的数据
                 case 3:
                     mHomeDetail_Content.setData(mImgList, mList);
-                    StopLoading();
-
+                    if (isFristRun == 0) {
+                        updateAPK = new Intent();
+                        updateAPK.setClass(getActivity(), DownNewApkService.class);
+                        getActivity().bindService(updateAPK, downApkServiceConnection,
+                                BIND_AUTO_CREATE);
+                        iLocService = new Intent();
+                        iLocService.setClass(getActivity(), LocationMyLatService.class);
+                        getActivity().bindService(iLocService, mServiceConnection,
+                                BIND_AUTO_CREATE);
+                    } else {
+                        StopLoading();
+                    }
+                    isFristRun = 1;
                     scrroll_view.onRefreshComplete();
                     break;
                 case 4:
+                    try {
+                        Thread.sleep(1000);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                     location_lat(mLocationMyLatService);
+                    break;
+                case 5:
+                    int num = i--;
+                    closetime_tv.setText(num + "");
+                    if (num <= 0) {
+                        timer.cancel();
+                        task.cancel();
+                        total_banner_ll.setVisibility(View.GONE);
+                    }
                     break;
                 //错误的请求
                 case 404:
@@ -361,6 +399,10 @@ public class HomeFragment extends Fragment implements OnClickListener,
         left_tv = (TextView) view.findViewById(R.id.left_tv);
         middle_tv = (TextView) view.findViewById(R.id.middle_tv);
         right_iv = (ImageView) view.findViewById(R.id.right_iv);
+        Drawable nav_up=getResources().getDrawable(R.drawable.xiasanjiao);
+        nav_up.setBounds(0, 0, nav_up.getMinimumWidth(), nav_up.getMinimumHeight());
+        left_tv.setCompoundDrawables(null, null, nav_up, null);
+        left_tv.setCompoundDrawablePadding(0);
         left_tv.setTypeface(MyApplication.GetTypeFace());
         left_tv.setOnClickListener(this);
         middle_tv.setTypeface(MyApplication.GetTypeFace());
@@ -373,7 +415,7 @@ public class HomeFragment extends Fragment implements OnClickListener,
         });
         right_iv.setOnClickListener(this);
         mHomeDetail_TopLayout = new HomeDetail_TopLayout(mContext,
-                getActivity(), scrroll_view, this);
+                getActivity(), scrroll_view);
         mHomeDetail_Index = new HomeDetail_Index(mContext, getActivity());
         mHomeDetail_HorizontalListView = new HomeDetail_HorizontalListView(
                 mContext, getActivity(), scrroll_view);
@@ -421,13 +463,37 @@ public class HomeFragment extends Fragment implements OnClickListener,
         mPopGvList = new ArrayList<EventInfo>();
         mHomePopGridAdapter = new HomePopGridAdapter(getActivity(), mPopGvList);
         mHomePopListAdapter = new HomePopListAdapter(getActivity(), mPopList);
+
+
+        tv = (TextView) view.findViewById(R.id.tv);
+        tv1 = (TextView) view.findViewById(R.id.tv1);
+        tv2 = (TextView) view.findViewById(R.id.tv2);
+        top_banner_address_tv = (TextView) view.findViewById(R.id.top_banner_address_tv);
+        closetime_tv = (TextView) view.findViewById(R.id.closetime);
+        change_btn = (Button) view.findViewById(R.id.change_btn);
+        total_banner_ll = (LinearLayout) view.findViewById(R.id.total_banner_ll);
+        total_banner_china_ll = (LinearLayout) view.findViewById(R.id.total_banner_china_ll);
+        tv3 = (TextView) view.findViewById(R.id.tv3);
+        tv4 = (TextView) view.findViewById(R.id.tv4);
+        top_banner_address_china_tv = (TextView) view.findViewById(R.id
+                .top_banner_address_china_tv);
+        change_china_btn = (Button) view.findViewById(R.id.change_china_btn);
+
+
+        tv.setTypeface(MyApplication.GetTypeFace());
+        tv1.setTypeface(MyApplication.GetTypeFace());
+        tv2.setTypeface(MyApplication.GetTypeFace());
+        tv3.setTypeface(MyApplication.GetTypeFace());
+        tv4.setTypeface(MyApplication.GetTypeFace());
+        top_banner_address_china_tv.setTypeface(MyApplication.GetTypeFace());
+        change_china_btn.setTypeface(MyApplication.GetTypeFace());
+        top_banner_address_tv.setTypeface(MyApplication.GetTypeFace());
+        closetime_tv.setTypeface(MyApplication.GetTypeFace());
+        change_btn.setTypeface(MyApplication.GetTypeFace());
+        change_btn.setOnClickListener(this);
+        change_china_btn.setOnClickListener(this);
+        timer = new Timer();
         //开启定位
-        iLocService = new Intent();
-        iLocService.setClass(getActivity(), LocationMyLatService.class);
-        getActivity().bindService(iLocService, mServiceConnection, BIND_AUTO_CREATE);
-        updateAPK = new Intent();
-        updateAPK.setClass(getActivity(), DownNewApkService.class);
-        getActivity().bindService(updateAPK, downApkServiceConnection, BIND_AUTO_CREATE);
         StartLoading();
     }
 
@@ -442,24 +508,26 @@ public class HomeFragment extends Fragment implements OnClickListener,
     private void location_lat(Location_address interface_address) {
         HomeFragment.this.setLocationInterface(interface_address);
         int status = HomeFragment.this.call();
-        if(status==0){
+        String locationAddress = HomeFragment.this.callAddress();
+        if (status == 0) {
             handler.sendEmptyMessage(4);
             return;
         }
-        location_str = "";
+        location_str = locationAddress;
+        StopLoading();
         Log.i(TAG, "LocationStatus: " + status);
         switch (status) {
             case 1:
-                mHomeDetail_TopLayout.total_banner_ll.setVisibility(View.VISIBLE);
-                mHomeDetail_TopLayout.startTask();
+                total_banner_ll.setVisibility(View.VISIBLE);
+                startTask();
                 break;
             case 2:
                 address_location_tv.setText("你所在的城市尚未开通");
                 popupWindowNoLat.showAsDropDown(middle_tv);
                 break;
             case 3:
-                mHomeDetail_TopLayout.total_banner_ll.setVisibility(View.VISIBLE);
-                mHomeDetail_TopLayout.startTask();
+                total_banner_ll.setVisibility(View.VISIBLE);
+                startTask();
                 break;
             case 4:
                 popupWindowChangeCity.showAsDropDown(middle_tv);
@@ -514,7 +582,7 @@ public class HomeFragment extends Fragment implements OnClickListener,
         mLoadingHandler.startLoading();
     }
 
-    private void StopLoading() {
+    public void StopLoading() {
         scrroll_view.setVisibility(View.VISIBLE);
         mLoadingHandler.stopLoading();
     }
@@ -532,11 +600,10 @@ public class HomeFragment extends Fragment implements OnClickListener,
                     MyApplication.change_fragment = 4;
                     mfc.setTabSelection(4);
                 }
-
                 break;
             case R.id.left_tv:
-                changeToChina();
-//                openPopWindow();
+//                changeToChina();
+                openPopWindow();
                 break;
             case R.id.left_btn:
                 //进入选择地图
@@ -557,11 +624,15 @@ public class HomeFragment extends Fragment implements OnClickListener,
                 popupWindowChangeCity.dismiss();
                 //改变接口 改变布局
                 changeToCity();
-
-
                 break;
             case R.id.address_tv:
                 popupWindow.dismiss();
+                break;
+            case R.id.change_btn:
+                openPopWindow();
+                break;
+            case R.id.change_china_btn:
+                openPopWindow();
                 break;
             default:
                 break;
@@ -570,7 +641,8 @@ public class HomeFragment extends Fragment implements OnClickListener,
     }
 
     public void changeToChina() {
-        mHomeDetail_TopLayout.total_banner_china_ll.setVisibility(View.VISIBLE);
+        total_banner_china_ll.setVisibility(View.VISIBLE);
+        left_tv.setCompoundDrawables(null, null, null, null);
         MainFragmentActivity.getIntance().closeBottom();
     }
 
@@ -659,16 +731,28 @@ public class HomeFragment extends Fragment implements OnClickListener,
 
     public interface Location_address {
         public int LocationStatus();
+        public String LocationAddress();
     }
-
-
     public void setLocationInterface(Location_address la) {
         this.mLocationAddress = la;
     }
-
     public int call() {
         return this.mLocationAddress.LocationStatus();
     }
+    public String callAddress() {
+        return this.mLocationAddress.LocationAddress();
+    }
+    public void startTask() {
+        timer.schedule(task, 0, 10000);//
+    }
+    TimerTask task = new TimerTask() {
 
-
+        @Override
+        public void run() {
+            // 需要做的事:发送消息
+            Message message = new Message();
+            message.what = 5;
+            handler.sendMessage(message);
+        }
+    };
 }
