@@ -16,6 +16,8 @@ import com.sun3d.culturalShanghai.MyApplication;
 import com.sun3d.culturalShanghai.Util.GaoDeLocationUtil;
 import com.sun3d.culturalShanghai.fragment.HomeFragment;
 
+import org.json.JSONObject;
+
 
 /**
  * Created by Administrator on 2016/11/17 0017.
@@ -69,14 +71,29 @@ public class LocationMyLatService extends Service implements HomeFragment.Locati
                 * 第六种：第二次进入APP 定位失败 默认进入前一次的地点
                 *
                 * */
-                location_str = location.getCity();
                 //这里对两次的地点进行对比
                 Log.i(TAG, "onLocationSuccess: " + location.getCity() + "isFirstRun  ==" +
                         isFirstRun + "  isAddressChange  " + isAddressChange + "  isHava  " +
-                        isHava);
+                        isHava + "  code==  " + location.getAdCode());
+                //这是第一次进来的时候判断 是否有分公司
+                for (int i = 0; i < HomeFragment.sAddressList.size() && HomeFragment.sAddressList
+                        .size() != 0; i++) {
+                    for (int j = 0; j < HomeFragment.sAddressList.get(i).getCityList().length();
+                         j++) {
+                        JSONObject jo = HomeFragment.sAddressList.get(i).getCityList()
+                                .optJSONObject(j);
+                        String city = jo.optString("cityName", "");
+                        if (city.equals(location.getCity())) {
+                            isHava = false;
+                        }
+                    }
+                }
+
+                location_str = location.getCity();
+                HomeFragment.cityCode = location.getAdCode();
                 if (isFirstRun) {
                     //第一次进入定位成功
-                    if (isHava) {
+                    if (!isHava) {
                         //定位地点有分公司
                         MyApplication.saveNowAddress(LocationMyLatService.this, location_str);
                         status_int = 1;
@@ -88,16 +105,24 @@ public class LocationMyLatService extends Service implements HomeFragment.Locati
                     }
 
                 } else {
-                    //第二次定位成功
+                    //第二次定位成功  这是记录第一次定位的地址
+                    String fristAddress = MyApplication.getNowAddress(LocationMyLatService.this);
+                    if (fristAddress.equals(location.getCity())) {
+                        isAddressChange = true;
+                    } else {
+                        isAddressChange = false;
+                    }
                     if (isAddressChange) {
                         //地址没变
                         status_int = 3;
+                        MyApplication.saveNowAddress(LocationMyLatService.this, location_str);
 //                        mLocationAddress_interface.LocationStatus(3, location_str);
-
                     } else {
-                        status_int = 4;
-//                        mLocationAddress_interface.LocationStatus(4, location_str);
                         //地址变了
+                        status_int = 4;
+
+//                        mLocationAddress_interface.LocationStatus(4, location_str);
+
                     }
 
                 }

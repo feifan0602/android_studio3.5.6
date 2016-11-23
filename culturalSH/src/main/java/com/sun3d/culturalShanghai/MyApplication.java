@@ -79,6 +79,8 @@ import java.util.regex.Pattern;
 
 import cn.jpush.android.api.JPushInterface;
 
+import static com.sun3d.culturalShanghai.service.DownloadAPKService.context;
+
 public class MyApplication extends Application {
     public static String Text_Url = "http://new-img2.ol-img.com/985x695/116/31/lirqOsEqHWnuE.jpg";
     public static String Text_Big_Url = "http://pic16.nipic.com/20110831/8027526_145847893000_2" +
@@ -245,15 +247,16 @@ public class MyApplication extends Application {
     public static String TEXTFONTTYPEPATH = Environment.getExternalStorageDirectory()
             .getAbsolutePath() + "/YuanTi.TTF";
     public static String FONTSIZI;
-    public  static final int GB_SP_DIFF = 160;
+    public static final int GB_SP_DIFF = 160;
     // 存放国标一级汉字不同读音的起始区位码
-    public static final int[] secPosValueList = { 1601, 1637, 1833, 2078, 2274, 2302,
+    public static final int[] secPosValueList = {1601, 1637, 1833, 2078, 2274, 2302,
             2433, 2594, 2787, 3106, 3212, 3472, 3635, 3722, 3730, 3858, 4027,
-            4086, 4390, 4558, 4684, 4925, 5249, 5600 };
+            4086, 4390, 4558, 4684, 4925, 5249, 5600};
     // 存放国标一级汉字不同读音的起始区位码对应读音
-    public static final char[] firstLetter = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+    public static final char[] firstLetter = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
             'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'w', 'x',
-            'y', 'z' };
+            'y', 'z'};
+
     @Override
     public void onCreate() {
         // TODO Auto-generated method stub
@@ -272,8 +275,15 @@ public class MyApplication extends Application {
         }
         JPushInterface.init(this);
         initChange();
-
         init();
+        getIp();
+    }
+
+    public static void getIp() {
+        String ip = getNowIp(mContext);
+        String testip = getNowTestIp(mContext);
+        Log.i(TAG, "getIp: " + ip + "  test ip" + testip);
+        HttpUrlList.setIpAndTestIp(mContext, ip, testip);
     }
 
     private void initChange() {
@@ -290,16 +300,16 @@ public class MyApplication extends Application {
         File apatchPath = new File(patchFileString);
 
         if (apatchPath.exists()) {
-            ToastUtil.showToast("补丁文件存在");
+//            ToastUtil.showToast("补丁文件存在");
             try {
                 //添加apatch文件
                 mPatchManager.addPatch(patchFileString);
             } catch (IOException e) {
-                ToastUtil.showToast("打补丁出错了");
+//                ToastUtil.showToast("打补丁出错了");
                 e.printStackTrace();
             }
         } else {
-            ToastUtil.showToast("补丁文件不存在");
+//            ToastUtil.showToast("补丁文件不存在");
         }
 
 
@@ -914,6 +924,33 @@ public class MyApplication extends Application {
      *
      * @param listView
      */
+    public static void setListViewHeightPop(ListView listView, int divider_height) {
+        // 获取ListView对应的Adapter
+        ListAdapter listAdapter = listView.getAdapter();
+        if (listAdapter == null) {
+            return;
+        }
+
+        int totalHeight = 0;
+        for (int i = 0; i < listAdapter.getCount(); i++) { // listAdapter.getCount()返回数据项的数目
+            View listItem = listAdapter.getView(i, null, listView);
+            listItem.measure(0, 0); // 计算子项View 的宽高
+            totalHeight += listItem.getMeasuredHeight(); // 统计所有子项的总高度
+        }
+        ViewGroup.LayoutParams params = listView.getLayoutParams();
+        params.height = totalHeight + (listAdapter.getCount() * divider_height);
+        Log.i(TAG, "setListViewHeightPop: "+params.height);
+        if (params.height < 1300) {
+            params.height = 1300;
+        }
+        listView.setLayoutParams(params);
+    }
+
+    /**
+     * 动态获取 ListView 的高度
+     *
+     * @param listView
+     */
     public static void setListViewHeightBasedOnChildren(ListView listView) {
         // 获取ListView对应的Adapter
         ListAdapter listAdapter = listView.getAdapter();
@@ -1114,40 +1151,44 @@ public class MyApplication extends Application {
         }
         return true;
     }
-    public static void setFontsSize(){
-        MyApplication.FONTSIZI="23.19MB";
+
+    public static void setFontsSize() {
+        MyApplication.FONTSIZI = "23.19MB";
     }
-    public static boolean downFontbol(){
-        File f=new File(MyApplication.TEXTFONTTYPEPATH);
-        String size=FileSizeUtil.getAutoFileOrFilesSize(MyApplication.TEXTFONTTYPEPATH);
+
+    public static boolean downFontbol() {
+        File f = new File(MyApplication.TEXTFONTTYPEPATH);
+        String size = FileSizeUtil.getAutoFileOrFilesSize(MyApplication.TEXTFONTTYPEPATH);
         setFontsSize();
-        if (!f.exists()||!size.equals(MyApplication.FONTSIZI)){
+        if (!f.exists() || !size.equals(MyApplication.FONTSIZI)) {
             return true;
-        }else{
+        } else {
             return false;
         }
 
     }
-    public static boolean changeFontType(){
-        File f=new File(MyApplication.TEXTFONTTYPEPATH);
-        String size=FileSizeUtil.getAutoFileOrFilesSize(MyApplication.TEXTFONTTYPEPATH);
+
+    public static boolean changeFontType() {
+        File f = new File(MyApplication.TEXTFONTTYPEPATH);
+        String size = FileSizeUtil.getAutoFileOrFilesSize(MyApplication.TEXTFONTTYPEPATH);
         setFontsSize();
-        if(f.exists()&&size.equals(MyApplication.FONTSIZI)){
+        if (f.exists() && size.equals(MyApplication.FONTSIZI)) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
+
     public static Typeface GetTypeFace() {
         if (typeFace == null) {
             String familyName = "宋体";
             File f = new File(TEXTFONTTYPEPATH);
-            if(changeFontType()){
+            if (changeFontType()) {
                 Log.i(TAG, "GetTypeFace: 存在");
                 typeFace = Typeface.createFromFile(f);
-            }else{
+            } else {
                 Log.i(TAG, "GetTypeFace: 不存在");
-                typeFace =Typeface.create(familyName,Typeface.BOLD);
+                typeFace = Typeface.create(familyName, Typeface.BOLD);
             }
             return typeFace;
         } else {
@@ -1616,16 +1657,59 @@ public class MyApplication extends Application {
         intent.putExtra("url", url);
         con.startActivity(intent);
     }
-    public static void saveNowAddress(Context context,String location_str){
+
+    public static void saveNowAddress(Context context, String location_str) {
         SharedPreferences sharedPreferences = context.getSharedPreferences("share", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("nowAddress", location_str);
         editor.commit();
     }
-    public static String getNowAddress(Context context){
+
+    public static String getNowAddress(Context context) {
         SharedPreferences sharedPreferences = context.getSharedPreferences("share", MODE_PRIVATE);
         String address = sharedPreferences.getString("nowAddress", "");
         return address;
+    }
+
+    public static void saveNowIp(Context context, String ip) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences("ip", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("ip", ip);
+        editor.commit();
+    }
+
+    public static String getNowIp(Context context) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences("ip", MODE_PRIVATE);
+        String ip = sharedPreferences.getString("ip", "");
+        return ip;
+    }
+
+    public static void saveNowTestIp(Context context, String ip) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences("testip", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("testip", ip);
+        editor.commit();
+    }
+
+    public static String getNowTestIp(Context context) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences("testip", MODE_PRIVATE);
+        String testip = sharedPreferences.getString("testip", "");
+        return testip;
+    }
+
+    public static void clearCache() {
+        SharedPreferences sharedPreferences = context.getSharedPreferences("testip", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        SharedPreferences sharedPreferences1 = context.getSharedPreferences("ip", MODE_PRIVATE);
+        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+        SharedPreferences sharedPreferences2 = context.getSharedPreferences("share", MODE_PRIVATE);
+        SharedPreferences.Editor editor2 = sharedPreferences2.edit();
+        editor.clear();
+        editor1.clear();
+        editor2.clear();
+        editor.commit();
+        editor1.commit();
+        editor2.commit();
     }
 
     public static String getSpells(String characters) {

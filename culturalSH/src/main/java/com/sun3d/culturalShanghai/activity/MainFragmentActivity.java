@@ -122,6 +122,7 @@ public class MainFragmentActivity extends FragmentActivity implements
         unregisterReceiver(mMessageReceiver);
         RepairBugUtil.getInstance().release();
         LoadingTextShowPopWindow.dismissPop();
+//        MyApplication.clearCache();
     }
 
     @Override

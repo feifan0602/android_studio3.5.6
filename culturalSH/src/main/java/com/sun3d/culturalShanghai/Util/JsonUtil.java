@@ -1,14 +1,5 @@
 package com.sun3d.culturalShanghai.Util;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.util.Log;
 
 import com.sun3d.culturalShanghai.activity.ActivityRoomDateilsActivity;
@@ -60,6 +51,15 @@ import com.sun3d.culturalShanghai.object.WeiXinInfo;
 import com.sun3d.culturalShanghai.object.WindowInfo;
 import com.sun3d.culturalShanghai.seat.CH_seatInfo;
 import com.sun3d.culturalShanghai.video.VideoInfo;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Json 解析类
@@ -246,7 +246,26 @@ public class JsonUtil {
 		}
 		return list;
 	}
-
+	public static List<EventInfo> getHomeAddressPop(String json_str)
+			throws JSONException {
+		List<EventInfo> list = new ArrayList<EventInfo>();
+		JSONObject json = new JSONObject(json_str);
+		JSONArray data_ja = json.getJSONArray("data");
+		for (int i = 0; i < data_ja.length(); i++) {
+			JSONObject jo = data_ja.getJSONObject(i);
+			EventInfo eventInfo = new EventInfo();
+			eventInfo.setCityList(jo.optJSONArray("cityList"));
+			eventInfo.setIsQuickSearch(jo.optInt("isQuickSearch",0));
+			eventInfo.setCityId(jo.optInt("cityId",0));
+			eventInfo.setCityCode(jo.optInt("cityCode",0));
+			eventInfo.setAreaId(jo.optInt("areaId",0));
+			eventInfo.setCityName(jo.optString("cityName",""));
+			eventInfo.setCityIndex(jo.optInt("cityIndex",0));
+			eventInfo.setFirstLetter(jo.optString("firstLetter",""));
+			list.add(eventInfo);
+		}
+		return list;
+	}
 	public static List<SpaceInfo> getSpaceList(String json_str)
 			throws JSONException {
 		List<SpaceInfo> list = new ArrayList<SpaceInfo>();

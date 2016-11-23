@@ -13,13 +13,18 @@ import com.sun3d.culturalShanghai.MyApplication;
 public class ToastUtil {
     private static Toast toast;
     private static TextView mText;
-
+    public static boolean isShow=true;
+    public static boolean timeShow=true;
     public static void showToast(String str) {
 
-        if (toast == null) {
+        if (toast == null&&isShow&&timeShow) {
+            timeShow=false;
             com.sun3d.culturalShanghai.Util.Toast.makeText(
                     MyApplication.getContext(), str,
                     com.sun3d.culturalShanghai.Util.Toast.LENGTH_LONG).show();
+            Thread th=new Thread(mRunnable);
+            th.start();
+
         }
 //            toast = new Toast(MyApplication.getContext());
 //            toast.setGravity(Gravity.CENTER, 0, 0);
@@ -36,7 +41,17 @@ public class ToastUtil {
 //        }
 //        toast.show();
     }
-
+    static Runnable mRunnable=new Runnable() {
+        @Override
+        public void run() {
+            try {
+                Thread.sleep(5000);
+                timeShow=true;
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+    };
     public static void cancelToast() {
         if (toast != null) {
             toast.cancel();

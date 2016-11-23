@@ -10,6 +10,141 @@ import java.util.List;
 
 @SuppressWarnings("serial")
 public class EventInfo implements Serializable {
+	public int isQuickSearch;
+	public int cityId;
+	public int areaId;
+	public String cityName;
+	public int cityCode;
+	public int cityIndex;
+	public String firstLetter;
+	public JSONArray cityList;
+	public int isQuickSearch_two;
+	public int cityId_two;
+	public int areaId_two;
+	public String cityName_two;
+	public int cityCode_two;
+	public int cityIndex_two;
+	public String firstLetter_two;
+
+	public int getAreaId_two() {
+		return areaId_two;
+	}
+
+	public void setAreaId_two(int areaId_two) {
+		this.areaId_two = areaId_two;
+	}
+
+	public int getCityCode_two() {
+		return cityCode_two;
+	}
+
+	public void setCityCode_two(int cityCode_two) {
+		this.cityCode_two = cityCode_two;
+	}
+
+	public int getCityId_two() {
+		return cityId_two;
+	}
+
+	public void setCityId_two(int cityId_two) {
+		this.cityId_two = cityId_two;
+	}
+
+	public int getCityIndex_two() {
+		return cityIndex_two;
+	}
+
+	public void setCityIndex_two(int cityIndex_two) {
+		this.cityIndex_two = cityIndex_two;
+	}
+
+	public String getCityName_two() {
+		return cityName_two;
+	}
+
+	public void setCityName_two(String cityName_two) {
+		this.cityName_two = cityName_two;
+	}
+
+	public String getFirstLetter_two() {
+		return firstLetter_two;
+	}
+
+	public void setFirstLetter_two(String firstLetter_two) {
+		this.firstLetter_two = firstLetter_two;
+	}
+
+	public int getIsQuickSearch_two() {
+		return isQuickSearch_two;
+	}
+
+	public void setIsQuickSearch_two(int isQuickSearch_two) {
+		this.isQuickSearch_two = isQuickSearch_two;
+	}
+
+	public JSONArray getCityList() {
+		return cityList;
+	}
+
+	public void setCityList(JSONArray cityList) {
+		this.cityList = cityList;
+	}
+
+	public int getAreaId() {
+		return areaId;
+	}
+
+	public void setAreaId(int areaId) {
+		this.areaId = areaId;
+	}
+
+	public int getCityCode() {
+		return cityCode;
+	}
+
+	public void setCityCode(int cityCode) {
+		this.cityCode = cityCode;
+	}
+
+	public int getCityId() {
+		return cityId;
+	}
+
+	public void setCityId(int cityId) {
+		this.cityId = cityId;
+	}
+
+	public int getCityIndex() {
+		return cityIndex;
+	}
+
+	public void setCityIndex(int cityIndex) {
+		this.cityIndex = cityIndex;
+	}
+
+	public String getCityName() {
+		return cityName;
+	}
+
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
+	}
+
+	public String getFirstLetter() {
+		return firstLetter;
+	}
+
+	public void setFirstLetter(String firstLetter) {
+		this.firstLetter = firstLetter;
+	}
+
+	public int getIsQuickSearch() {
+		return isQuickSearch;
+	}
+
+	public void setIsQuickSearch(int isQuickSearch) {
+		this.isQuickSearch = isQuickSearch;
+	}
 
 	public ArrayList<EventInfo> getEventInfosList() {
 		return mEventInfosList;

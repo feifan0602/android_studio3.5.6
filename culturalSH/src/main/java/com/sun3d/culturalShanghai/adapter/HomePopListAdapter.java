@@ -10,8 +10,13 @@ import android.widget.TextView;
 
 import com.sun3d.culturalShanghai.MyApplication;
 import com.sun3d.culturalShanghai.R;
+import com.sun3d.culturalShanghai.fragment.HomeFragment;
 import com.sun3d.culturalShanghai.object.EventInfo;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,11 +25,12 @@ import java.util.List;
 public class HomePopListAdapter extends BaseAdapter {
     private List<EventInfo> list;
     private Context mContext;
-
-    public HomePopListAdapter(Context mContext, List<EventInfo> list) {
+    private HomeFragment mHomeFragment;
+    public HomePopListAdapter(Context mContext, List<EventInfo> list,HomeFragment homeFragment) {
         // TODO Auto-generated constructor stub
         this.mContext = mContext;
         this.list = list;
+        this.mHomeFragment=homeFragment;
     }
 
     public void setData(List<EventInfo> list) {
@@ -70,21 +76,32 @@ public class HomePopListAdapter extends BaseAdapter {
             mHolder.mRelativeLayout.setVisibility(View.GONE);
         } else {
             mHolder.mRelativeLayout.setVisibility(View.VISIBLE);
-            HomePopGridAdapter mHomePopGridAdapter = new HomePopGridAdapter(mContext, info
-                    .getEventInfosList());
+            JSONArray ja = info.getCityList();
+            ArrayList<EventInfo> mList=new ArrayList<EventInfo>();
+            for (int i = 0; i < ja.length(); i++) {
+                EventInfo info_even = new EventInfo();
+                try {
+                    JSONObject jo = ja.getJSONObject(i);
+                    info_even.setIsQuickSearch(jo.optInt("isQuickSearch", 0));
+                    info_even.setCityId(jo.optInt("cityId", 0));
+                    info_even.setCityCode(jo.optInt("cityCode", 0));
+                    info_even.setAreaId(jo.optInt("areaId", 0));
+                    info_even.setCityName(jo.optString("cityName", ""));
+                    info_even.setCityIndex(jo.optInt("cityIndex", 0));
+                    info_even.setFirstLetter(jo.optString("firstLetter", ""));
+                    mList.add(info_even);
+                }catch(Exception e){
+                    e.printStackTrace();
+                }
+
+            }
+            HomePopGridAdapter mHomePopGridAdapter = new HomePopGridAdapter(mContext, mList,mHomeFragment);
             mHolder.mGridView.setAdapter(mHomePopGridAdapter);
-            MyApplication.setGridViewHeight(mHolder.mGridView, 4, 9);
+            MyApplication.setGridViewHeight(mHolder.mGridView, 4, 20);
 
         }
-        String frist_str = "";
-        if (list.get(position).getActivityArea() != "" && list.get(position).getActivityArea() !=
-                null) {
-            frist_str = MyApplication.getSpells(list.get(position).getActivityArea());
-            frist_str = frist_str.substring(0, 1).toUpperCase();
-        }
-
-        mHolder.mText_Frist.setText(frist_str);
-        mHolder.mTextView.setText(list.get(position).getActivityArea());
+        mHolder.mText_Frist.setText(list.get(position).getFirstLetter());
+        mHolder.mTextView.setText(list.get(position).getCityName());
         return convertView;
     }
 

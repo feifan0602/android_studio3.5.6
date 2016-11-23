@@ -1,5 +1,9 @@
 package com.sun3d.culturalShanghai.http;
 
+import android.content.Context;
+
+import com.sun3d.culturalShanghai.MyApplication;
+
 /**
  * HTTPurl请求列表
  *
@@ -29,10 +33,11 @@ public class HttpUrlList {
 //    public static String IP = "http://m.wenhuayun.cn";
 //    public static String TEST_IP = "http://m.whycm.sh.cn:10019";
 
-    public static String IP = "http://m.wenhuayun.cn";
-    public static String TEST_IP = "http://m.whycm.sh.cn:10019";
+    public static String IP = "http://eme.wenhuayun.cn";
+    public static String TEST_IP = "http://eme.whycm.sh.cn:10019";
 
-
+//    public static String IP = "";
+//    public static String TEST_IP = "";
     // public static  String IP = "http://eme.wenhuayun.cn";// 正式环境
     // public static  String IP="http://eme.whycm.sh.cn:10019";
 
@@ -56,7 +61,519 @@ public class HttpUrlList {
     public static String NEW_IP = "";
     public static String NEW_TEST_IP = "";
 
+    public static void setIpAndTestIp(Context context, String ip, String test_ip) {
+        IP=ip;
+        TEST_IP=test_ip;
+        WebUrl.NEWURL = ip + "/frontNews/detail.do";
+        WebUrl.VOTEURL = ip + "/frontVote/detail.do";
+        WebUrl.WEB_AOUNT = ip + "/serviceProtocol.html";
+        WebUrl.WEB_HELP = ip + "/wechat/help.do?type=app";
 
+        UserUrl.User_thirdlogin = ip + "/login/appOpenUser.do";
+        UserUrl.User_fasrlogin = ip + "/login/doLogin.do";
+        UserUrl.User_UploadUserIcon = ip
+                + "/appUser/uploadAppFiles.do";
+        UserUrl.User_setUserInfo = ip
+                + "/appUser/editTerminalUser.do";
+        UserUrl.User_getphonecodeInfo = ip
+                + "/appUser/appSendCode.do";
+        UserUrl.User_bindphoneInfo = ip
+                + "/appUser/appValidateCode.do";
+        UserUrl.User_setuserpasswordInfo = ip
+                + "/appUser/appValidatePwd.do";
+        UserUrl.USER_SETEMAILINFO = ip
+                + "/appUser/editTerminalUserByMail.do";
+        UserUrl.GET_USERINFO = ip
+                + "/appUser/queryTerminalUserById.do";
+        UserUrl.FORGETPW_GETCODE = ip
+                + "/appUser/editTerminalUserByMobile.do";
+        UserUrl.FINDPW_FIXPW = ip
+                + "/appUser/editTerminalUserByPwd.do";
+        UserUrl.REGISTER_PHONE_CODE = ip
+                + "/login/userCode.do";
+        UserUrl.REGISTER_URL = ip + "/login/doRegister.do";
+        UserUrl.USER_UPLOADGROUPPIC = ip
+                + "/appUser/uploadAppFiles.do";
+        UserUrl.USER_THIRD_BIND = ip
+                + "/appUser/BindingAccount.do";
+
+
+        Comment.User_CommentList = ip
+                + "/appActivity/activityAppComment.do";
+        Comment.User_CommitComment = ip
+                + "/appActivity/addComment.do";
+
+
+        EventUrl.HTTP_MAIN_LIST_URL = ip
+                + "/appActivity/activityAppIndex.do";// 主界面20条活动数据
+        /**
+         * 3.5 活动详情接口
+         */
+        EventUrl.WFF_HTTP_EVENT_URL = ip
+                + "/appActivity/cmsActivityAppDetail.do";// 活动详情
+        // public static  String HTTP_EVENT_URL = IP
+        // + "/appActivity/activityAppDetail.do";// 活动详情
+        EventUrl.MAIN_EVENT_SIX_URL = ip
+                + "/appActivity/appActivityTag.do";// 活动六个标签
+        EventUrl.ACTIVITY_ONLINE_SEAT = ip
+                + "/appActivity/appActivityBook.do";// 活动在线选座
+        EventUrl.LOOK_URL = ip
+                + "/appActivity/appActivityTagList.do";// 活动类型
+        EventUrl.ADDTYPETAG = ip + "/appTag/addUserTags.do";// 活动类型
+        EventUrl.WANTTO_URL = ip
+                + "/appActivity/appAddActivityUserWantgo.do";// 我想参加
+        EventUrl.WFF_APPADDVENUEUSERWANTGO = ip
+                + "/appVenue/appAddVenueUserWantgo.do";// 点赞场馆
+        EventUrl.WFF_APPDELETEVENUEUSERWANTGO = ip
+                + "/appVenue/appDeleteVenueUserWantgo.do";// 取消点赞场馆
+        EventUrl.WANTNOT_URL = ip
+                + "/appActivity/deleteActivityUserWantgo.do";// 我不想参加
+        EventUrl.WANTTO_USERS_URL = ip
+                + "/appActivity/appActivityUserWantgoList.do";// 获取报名用户
+        EventUrl.WFF_APPVUNUEUSERWANTGOLIST = ip
+                + "/appVenue/appVenueUserWantgoList.do";// 获取报名用户
+
+        /**
+         * 获取活动浏览数
+         */
+        EventUrl.WFF_APPCMSACTIVITYBROWSECOUNT = ip
+                + "/appActivity/appCmsActivityBrowseCount.do";// 获取报名用户
+        /**
+         * 获取场馆浏览数
+         */
+        EventUrl.WFF_APPCMSVENUEBROWSECOUNT = ip
+                + "/appVenue/appCmsVenueBrowseCount.do";// 获取场馆浏览数
+
+        EventUrl.RANDACTIVITY_URL = ip
+                + "/appActivity/appRandActivityList.do";// 随机推送的数据
+        EventUrl.RANDAUSERSCAN_URL = ip
+                + "/appActivity/addRandActivity.do";// 随机推送的数据
+        EventUrl.ELECTRONICTICKET_URL = ip
+                + "/appUserActivity/electronicTicket.do";// 生成电子票
+
+        EventUrl.ACTIVITYDETAILVOTE = ip
+                + "/userActivityVote/userVote.do";
+        EventUrl.ACTIVITYSHOWINDEX = ip
+                + "/appMc/mcShowIndex.do";
+        EventUrl.ACTIVITYCOUNT = ip
+                + "/appActivity/appWillStartActivityCount.do";
+        EventUrl.ACTIVITYWILL = ip
+                + "/appActivity/appAddWillStart.do";
+        EventUrl.ACTIVITYVOTELIST = ip
+                + "/userActivityVote/queryActivityVote.do";
+
+
+        /**
+         * 活动搜索接口
+         */
+        SearchUrl.HTTP_APPHOTACTIVITY = ip
+                + "/appHot/getActivity.do";
+
+        SearchUrl.URL_GET_SK_MATCH = test_ip
+                + "/activity/automatedName";
+        /**
+         * 根据条件搜索活动
+         */
+        SearchUrl.WFF_APPCMSACTIVITYLISTBYCONDITION = ip
+                + "/appActivity/appCmsActivityListByCondition.do";
+        SearchUrl.HTTP_PUPO_SEARCH_URL = ip
+                + "/appTag/appActivityTagByType.do";
+        SearchUrl.HTTP_SEARCH_URL = ip
+                + "/appActivity/appActivityIndex.do";
+
+
+        Label.HTTP_INDEXTAGS = ip
+                + "/tag/appActivityTags.do";
+
+
+        Venue.WFF_CMSVUNUEAPPDETAIL = ip
+                + "/appVenue/cmsVenueAppDetail.do";
+
+        Venue.VENUE_DETAILURL = ip
+                + "/appVenue/venueAppDetail.do";
+        Venue.CANCEL_URL = ip
+                + "/appUserVenue/removeAppRoomOrder.do";
+        Venue.CANCEL_ROOMORDER_ID = "roomOrderId";
+        // public static  String VENUE_LIST = IP +
+        // "/venue/appVenueIndex.do";
+        Venue.VENUE_LIST = ip
+                + "/appVenue/venueAppIndex.do";
+        /**
+         * 根据条件筛选场馆
+         */
+        Venue.WFF_APPCMSVENUELIST = ip
+                + "/appVenue/appCmsVenueList.do";
+        /**
+         * 場館的分類選項
+         */
+        Venue.WFF_APPVENUETAGBYTYPE = ip
+                + "/appTag/appVenueTagByType.do";
+        /**
+         * 区域的选项 venueMood
+         */
+        Venue.WFF_GETALLAREA = ip
+                + "/appActivity/getAllArea.do";
+        /**
+         * 根据不同条件选择场馆
+         */
+        Venue.WFF_APPVENUELIST = ip
+                + "/appVenue/appVenueList.do";
+
+        Venue.URL_GET_VENUE_NUMOFROOMS = ip
+                + "/appVenue/appVenueCountInfo.do";
+
+        Venue.VENUE_LIST_SCREEN = ip
+                + "/appVenue/appVenueListIndex.do";
+
+
+        /**
+         * 广告的链接
+         */
+        HomeFragment.PAGEADVERTRECOMMEND = test_ip
+                + "/advertRecommend/pageAdvertRecommend";
+        /**
+         * 推荐活动接口 3.5.4
+         */
+        HomeFragment.RECOMMENDACTIVITY = test_ip
+                + "/activity/recommendActivity";
+
+
+        SearchList.SEARCHACTIVITY = test_ip
+                + "/activity/searchActivity";
+        SearchList.SEARCHVENUE = test_ip + "/venue/searchVenue";
+
+
+        /**
+         * 活动室列表
+         */
+        /**
+         * 根据展馆id查询相关活动室信息
+         */
+        ActivityRoomUrl.ROOM_LIST_URL = ip
+                + "/appVenue/activityAppRoom.do";// venueAppRooms
+        ActivityRoomUrl.ROOMDETAIL_LIST_URL = ip
+                + "/appRoom/roomAppDetail.do";
+        ActivityRoomUrl.ROOM_TEAMLIST = ip
+                + "/appRoom/roomTeamUser.do";
+        ActivityRoomUrl.ROOM_BOOK = ip + "/appRoom/roomBook.do";
+        ActivityRoomUrl.ROOM_BOOK_TRUE = ip
+                + "/appRoom/roomOrderConfirm.do";
+
+
+        /**
+         * 藏品
+         */
+        Collection.COLLECTION_ALL_GETURL = ip
+                + "/appAntique/antiqueAppIndex.do";
+        Collection.COLLECTION_FILTER_GETURL = ip
+                + "/appAntique/screenAppAntiqueDynasty.do";
+        Collection.COLLECTION_FILTER_GETURL_NAME = ip
+                + "/appAntique/screenAppAntiqueTypeName.do";
+        Collection.COLLECTION_DETAIL_GETURL = ip
+                + "/appAntique/antiqueAppDetail.do";
+
+
+        // 3.5接口更新
+        /**
+         * 这个是横向listview选择后的接口,刷新listview
+         */
+        MyEvent.WFF_APPTOPACTIVITYLIST = ip
+                + "/appActivity/appTopActivityList.do";
+        /**
+         * app发送用户实名认证验证码
+         */
+        MyEvent.WFF_SENDAUTHCODE = ip
+                + "/appUser/sendAuthCode.do";
+        /**
+         * 这是首页的广告栏接口
+         */
+        MyEvent.WFF_APPADVERTRECOMENDLIST = ip
+                + "/appActivity/appAdvertRecommendList.do";
+        /**
+         * 这个是APP首页的活动的接口
+         */
+        MyEvent.WFF_ACTIVITYRECOMMENTDURL = ip
+                + "/appActivity/appRecommendActivity.do";
+        /**
+         * 这是查询推荐活动的接口 默认是推荐的接口
+         */
+        MyEvent.WFF_APPRECOMMENDACTIVITYLIST = ip
+                + "/appActivity/appRecommendActivityList.do";
+        /**
+         * 这是查询推荐活动的接口 3.5.2（有筛选条件 的时候选择这个接口）
+         */
+        MyEvent.WFF_APPFILTERACTIVITYLIST = ip
+                + "/appActivity/appFilterActivityList.do";
+
+        /**
+         * 这是用户活动订单详情 3.5.2
+         */
+        MyEvent.WFF_USERACTIVITYORDERDEATIL = ip
+                + "/appUserOrder/userActivityOrderDetail.do";
+        /**
+         * app活动场次列表
+         */
+        MyEvent.WFF_APPACTIVITYEVENTLIST = ip
+                + "/appActivity/appActivityEventList.do";
+
+        /**
+         * app转发添加积分接口(3.5.2接口)
+         */
+        MyEvent.WFF_FORWARDINGINTEGRAL = ip
+                + "/appUser/forwardingIntegral.do";
+
+        // public static  String WFF_APPACTIVITYEVENTLIST = IP
+        // + "/appActivity/appActivitySpikeList.do";
+
+        /**
+         * 这是用户活动室详情 3.5.2
+         */
+        MyEvent.WFF_USERROOMORDERDEATIL = ip
+                + "/appUserOrder/userRoomOrderDetail.do";
+
+        /**
+         * 这是根據不同的条件显示活动列表
+         */
+        MyEvent.WFF_APPCMSACTIVITYLISTBYCONDITION = ip
+                + "/appActivity/appCmsActivityListByCondition.do";
+
+        /**
+         * 这个是APP附近活动的接口
+         */
+        MyEvent.WFF_APPNEARACTIVITYLIST = ip
+                + "/appActivity/appNearActivityList.do";
+        /**
+         * 每天的活动数
+         */
+        MyEvent.WFF_APPEVERYDATEACTIVITYCOUNT = ip
+                + "/appActivity/appEveryDateActivityCount.do";
+
+        /**
+         * 某天的活动列表
+         */
+        MyEvent.WFF_ACTIVITYLISTURL_MAP = ip
+                + "/appActivity/appEveryDateActivityList.do";
+        /**
+         * 3.5.2 日历接口改变
+         */
+        MyEvent.WFF_APPACTIVITYCALENDARLIST = ip
+                + "/appActivity/appActivityCalendarList.do";
+
+        MyEvent.ACTIVITYLISTURL = ip
+                + "/appActivity/appTopActivity.do";
+
+        MyEvent.INDEXLISTURL = ip
+                + "/appActivity/appActivityListIndex.do";
+        MyEvent.MY_PASTEVENT_URL = ip
+                + "/appUserActivity/userAppOldActivity.do";
+        MyEvent.MY_NEWEVENT_URL = ip
+                + "/appUserActivity/userAppNowActivity.do";
+        /**
+         * 根据展馆id查询相关活动
+         */
+        MyEvent.ACTIVITY_LIST_URL = ip
+                + "/appVenue/venueAppCmsActivity.do";
+        MyEvent.ACTIVITY_RESERVE_URL = ip
+                + "/appActivity/appActivityOrder.do";
+        MyEvent.CANCEL_EVENT_URL = ip
+                + "/appUserActivity/removeAppActivity.do";
+        MyEvent.DELLETE_ACTIVITY_URL = ip
+                + "/appUserActivity/deleteAppUserActivityHistory.do";
+
+
+        Banner.CALENDER_BANNER_URL = ip
+                + "/appActivity/queryCalendarAdvert.do";
+        Banner.MAIN_BANNER_URL = ip
+                + "/appActivity/appActivityBanner.do";
+        // 这个是引导页
+        Banner.WFF_GETMOBILEIMAGE = ip
+                + "/appUser/getMobileImage.do";
+        // 这个是版本号
+        Banner.WFF_CHECKAPPVERSIONNO = ip
+                + "/appUser/checkAppVersionNo.do";
+
+
+        ActivityDetail.ASSOCIATIONACTIVITY = test_ip
+                + "/association/associationActivity";
+        ActivityDetail.PATH = test_ip + "/staticServer/path";
+
+
+        // 添加活动收藏
+        Collect.ADD_EVENT_URL = ip
+                + "/appUserCollect/appCollectActivity.do";
+        // 取消活动收藏
+        Collect.CANCEL_EVENT_URL = ip
+                + "/appUserCollect/appDelCollectActivity.do";
+        // 我的收藏活动列表
+        Collect.ACTIVITY_LIST = ip
+                + "/appUserCollect/userAppCollectAct.do";
+        // app显示用户收藏活动列表
+        Collect.WFF_USERAPPCOLLECTACT = ip
+                + "/appUserCollect/userAppCollectAct.do";
+        // app显示用户收藏场馆列表
+        Collect.WFF_USERAPPCOLLECTVEN = ip
+                + "/appUserCollect/userAppCollectVen.do";
+        // app显示用户评论活动列表
+        Collect.WFF_APPACTIVITYCOMMENTLIST = ip
+                + "/appActivity/appActivityCommentList.do";
+        // app显示用户评论场馆列表
+        Collect.WFF_APPVENUECOMMENTLIST = ip
+                + "/appVenue/appVenueCommentList.do";
+        Collect.COLLECT_LIST = ip
+                + "/appUserCollect/queryAppUserCollect.do";
+        // 场馆Id
+        // 添加场馆收藏
+        Collect.ADD_VENUE_URL = ip
+                + "/appUserCollect/appCollectVenue.do";
+        // 取消场馆收藏
+        Collect.CANCEL_VENUE_URL = ip
+                + "/appUserCollect/appDelCollectVenue.do";
+        // 我的收藏场馆列表
+        Collect.VENUE_LIST_URL = ip
+                + "/appUserCollect/userAppCollectVen.do";
+        // 添加团体收藏
+        Collect.ADD_GROUP_URL = ip
+                + "/appUserCollect/appCollectTeam.do";
+        // 取消团体收藏
+        Collect.CANCEL_GROUP_URL = ip
+                + "/appUserCollect/appDelCollectTeam.do";
+        // 我的收藏团体列表
+        Collect.GROUP_LIST_URL = ip
+                + "/appUserCollect/userAppCollectTeam.do";
+
+
+        /**
+         * app显示活动及场馆进行中的订单列表
+         */
+        MyMessage.WFF_USERORDERS = ip
+                + "/appUserOrder/appUserOrder.do";
+        /**
+         * app显示待审核的订单列表
+         */
+        MyMessage.WFF_APPUSERCHECKORDER = ip
+                + "/appUserOrder/appUserCheckOrder.do";
+        /**
+         * app显示活动及场馆进行中的历史订单列表
+         */
+        MyMessage.WFF_APPUSERHISTORYORDER = ip
+                + "/appUserOrder/appUserHistoryOrder.do";
+        MyMessage.ORDER_MESSAGE_URL = ip
+                + "/appUserOrder/userOrders.do";
+
+
+        /**
+         * 我的消息
+         */
+        Message.MY_MESSAGE_URL = ip
+                + "/appUserMessage/userAppMessage.do";
+        Message.MY_DELETEMESSAGE_URL = ip
+                + "/appUserMessage/delAppMessage.do";
+
+
+        /**
+         * 我的積分
+         */
+        Code.MY_CODE_URL = ip
+                + "/appUser/appUserIntegralDetail.do";
+        Code.MY_MORE_CODE_URL = ip
+                + "/appUser/appUserIntegralDetailList.do";
+
+
+        /**
+         * 反馈信息
+         */
+        Feedback.FEEDBACK_URL = ip
+                + "/appUser/appFeedInformation.do";
+        Feedback.FEEDBACK_TYPE_URL = ip
+                + "/appTag/appFeedBackTagByType.do";
+
+
+        /**
+         * 我的场馆
+         */
+        MyVenue.NEW_VENUE_URL = ip
+                + "/appUserVenue/userAppNowVenue.do";
+        MyVenue.PAST_VENUE_URL = ip
+                + "/appUserVenue/userAppOldVenue.do";
+        MyVenue.DELETE_VENUE_URL = ip
+                + "/appUserVenue/deleteAppRoomOrder.do";
+
+
+        /**
+         * 版本更新
+         */
+        Version.APP_VESIONUPDATER_URL = ip
+                + "/login/appAndroidVersion.do";
+
+
+        /**
+         * 条件筛选(场馆，团体，非遗)
+         */
+        Window.WFF_VENUE_URL = ip + "/appHot/getVenue.do";
+        Window.VENUE_URL = ip
+                + "/appTag/appVenueTagByType.do";
+        Window.GROUP_URL = ip
+                + "/teamUser/appTeamUserTagByType.do";
+        Window.NOT_INVOLUANTARY_URL = ip
+                + "/culture/appCultureTagByType.do";
+
+
+        /**
+         * 团体
+         */
+        Group.GROUP_LIST = ip
+                + "/teamUser/teamUserAppIndex.do";
+        Group.GROUP_DETAIL = ip
+                + "/teamUser/appTeamUserDetail.do";
+        Group.GROUP_LIST_SCREEN = ip
+                + "/teamUser/appTeamUserListIndex.do";
+        Group.GROUP_ADD = ip
+                + "/teamUser/appTeamUserAdd.do";
+        Group.GROUP_MYADD = ip
+                + "/userTeam/userAppNowTeam.do";
+        Group.GROUP_HISADD = ip
+                + "/userTeam/userAppHistoryTeam.do";
+        // 团体管理
+        Group.GROUP_MANAGE = ip
+                + "/teamUser/appGroupManager.do";
+
+        // 团体消息
+        Group.MESSAGE_URL = ip
+                + "/userTeam/userAppGroupAuditing.do";
+        Group.GROUP_QUITADD = ip
+                + "/userTeam/userAppQuitTeam.do";
+        Group.GROUP_MANAGEADD = ip
+                + "/userTeam/userAppGroupTeam.do";
+        Group.GROUP_TREAMLABEL = ip
+                + "/teamUser/appMateTeamUserTag.do";
+        // 同意
+        Group.MESSAGE_AGREE_URL = ip
+                + "/userTeam/userAppApplyJoinTeamPass.do";
+        Group.MESSAGE_REPULSE_URL = ip
+                + "/userTeam/userAppApplyJoinTeamRefuse.do";
+        Group.GROUP_EDITCOMMIT = ip
+                + "/userTeam/editTeamUser.do";
+
+
+        NotInvoluntary.NOTINVOLUNTARY_LIST_URL = ip
+                + "/culture/cultureAppIndex.do";
+        NotInvoluntary.NOTINVOLUNTARY_DETAIL_URL = ip
+                + "/culture/cultureAppDetail.do";
+        NotInvoluntary.NOTINVOLUNTARY_URL = ip
+                + "/culture/appCultureListIndex.do";// 筛选列表
+
+
+        /**
+         * 文件相关
+         */
+        File.UPLOADIMG = ip
+                + "/appUser/uploadAppFiles.do";
+
+
+        MyApplication.saveNowIp(context,ip);
+        MyApplication.saveNowTestIp(context,test_ip);
+
+    }
 
     public static class WebUrl {
         public static String NEWURL = IP + "/frontNews/detail.do";
@@ -291,6 +808,10 @@ public class HttpUrlList {
     }
 
     public static class HomeFragment {
+        public static String CITYLIST = "http://emechinam.wenhuayun.cn:10019"
+                + "/areaCity/cityList";
+        public static String CITYPAGEINFO = "http://emechinam.wenhuayun.cn:10019"
+                + "/areaCity/cityPageInfo";
 
         /**
          * 广告的链接

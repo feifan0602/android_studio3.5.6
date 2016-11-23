@@ -368,7 +368,7 @@ public class SplashActivity extends Activity implements OnClickListener,
         Map<String, String> params = new HashMap<String, String>();
         params.put("height", "1787");
         params.put("width", "1242");
-
+        Log.i(TAG, "getSplashImage: "+HttpUrlList.Banner.WFF_GETMOBILEIMAGE);
         MyHttpRequest.onHttpPostParams(HttpUrlList.Banner.WFF_GETMOBILEIMAGE,
                 params, new HttpRequestCallback() {
 
@@ -376,6 +376,7 @@ public class SplashActivity extends Activity implements OnClickListener,
                     public void onPostExecute(int statusCode, String resultStr) {
                         // TODO Auto-generated method stub
                         if (HttpCode.HTTP_Request_Success_CODE == statusCode) {
+                            Log.i(TAG, "statusCode: "+statusCode+"  resultStr  "+resultStr);
                             try {
                                 JSONObject jo = new JSONObject(resultStr);
                                 url = jo.getString("data");
