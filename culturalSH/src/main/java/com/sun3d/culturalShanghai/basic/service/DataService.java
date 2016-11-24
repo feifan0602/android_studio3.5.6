@@ -108,6 +108,7 @@ public class DataService
 	{// 活动类别
 		Map<String, String> params = new HashMap<String, String>();
 		params.put(HttpUrlList.HTTP_USER_ID, MyApplication.loginUserInfor.getUserId());
+		Log.i(TAG, "getActivityType: "+HttpUrlList.EventUrl.LOOK_URL);
 		MyHttpRequest.onHttpPostParams(HttpUrlList.EventUrl.LOOK_URL, params, new HttpRequestCallback()
 		{
 
@@ -238,11 +239,11 @@ public class DataService
 		
 		Map<String, String> mParams = new HashMap<String, String>();
 		String area = SharedPreManager.getAllArea();
-		if (area != null)
+		if (area != null&&MyApplication.activity_bool==false)
 		{
 			callback.dataReceviceSuccessCallBack(area);
 			return;
-		} 
+		}
 		MyHttpRequest.onStartHttpGET(HttpUrlList.Venue.WFF_GETALLAREA, mParams, new HttpRequestCallback()
 		{
 

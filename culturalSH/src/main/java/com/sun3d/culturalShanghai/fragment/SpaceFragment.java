@@ -725,7 +725,7 @@ public class SpaceFragment extends Fragment implements OnClickListener,
 	 * 
 	 * @param i
 	 */
-	private void onResh(int i) {
+	public void onResh(int i) {
 		if (NetWorkUtil.isConnected()) {
 			if (WebOrListView_bool) {
 				web_view.setVisibility(View.GONE);
@@ -1488,7 +1488,7 @@ public class SpaceFragment extends Fragment implements OnClickListener,
 	/**
 	 * 获取地址的信息
 	 */
-	private void getDataArea() {
+	public void getDataArea() {
 		Map<String, String> mParams = new HashMap<String, String>();
 		MyHttpRequest.onStartHttpGET(HttpUrlList.Venue.WFF_GETALLAREA, mParams,
 				new HttpRequestCallback() {

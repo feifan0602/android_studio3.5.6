@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.sun3d.culturalShanghai.MyApplication;
 import com.sun3d.culturalShanghai.R;
+import com.sun3d.culturalShanghai.activity.MainFragmentActivity;
 import com.sun3d.culturalShanghai.fragment.HomeFragment;
 import com.sun3d.culturalShanghai.object.EventInfo;
 
@@ -65,6 +66,7 @@ public class HomePopGridAdapter extends BaseAdapter {
         mHolder.tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                MainFragmentActivity.getIntance().ResetFragment();
                 if (list.get(position).getCityCode()==0){
                     mHomeFragment.changeToChina();
                 }else{
@@ -75,6 +77,7 @@ public class HomePopGridAdapter extends BaseAdapter {
 
                 }
                 mHomeFragment.openPopWindow();
+
 
             }
         });

@@ -1295,7 +1295,7 @@ int id activity_dateils 0x7f0b00e4
 int id activity_detail_Only_tv 0x7f0b00e1
 int id activity_detail_ll 0x7f0b00da
 int id activity_detail_tv 0x7f0b0076
-int id activity_details_head 0x7f0b0171
+int id activity_details_head 0x7f0b0172
 int id activity_ll 0x7f0b0075
 int id activity_map_tv 0x7f0b045f
 int id activity_name 0x7f0b0382
@@ -1368,7 +1368,7 @@ int id arrowimg 0x7f0b01a3
 int id author_name 0x7f0b04e5
 int id back 0x7f0b00bb
 int id backButton1 0x7f0b034a
-int id back_iv 0x7f0b0172
+int id back_iv 0x7f0b015e
 int id back_tv 0x7f0b024a
 int id backgraundlayout 0x7f0b00b7
 int id banner_layout 0x7f0b0319
@@ -1484,7 +1484,7 @@ int id car 0x7f0b0098
 int id centerBottom 0x7f0b004d
 int id change_btn 0x7f0b0446
 int id change_china_btn 0x7f0b0443
-int id choose_layout 0x7f0b016b
+int id choose_layout 0x7f0b016c
 int id circle 0x7f0b0016
 int id city_item_gv 0x7f0b021b
 int id classification 0x7f0b041d
@@ -1740,11 +1740,11 @@ int id id_list_dir 0x7f0b0481
 int id id_total_count 0x7f0b00c0
 int id imageView1 0x7f0b033d
 int id imageView2 0x7f0b033c
-int id imagebutton_bad 0x7f0b016e
-int id imagebutton_badlayout 0x7f0b016d
-int id imagebutton_good 0x7f0b0170
-int id imagebutton_goodlayout 0x7f0b016f
-int id imageleft 0x7f0b016c
+int id imagebutton_bad 0x7f0b016f
+int id imagebutton_badlayout 0x7f0b016e
+int id imagebutton_good 0x7f0b0171
+int id imagebutton_goodlayout 0x7f0b0170
+int id imageleft 0x7f0b016d
 int id img 0x7f0b0145
 int id img_camera 0x7f0b00b8
 int id img_url 0x7f0b0467
@@ -1848,7 +1848,7 @@ int id linearLayout 0x7f0b0223
 int id linearLayout1 0x7f0b02c4
 int id linearLayout2 0x7f0b0226
 int id linearLayout3 0x7f0b01d1
-int id linear_layout 0x7f0b0164
+int id linear_layout 0x7f0b0165
 int id linear_text 0x7f0b0433
 int id linearlayout 0x7f0b047f
 int id linkname_commit 0x7f0b0377
@@ -1873,7 +1873,7 @@ int id load_viewpager 0x7f0b0140
 int id loading 0x7f0b0058
 int id loading_gif 0x7f0b04a6
 int id loading_text 0x7f0b0488
-int id login_iv 0x7f0b0162
+int id login_iv 0x7f0b0163
 int id login_login 0x7f0b0396
 int id login_register 0x7f0b0395
 int id login_return 0x7f0b0394
@@ -1921,7 +1921,7 @@ int id map_location 0x7f0b01d9
 int id menu_settings 0x7f0b0546
 int id menuitem 0x7f0b04a9
 int id menulist 0x7f0b04aa
-int id message 0x7f0b0160
+int id message 0x7f0b0161
 int id message_content 0x7f0b01ee
 int id message_title 0x7f0b01ed
 int id middle_img 0x7f0b021e
@@ -1941,8 +1941,8 @@ int id music_paly 0x7f0b0495
 int id music_seekbar 0x7f0b0493
 int id myProgressBar 0x7f0b00e3
 int id myView 0x7f0b045a
-int id my_collection 0x7f0b0166
-int id my_comment 0x7f0b0167
+int id my_collection 0x7f0b0167
+int id my_comment 0x7f0b0168
 int id my_comment_listview 0x7f0b01e5
 int id my_event_code 0x7f0b03fe
 int id my_event_cost 0x7f0b0408
@@ -1956,7 +1956,7 @@ int id my_event_seatshow 0x7f0b0405
 int id my_event_session 0x7f0b0403
 int id my_event_time 0x7f0b03ff
 int id my_event_title 0x7f0b0400
-int id my_order 0x7f0b0165
+int id my_order 0x7f0b0166
 int id my_venue_class 0x7f0b0413
 int id my_venue_code 0x7f0b040f
 int id my_venue_cost 0x7f0b0417
@@ -2037,7 +2037,7 @@ int id order_time 0x7f0b0474
 int id order_title 0x7f0b0468
 int id organization_title 0x7f0b04a1
 int id pageControl 0x7f0b045c
-int id page_layout 0x7f0b016a
+int id page_layout 0x7f0b016b
 int id pageitem_layout 0x7f0b0490
 int id pageitem_show 0x7f0b0491
 int id paly_listview 0x7f0b050d
@@ -2045,11 +2045,11 @@ int id pathView 0x7f0b0492
 int id person_listview 0x7f0b0232
 int id person_radiogroup 0x7f0b03a0
 int id person_radiogroup_sex 0x7f0b03a8
-int id personal_admin 0x7f0b0163
-int id personal_content 0x7f0b0168
+int id personal_admin 0x7f0b0164
+int id personal_content 0x7f0b0169
 int id personal_head 0x7f0b0217
 int id personal_info 0x7f0b04f7
-int id personal_name 0x7f0b015e
+int id personal_name 0x7f0b015f
 int id personal_title_left 0x7f0b015a
 int id personality_return 0x7f0b039f
 int id personrbtn_1 0x7f0b03a1
@@ -2064,7 +2064,7 @@ int id personrbtn_woman 0x7f0b03aa
 int id phone_cancel 0x7f0b03b9
 int id phone_num 0x7f0b035a
 int id phone_ok 0x7f0b03ba
-int id pic_gallery 0x7f0b0169
+int id pic_gallery 0x7f0b016a
 int id play_count 0x7f0b0514
 int id play_error_layout 0x7f0b000e
 int id play_error_layout_inner 0x7f0b050e
@@ -2236,7 +2236,7 @@ int id select 0x7f0b012f
 int id select_tv 0x7f0b021a
 int id send_code 0x7f0b011b
 int id serif 0x7f0b001b
-int id setting 0x7f0b015f
+int id setting 0x7f0b0160
 int id setting_clean 0x7f0b023a
 int id setting_comment 0x7f0b023d
 int id setting_exit 0x7f0b023e
@@ -2371,7 +2371,7 @@ int id top_left_img 0x7f0b0146
 int id top_left_tv 0x7f0b02cc
 int id top_line 0x7f0b04c1
 int id top_null_ll 0x7f0b0216
-int id top_tv 0x7f0b0161
+int id top_tv 0x7f0b0162
 int id toptv 0x7f0b0526
 int id total_banner_china_ll 0x7f0b043f
 int id total_banner_ll 0x7f0b0444

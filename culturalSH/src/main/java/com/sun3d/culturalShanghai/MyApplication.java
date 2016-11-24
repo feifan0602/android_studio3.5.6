@@ -82,6 +82,10 @@ import cn.jpush.android.api.JPushInterface;
 import static com.sun3d.culturalShanghai.service.DownloadAPKService.context;
 
 public class MyApplication extends Application {
+    public static boolean activity_bool=false;
+    public static boolean space_bool=false;
+    public static boolean organizations_bool=false;
+    public static boolean my_bool=false;
     public static String Text_Url = "http://new-img2.ol-img.com/985x695/116/31/lirqOsEqHWnuE.jpg";
     public static String Text_Big_Url = "http://pic16.nipic.com/20110831/8027526_145847893000_2" +
             ".jpg";
@@ -939,7 +943,7 @@ public class MyApplication extends Application {
         }
         ViewGroup.LayoutParams params = listView.getLayoutParams();
         params.height = totalHeight + (listAdapter.getCount() * divider_height);
-        Log.i(TAG, "setListViewHeightPop: "+params.height);
+        Log.i(TAG, "setListViewHeightPop: " + params.height);
         if (params.height < 1300) {
             params.height = 1300;
         }

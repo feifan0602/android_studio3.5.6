@@ -35,7 +35,8 @@ public class HttpUrlList {
 
     public static String IP = "http://eme.wenhuayun.cn";
     public static String TEST_IP = "http://eme.whycm.sh.cn:10019";
-
+    public static String ADDRESS_IP="http://emechina.wenhuayun.cn";
+    public static String ADDRESS_TEST_IP="http://emechinam.wenhuayun.cn:10019";
 //    public static String IP = "";
 //    public static String TEST_IP = "";
     // public static  String IP = "http://eme.wenhuayun.cn";// 正式环境
@@ -69,33 +70,33 @@ public class HttpUrlList {
         WebUrl.WEB_AOUNT = ip + "/serviceProtocol.html";
         WebUrl.WEB_HELP = ip + "/wechat/help.do?type=app";
 
-        UserUrl.User_thirdlogin = ip + "/login/appOpenUser.do";
-        UserUrl.User_fasrlogin = ip + "/login/doLogin.do";
-        UserUrl.User_UploadUserIcon = ip
-                + "/appUser/uploadAppFiles.do";
-        UserUrl.User_setUserInfo = ip
-                + "/appUser/editTerminalUser.do";
-        UserUrl.User_getphonecodeInfo = ip
-                + "/appUser/appSendCode.do";
-        UserUrl.User_bindphoneInfo = ip
-                + "/appUser/appValidateCode.do";
-        UserUrl.User_setuserpasswordInfo = ip
-                + "/appUser/appValidatePwd.do";
-        UserUrl.USER_SETEMAILINFO = ip
-                + "/appUser/editTerminalUserByMail.do";
-        UserUrl.GET_USERINFO = ip
-                + "/appUser/queryTerminalUserById.do";
-        UserUrl.FORGETPW_GETCODE = ip
-                + "/appUser/editTerminalUserByMobile.do";
-        UserUrl.FINDPW_FIXPW = ip
-                + "/appUser/editTerminalUserByPwd.do";
-        UserUrl.REGISTER_PHONE_CODE = ip
-                + "/login/userCode.do";
-        UserUrl.REGISTER_URL = ip + "/login/doRegister.do";
-        UserUrl.USER_UPLOADGROUPPIC = ip
-                + "/appUser/uploadAppFiles.do";
-        UserUrl.USER_THIRD_BIND = ip
-                + "/appUser/BindingAccount.do";
+//        UserUrl.User_thirdlogin = ip + "/login/appOpenUser.do";
+//        UserUrl.User_fasrlogin = ip + "/login/doLogin.do";
+//        UserUrl.User_UploadUserIcon = ip
+//                + "/appUser/uploadAppFiles.do";
+//        UserUrl.User_setUserInfo = ip
+//                + "/appUser/editTerminalUser.do";
+//        UserUrl.User_getphonecodeInfo = ip
+//                + "/appUser/appSendCode.do";
+//        UserUrl.User_bindphoneInfo = ip
+//                + "/appUser/appValidateCode.do";
+//        UserUrl.User_setuserpasswordInfo = ip
+//                + "/appUser/appValidatePwd.do";
+//        UserUrl.USER_SETEMAILINFO = ip
+//                + "/appUser/editTerminalUserByMail.do";
+//        UserUrl.GET_USERINFO = ip
+//                + "/appUser/queryTerminalUserById.do";
+//        UserUrl.FORGETPW_GETCODE = ip
+//                + "/appUser/editTerminalUserByMobile.do";
+//        UserUrl.FINDPW_FIXPW = ip
+//                + "/appUser/editTerminalUserByPwd.do";
+//        UserUrl.REGISTER_PHONE_CODE = ip
+//                + "/login/userCode.do";
+//        UserUrl.REGISTER_URL = ip + "/login/doRegister.do";
+//        UserUrl.USER_UPLOADGROUPPIC = ip
+//                + "/appUser/uploadAppFiles.do";
+//        UserUrl.USER_THIRD_BIND = ip
+//                + "/appUser/BindingAccount.do";
 
 
         Comment.User_CommentList = ip
@@ -480,15 +481,6 @@ public class HttpUrlList {
 
 
         /**
-         * 反馈信息
-         */
-        Feedback.FEEDBACK_URL = ip
-                + "/appUser/appFeedInformation.do";
-        Feedback.FEEDBACK_TYPE_URL = ip
-                + "/appTag/appFeedBackTagByType.do";
-
-
-        /**
          * 我的场馆
          */
         MyVenue.NEW_VENUE_URL = ip
@@ -590,28 +582,28 @@ public class HttpUrlList {
      */
     public static class UserUrl {
 
-        public static String User_thirdlogin = IP
+        public static String User_thirdlogin = ADDRESS_IP
                 + "/login/appOpenUser.do";
-        public static String User_fasrlogin = IP + "/login/doLogin.do";
-        public static String User_UploadUserIcon = IP
+        public static String User_fasrlogin = ADDRESS_IP + "/login/doLogin.do";
+        public static String User_UploadUserIcon = ADDRESS_IP
                 + "/appUser/uploadAppFiles.do";
-        public static String User_setUserInfo = IP
+        public static String User_setUserInfo = ADDRESS_IP
                 + "/appUser/editTerminalUser.do";
-        public static String User_getphonecodeInfo = IP
+        public static String User_getphonecodeInfo = ADDRESS_IP
                 + "/appUser/appSendCode.do";
-        public static String User_bindphoneInfo = IP
+        public static String User_bindphoneInfo = ADDRESS_IP
                 + "/appUser/appValidateCode.do";
-        public static String User_setuserpasswordInfo = IP
+        public static String User_setuserpasswordInfo = ADDRESS_IP
                 + "/appUser/appValidatePwd.do";
-        public static String USER_SETEMAILINFO = IP
+        public static String USER_SETEMAILINFO = ADDRESS_IP
                 + "/appUser/editTerminalUserByMail.do";
-        public static String GET_USERINFO = IP
+        public static String GET_USERINFO = ADDRESS_IP
                 + "/appUser/queryTerminalUserById.do";
-        public static String FORGETPW_GETCODE = IP
+        public static String FORGETPW_GETCODE = ADDRESS_IP
                 + "/appUser/editTerminalUserByMobile.do";
-        public static String FINDPW_FIXPW = IP
+        public static String FINDPW_FIXPW = ADDRESS_IP
                 + "/appUser/editTerminalUserByPwd.do";
-        public static String REGISTER_PHONE_CODE = IP
+        public static String REGISTER_PHONE_CODE = ADDRESS_IP
                 + "/login/userCode.do";
         public static String REGISTER_PHONE = "userMobileNo";
         public static String REGISTER_URL = IP + "/login/doRegister.do";
@@ -620,9 +612,9 @@ public class HttpUrlList {
         public static String REGISTER_BIRTH = "userBirthStr";
         public static String REGISTER_PW = "userPwd";
         public static String REGISTER_CODE = "code";
-        public static String USER_UPLOADGROUPPIC = IP
+        public static String USER_UPLOADGROUPPIC = ADDRESS_IP
                 + "/appUser/uploadAppFiles.do";
-        public static String USER_THIRD_BIND = IP
+        public static String USER_THIRD_BIND = ADDRESS_IP
                 + "/appUser/BindingAccount.do";
     }
 
@@ -808,9 +800,9 @@ public class HttpUrlList {
     }
 
     public static class HomeFragment {
-        public static String CITYLIST = "http://emechinam.wenhuayun.cn:10019"
+        public static String CITYLIST = ADDRESS_TEST_IP
                 + "/areaCity/cityList";
-        public static String CITYPAGEINFO = "http://emechinam.wenhuayun.cn:10019"
+        public static String CITYPAGEINFO = ADDRESS_TEST_IP
                 + "/areaCity/cityPageInfo";
 
         /**
@@ -1124,9 +1116,9 @@ public class HttpUrlList {
      * 反馈信息
      */
     public static class Feedback {
-        public static String FEEDBACK_URL = IP
+        public static String FEEDBACK_URL = ADDRESS_IP
                 + "/appUser/appFeedInformation.do";
-        public static String FEEDBACK_TYPE_URL = IP
+        public static String FEEDBACK_TYPE_URL = ADDRESS_IP
                 + "/appTag/appFeedBackTagByType.do";
         public static String CONTENT = "feedContent";
     }

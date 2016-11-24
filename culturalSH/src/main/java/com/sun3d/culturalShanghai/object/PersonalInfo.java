@@ -7,12 +7,22 @@ public class PersonalInfo {
 	int info;
 	String status;
 
-	public PersonalInfo(String title, int icon, int info, String status) {
+	public int getFlag() {
+		return mFlag;
+	}
+
+	public void setFlag(int flag) {
+		mFlag = flag;
+	}
+
+	int mFlag;
+	public PersonalInfo(String title, int icon, int info, String status,int flag) {
 		super();
 		this.title = title;
 		this.icon = icon;
 		this.info = info;
 		this.status = status;
+		this.mFlag=flag;
 	}
 
 	public String getStatus() {

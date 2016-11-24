@@ -1,8 +1,5 @@
 package com.sun3d.culturalShanghai.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.annotation.SuppressLint;
 import android.app.ActionBar.LayoutParams;
 import android.app.Activity;
@@ -10,18 +7,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.GridView;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.sun3d.culturalShanghai.MyApplication;
@@ -30,12 +23,13 @@ import com.sun3d.culturalShanghai.Util.AppConfigUtil;
 import com.sun3d.culturalShanghai.Util.Options;
 import com.sun3d.culturalShanghai.Util.ToastUtil;
 import com.sun3d.culturalShanghai.adapter.PersonalRelevanceAdapter;
-import com.sun3d.culturalShanghai.http.HttpUrlList;
 import com.sun3d.culturalShanghai.object.PersonalInfo;
 import com.sun3d.culturalShanghai.object.UserInfor;
 import com.sun3d.culturalShanghai.view.BadgeView;
-import com.sun3d.culturalShanghai.view.FastBlur;
 import com.umeng.analytics.MobclickAgent;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class PersonalCenterActivity extends Activity implements
 		OnClickListener, OnItemClickListener {
@@ -123,19 +117,19 @@ public class PersonalCenterActivity extends Activity implements
 		// mList.add(new PersonalInfo("我 的 喜 欢",
 		// R.drawable.select_personal_like, -1)); // 我喜欢
 		mList.add(new PersonalInfo("我 的 订 单",
-				R.drawable.select_personal_indent, -1,"")); // 我的订单
+				R.drawable.select_personal_indent, -1,"",1)); // 我的订单
 		mList.add(new PersonalInfo("我 的 收 藏",
-				R.drawable.select_personal_collect, -1,"")); // 我的收藏
+				R.drawable.select_personal_collect, -1,"",2)); // 我的收藏
 		// mList.add(new PersonalInfo("我 的 消 息",
 		// R.drawable.select_personal_message, 99)); // 我的消息
 		// mList.add(new PersonalInfo("系 统 设 置",
 		// R.drawable.select_personal_system, -1)); // 系统设置
 		mList.add(new PersonalInfo("个 人 设 置",
-				R.drawable.select_personal_single, -1,"")); // 个人设置
+				R.drawable.select_personal_single, -1,"",3)); // 个人设置
 		mList.add(new PersonalInfo("帮 助 与 反 馈",
-				R.drawable.select_personal_system, -1,"")); // 意见反馈
+				R.drawable.select_personal_system, -1,"",4)); // 意见反馈
 		mList.add(new PersonalInfo("关 于 文 化 云",
-				R.drawable.select_personal_idea, -1,""));
+				R.drawable.select_personal_idea, -1,"",5));
 
 		LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
 				LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);

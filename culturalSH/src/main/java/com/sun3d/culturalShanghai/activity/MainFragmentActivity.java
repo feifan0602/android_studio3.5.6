@@ -180,8 +180,8 @@ public class MainFragmentActivity extends FragmentActivity implements
         sharedPreferences = getSharedPreferences("share", MODE_PRIVATE);
         isFirstRun = sharedPreferences.getBoolean("isFirstRun", true);
         //这里是字体的下载 如果没有这个文件 就进行下载
-        if (MyApplication.downFontbol()){
-            Log.i(TAG,"文件不在了");
+        if (MyApplication.downFontbol()) {
+            Log.i(TAG, "文件不在了");
             Intent iService = new Intent();
             iService.setClass(this, DownloadTextFont.class);
             iService.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -321,7 +321,7 @@ public class MainFragmentActivity extends FragmentActivity implements
                 switch (msg.what) {
                     case 0:
                         //设置进度条最大值
-                       ToastUtil.showToast("补丁下载完成");
+                        ToastUtil.showToast("补丁下载完成");
                         break;
                     default:
                         break;
@@ -646,6 +646,11 @@ public class MainFragmentActivity extends FragmentActivity implements
                     Activity_view = new ActivityFragment();
                     transaction.add(R.id.content, Activity_view);
                 } else {
+                    if(MyApplication.activity_bool){
+                        Activity_view.initListData();
+                        Activity_view.initDataArea();
+                        MyApplication.activity_bool=false;
+                    }
                     transaction.show(Activity_view);
                 }
                 break;
@@ -676,9 +681,15 @@ public class MainFragmentActivity extends FragmentActivity implements
                 position = 2;
                 bottom_venue_iv.setBackgroundResource(R.drawable.btn_kongjian_on);
                 if (space_view == null) {
+
                     space_view = new SpaceFragment();
                     transaction.add(R.id.content, space_view);
                 } else {
+                    if(MyApplication.space_bool){
+                        space_view.onResh(0);
+                        space_view.getDataArea();
+                        MyApplication.space_bool=false;
+                    }
                     transaction.show(space_view);
                 }
                 break;
@@ -691,6 +702,10 @@ public class MainFragmentActivity extends FragmentActivity implements
                     organizations_view = new OrganizationsFragment();
                     transaction.add(R.id.content, organizations_view);
                 } else {
+                    if(MyApplication.organizations_bool){
+                        organizations_view.setWebUrl();
+                        MyApplication.organizations_bool=false;
+                    }
                     transaction.show(organizations_view);
                 }
 
@@ -708,6 +723,10 @@ public class MainFragmentActivity extends FragmentActivity implements
                     My_view = new PersonalCenterFragmet();
                     transaction.add(R.id.content, My_view);
                 } else {
+                    if(MyApplication.my_bool){
+                        MyApplication.my_bool=false;
+                        My_view.getUserInfo();
+                    }
                     transaction.show(My_view);
                 }
                 break;
@@ -743,6 +762,13 @@ public class MainFragmentActivity extends FragmentActivity implements
         bottom_nearby_iv.setBackgroundResource(R.drawable.nearby);
         bottom_calender_iv.setBackgroundResource(R.drawable.calender);
 
+    }
+
+    public void ResetFragment() {
+        MyApplication.activity_bool=true;
+        MyApplication.space_bool=true;
+        MyApplication.organizations_bool=true;
+        MyApplication.my_bool=true;
     }
 
     private void hideFragments(FragmentTransaction transaction) {

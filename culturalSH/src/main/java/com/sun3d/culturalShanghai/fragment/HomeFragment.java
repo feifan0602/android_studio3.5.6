@@ -129,14 +129,18 @@ public class HomeFragment extends Fragment implements OnClickListener,
     private Intent updateAPK;
     private LocationMyLatService.MyBind mMyBind;
     private DownNewApkService.MyDownApkBind mDownApkBind;
-    public static String cityCode="";
+    private String PreviousAddress = "";
+    public static String cityCode = "";
     private TextView tv, tv1, tv2, tv3, tv4;
     private TextView top_banner_address_tv;
     private TextView closetime_tv;
     private Button change_btn;
     private TextView top_banner_address_china_tv;
     private Button change_china_btn;
-
+    //全国的接口  要全部从 getImgData中获取猜你喜欢的数据
+    private boolean all_city_bol = false;
+    //全国的接口  改变猜我喜欢的布局
+    private boolean all_city_ada_bol = true;
     public LinearLayout total_banner_ll, total_banner_china_ll;
     public Timer timer;
     public static List<EventInfo> sAddressList = new ArrayList<EventInfo>();
@@ -186,14 +190,12 @@ public class HomeFragment extends Fragment implements OnClickListener,
 
     private void getAddressData() {
         JSONObject json = new JSONObject();
-        Log.i(TAG, "getAddressData: "+ HttpUrlList.HomeFragment.CITYLIST+"  json  "+json);
         MyHttpRequest.onStartHttpPostJSON(
                 HttpUrlList.HomeFragment.CITYLIST, json,
                 new HttpRequestCallback() {
                     @Override
                     public void onPostExecute(int statusCode, String resultStr) {
                         // TODO Auto-generated method stub
-                        Log.i(TAG,"statusCode==  "+statusCode+ "onPostExecute: " + resultStr+ "  url  ==  "+HttpUrlList.HomeFragment.CITYLIST);
                         if (HttpCode.HTTP_Request_OK == statusCode) {
                             try {
                                 mAddressSelect = JsonUtil.getHomeAddressPop(resultStr);
@@ -250,7 +252,8 @@ public class HomeFragment extends Fragment implements OnClickListener,
                     public void onPostExecute(int statusCode, String resultStr) {
                         isRefresh = false;
                         if (HttpCode.HTTP_Request_OK == statusCode) {
-                            Log.i(TAG, "getData:111 "+HttpUrlList.HomeFragment.RECOMMENDACTIVITY+"  resultStr  ==  "+resultStr);
+                            Log.i(TAG, "getData:111 " + HttpUrlList.HomeFragment
+                                    .RECOMMENDACTIVITY + "  resultStr  ==  " + resultStr);
                             try {
                                 mDataList = JsonUtil.getHomeDataList(resultStr);
                                 if (mDataList.size() > 0) {
@@ -337,14 +340,45 @@ public class HomeFragment extends Fragment implements OnClickListener,
                     content_layout.addView(mHomeDetail_HorizontalListView
                             .getContent());
                     content_layout.addView(mHomeDetail_Content.getContent());
+                    all_city_ada_bol = true;
+                    if (all_city_bol) {
+                        Log.i(TAG, "handleMessage: all_city");
+                        all_city_ada_bol = false;
+                        mList.clear();
+                        all_city_bol = false;
+                        for (int j = 0; j < mImgList.size(); j++) {
+                            if (mImgList.get(j).getAdvertType().equals("E")) {
+                                HomeDetail_ContentInfor info = new HomeDetail_ContentInfor();
+                                info.setAdvertPostion(mImgList.get(j).getAdvertPostion());
+                                info.setAdvertSort(mImgList.get(j).getAdvertSort());
+                                info.setCreateTime(mImgList.get(j).getCreateTime());
+                                info.setUpdateTime(mImgList.get(j).getUpdateTime());
+                                info.setAdvertLink(mImgList.get(j).getAdvertLink());
+                                info.setAdvertState(mImgList.get(j).getAdvertState());
+                                info.setAdvertLinkType(mImgList.get(j).getAdvertLinkType());
+                                info.setAdvertType(mImgList.get(j).getAdvertType());
+                                info.setAdvertImgUrl(mImgList.get(j).getAdvertImgUrl());
+                                info.setAdvertTitle(mImgList.get(j).getAdvertTitle());
+                                info.setAdvertId(mImgList.get(j).getAdvertId());
+                                info.setAdvertUrl(mImgList.get(j).getAdvertUrl());
+                                info.setCreateBy(mImgList.get(j).getCreateBy());
+                                info.setUpdateBy(mImgList.get(j).getUpdateBy());
+//                                if (mImgList.get(j).getAdvertSort() != 1) {
+//                                    mImgHomeIndex.add(mImgList.get(j));
+//                                }
+                                mList.add(info);
+                            }
+                        }
+                        handler.sendEmptyMessage(3);
+                    }
                     break;
                 //地址的接口
                 case 2:
                     mPopGvList.clear();
                     mPopList.clear();
-                    EventInfo all_city=new EventInfo();
+                    EventInfo all_city = new EventInfo();
                     all_city.setCityCode(0);
-                    all_city.setCityName("全国");
+                    all_city.setCityName("中国");
                     mPopGvList.add(all_city);
                     for (int i = 0; i < mAddressSelect.size(); i++) {
                         EventInfo info = mAddressSelect.get(i);
@@ -370,7 +404,7 @@ public class HomeFragment extends Fragment implements OnClickListener,
                     break;
                 //获取listview 的数据
                 case 3:
-                    mHomeDetail_Content.setData(mImgList, mList);
+                    mHomeDetail_Content.setData(mImgList, mList, all_city_ada_bol);
                     if (isFristRun == 0) {
                         updateAPK = new Intent();
                         updateAPK.setClass(getActivity(), DownNewApkService.class);
@@ -380,6 +414,7 @@ public class HomeFragment extends Fragment implements OnClickListener,
                     StopLoading();
                     isFristRun = 1;
                     scrroll_view.onRefreshComplete();
+
                     break;
                 case 4:
                     try {
@@ -399,6 +434,10 @@ public class HomeFragment extends Fragment implements OnClickListener,
                     }
                     break;
                 case 6:
+                    all_city_bol = true;
+                    getImgData();
+                    break;
+                case 7:
                     onResh();
                     break;
                 //错误的请求
@@ -419,7 +458,7 @@ public class HomeFragment extends Fragment implements OnClickListener,
 
     private void init(View view) {
         Log.i(TAG, "init: ");
-
+        PreviousAddress = MyApplication.getNowAddress(mContext);
         mImgHomeIndex = new ArrayList<HomeImgInfo>();
         loadingLayout = (RelativeLayout) view.findViewById(R.id.loading);
         mLoadingHandler = new LoadingHandler(loadingLayout);
@@ -438,10 +477,10 @@ public class HomeFragment extends Fragment implements OnClickListener,
         left_tv.setCompoundDrawablePadding(0);
         left_tv.setTypeface(MyApplication.GetTypeFace());
         left_tv.setOnClickListener(this);
-        String city_str=MyApplication.getNowAddress(mContext);
-        if (!city_str.isEmpty()){
+        String city_str = MyApplication.getNowAddress(mContext);
+        if (!city_str.isEmpty()) {
             left_tv.setText(city_str);
-        }else{
+        } else {
             left_tv.setVisibility(View.INVISIBLE);
         }
         middle_tv.setTypeface(MyApplication.GetTypeFace());
@@ -532,6 +571,9 @@ public class HomeFragment extends Fragment implements OnClickListener,
         change_btn.setOnClickListener(this);
         change_china_btn.setOnClickListener(this);
         timer = new Timer();
+        if (MyApplication.getNowAddress(mContext).equals("中国")){
+            MainFragmentActivity.getIntance().closeBottom();
+        }
         //开启定位
         StartLoading();
     }
@@ -562,17 +604,19 @@ public class HomeFragment extends Fragment implements OnClickListener,
                 startTask();
                 left_tv.setVisibility(View.VISIBLE);
                 left_tv.setText(locationAddress);
-                int code=Integer.parseInt(cityCode);
+                int code = Integer.parseInt(cityCode);
                 getNewIP(code);
                 break;
             case 2:
                 //第一次进入  无分公司
                 address_Nolocation_tv.setText("你所在的城市尚未开通");
+                mLeftNoLat_btn.setText("选择城市");
+                mRightNolat_btn.setText("进入中国版");
                 popupWindowNoLat.showAsDropDown(middle_tv);
 
                 break;
             case 3:
-                int code_new=Integer.parseInt(cityCode);
+                int code_new = Integer.parseInt(cityCode);
                 getNewIP(code_new);
                 //第二次进入  地址不变
 //                address_location_tv.setText("你所在的城市尚未开通");
@@ -587,6 +631,8 @@ public class HomeFragment extends Fragment implements OnClickListener,
             case 5:
                 //无法定位当前位置
                 address_Nolocation_tv.setText("当前无法定位你的位置");
+                mLeftNoLat_btn.setText("选择城市");
+                mRightNolat_btn.setText("进入中国版");
                 popupWindowNoLat.showAsDropDown(middle_tv);
                 break;
 
@@ -623,8 +669,8 @@ public class HomeFragment extends Fragment implements OnClickListener,
             ViewGroup.LayoutParams params = mListview.getLayoutParams();
             params.height = totalHeight
                     + (mListview.getDividerHeight() * (mListview.getCount() - 1));
-            if(params.height<1300){
-                params.height=1300;
+            if (params.height < 1300) {
+                params.height = 1300;
             }
             mListview.setLayoutParams(params);
             mHomePopListAdapter.notifyDataSetChanged();
@@ -673,9 +719,17 @@ public class HomeFragment extends Fragment implements OnClickListener,
                 changeToChina();
                 break;
             case R.id.left_change_btn:
-                //不切换
+                //不切换  如果前一次记录是在中国  进入  handler 7  如果是其他城市  是  6
                 popupWindowChangeCity.dismiss();
-                handler.sendEmptyMessage(6);
+                Log.i(TAG, "onClick: "+PreviousAddress);
+                if (PreviousAddress.equals("中国")) {
+                    Log.i(TAG, "onClick: 666");
+                    handler.sendEmptyMessage(6);
+                } else {
+                    Log.i(TAG, "onClick: 777");
+                    handler.sendEmptyMessage(7);
+                }
+
                 break;
             case R.id.right_change_btn:
                 //切换
@@ -705,15 +759,17 @@ public class HomeFragment extends Fragment implements OnClickListener,
         left_tv.setVisibility(View.VISIBLE);
         left_tv.setText("中国");
 //        left_tv.setCompoundDrawables(null, null, null, null);
-        MyApplication.saveNowAddress(mContext,"中国");
+        MyApplication.saveNowAddress(mContext, "中国");
         MainFragmentActivity.getIntance().closeBottom();
-        HttpUrlList.setIpAndTestIp(mContext,"http://emechina.wenhuayun.cn","http://emechinam.wenhuayun.cn:10019");
+        Log.i("MainFragmentActivity", "changeToChina: ");
+        HttpUrlList.setIpAndTestIp(mContext, "http://emechina.wenhuayun.cn", "http://emechinam" +
+                ".wenhuayun.cn:10019");
 //        http://emechinam.wenhuayun.cn:10019/advertRecommend/pageAdvertRecommend
         getNewIP(0);
     }
 
     public void changeToCity() {
-        int code=Integer.parseInt(cityCode);
+        int code = Integer.parseInt(cityCode);
         left_tv.setVisibility(View.VISIBLE);
         left_tv.setText(location_str);
         MyApplication.saveNowAddress(mContext, location_str);
@@ -759,14 +815,14 @@ public class HomeFragment extends Fragment implements OnClickListener,
     }
 
     public void getNewIP(int cityCode) {
-        if (cityCode==0){
+        if (cityCode == 0) {
             //这个表示全国  直接刷新数据
             handler.sendEmptyMessage(6);
             return;
         }
         total_banner_china_ll.setVisibility(View.GONE);
         MainFragmentActivity.getIntance().openBottom();
-        Log.i(TAG, "getNewIP-CityCode: "+cityCode);
+        Log.i(TAG, "getNewIP-CityCode: " + cityCode);
         JSONObject jo = new JSONObject();
         try {
             jo.put("cityCode", cityCode);
@@ -781,22 +837,20 @@ public class HomeFragment extends Fragment implements OnClickListener,
                     public void onPostExecute(int statusCode, String resultStr) {
                         // TODO Auto-generated method stub
                         if (HttpCode.HTTP_Request_OK == statusCode) {
-                            Log.i(TAG, "onPostExecute: " + resultStr);
                             try {
                                 JSONObject json = new JSONObject(resultStr);
                                 JSONObject jo = json.optJSONObject("data");
                                 String test_ip = jo.optString("platformPath", "");
                                 String ip = jo.optString("pagePath", "");
-                                ip=ip.substring(0,ip.length()-1);
-                                test_ip=test_ip.substring(0,test_ip.length()-1);
-                                Log.i(TAG, "onPostExecute: "+ip+"  test_ip  "+test_ip);
-                                HttpUrlList.setIpAndTestIp(mContext,ip, test_ip);
-                                handler.sendEmptyMessage(6);
-                                Log.i(TAG, "onPostExecute: " + HttpUrlList.WebUrl.NEWURL);
+                                ip = ip.substring(0, ip.length() - 1);
+                                test_ip = test_ip.substring(0, test_ip.length() - 1);
+                                Log.i(TAG, "onPostExecute: " + ip + "  test_ip  " + test_ip);
+                                HttpUrlList.setIpAndTestIp(mContext, ip, test_ip);
+                                handler.sendEmptyMessage(7);
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
-                        }else{
+                        } else {
                             ToastUtil.showToast("数据请求失败，请重新选择地址");
                         }
                     }

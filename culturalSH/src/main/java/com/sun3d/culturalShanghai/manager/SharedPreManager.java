@@ -50,7 +50,11 @@ public class SharedPreManager {
 		String area = mAllArea.getString(AppConfigUtil.PRE_FILE_ALL_AREA, null);
 		return area;
 	}
-
+	public static void clearAllArea(){
+		Editor editor = mAllArea.edit();
+		editor.clear();
+		editor.commit();
+	}
 	static SharedPreferences mAllTag = MyApplication.getContext()
 			.getSharedPreferences(AppConfigUtil.PRE_FILE_ALL_TAG, 0);
 
